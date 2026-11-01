@@ -42,3 +42,33 @@
 .mk-legend span{font-size:10px;font-weight:800;color:#fff;padding:6px 9px;border-radius:999px;letter-spacing:.4px;text-transform:uppercase}
 .mk-legend .events{background:#d14a9c}.mk-legend .loops{background:#26a7b8}.mk-legend .logic{background:#4a82d7}.mk-legend .variables{background:#e05a47}.mk-legend .basic{background:#7a58c8}.mk-legend .input{background:#bf4eb5}.mk-legend .robotics{background:#118f72}.mk-legend .radio{background:#2877b7}.mk-legend .music{background:#db8a28}
 @media print{.mk-guide{break-inside:avoid}.mk-block{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+
+
+/* ayudas visuales por misión */
+.mission-visual-wrap{margin-top:14px}
+.mission-visual{display:grid;grid-template-columns:220px minmax(0,1fr);gap:16px;align-items:center;padding:14px;border:1px solid #dfe9e6;border-radius:18px;background:linear-gradient(180deg,#ffffff,#f8fbfa)}
+.mission-visual.compact{grid-template-columns:160px minmax(0,1fr);gap:12px;padding:10px;border-radius:14px}
+.mission-visual-art{display:grid;place-items:center;background:#eef5f4;border-radius:14px;min-height:150px;padding:6px}
+.mission-visual.compact .mission-visual-art{min-height:112px}
+.mission-visual-art svg{width:100%;height:auto;max-width:210px}
+.mission-visual.compact .mission-visual-art svg{max-width:150px}
+.mission-visual-badge{display:inline-block;font-size:11px;font-weight:850;letter-spacing:.7px;text-transform:uppercase;color:#0c725c;background:#def5ea;border-radius:999px;padding:6px 10px;margin-bottom:8px}
+.mission-visual-copy h3{font-size:19px;letter-spacing:-.3px;margin:0 0 8px}
+.mission-visual-copy ul{margin:0;padding-left:18px;color:#49606f;font-size:14px;line-height:1.55}
+.mission-visual.compact .mission-visual-copy h3{font-size:15px;margin-bottom:5px}
+.mission-visual.compact .mission-visual-copy ul{font-size:11px;line-height:1.45}
+
+/* makecode svg */
+.mk-render-zone{display:grid;gap:14px;margin-top:16px}
+.mk-svg-box{border:1px solid #dfe8e5;border-radius:16px;background:#fff;padding:10px;overflow:auto}
+.mk-svg-box svg{display:block;width:100%;height:auto;min-width:320px}
+.mk-guide{border:1px solid #dfe8e5;border-radius:16px;background:#f8fbfa;overflow:hidden}
+.mk-guide-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:12px 14px;border-bottom:1px solid #e1ebe8;background:#ffffff}
+.mk-guide-head span{font-size:13px;font-weight:850;color:#173049;letter-spacing:.2px}.mk-guide-head small{font-size:11px;color:#6d7c86;max-width:420px;line-height:1.45}
+.mk-sequences{display:grid;gap:14px;padding:14px}.mk-seq{background:#fff;border:1px solid #e3ece9;border-radius:14px;padding:12px}.mk-seq-label{font-size:11px;font-weight:800;color:#5d717f;letter-spacing:.8px;text-transform:uppercase;margin-bottom:10px}.mk-stack{display:flex;flex-direction:column;gap:4px}
+.mk-step{display:grid;grid-template-columns:18px minmax(0,1fr);align-items:start;gap:10px}.mk-arrow{font-size:16px;line-height:1;color:#7fa094;text-align:center;padding-top:6px}.mk-step.first .mk-arrow{opacity:0}
+.mk-block{position:relative;display:inline-flex;align-items:center;min-height:40px;width:fit-content;max-width:100%;padding:8px 14px 8px 18px;border-radius:10px;color:#fff;font-size:13px;font-weight:800;line-height:1.35;box-shadow:inset 0 -2px 0 #0000001c,0 3px 8px #0e1d2410}.mk-block span{display:block;overflow-wrap:anywhere}.mk-block:before{content:'';position:absolute;left:8px;top:50%;transform:translateY(-50%);width:8px;height:18px;border-radius:5px;background:#ffffff55}
+.mk-block.events{background:#d14a9c}.mk-block.loops{background:#26a7b8}.mk-block.logic{background:#4a82d7}.mk-block.variables{background:#e05a47}.mk-block.basic{background:#7a58c8}.mk-block.input{background:#bf4eb5}.mk-block.robotics{background:#118f72}.mk-block.radio{background:#2877b7}.mk-block.music{background:#db8a28}
+.mk-legend{display:flex;flex-wrap:wrap;gap:7px;padding:0 14px 14px}.mk-legend span{font-size:10px;font-weight:800;color:#fff;padding:6px 9px;border-radius:999px;letter-spacing:.4px;text-transform:uppercase}.mk-legend .events{background:#d14a9c}.mk-legend .loops{background:#26a7b8}.mk-legend .logic{background:#4a82d7}.mk-legend .variables{background:#e05a47}.mk-legend .basic{background:#7a58c8}.mk-legend .input{background:#bf4eb5}.mk-legend .robotics{background:#118f72}.mk-legend .radio{background:#2877b7}.mk-legend .music{background:#db8a28}
+@media(max-width:720px){.mission-visual{grid-template-columns:1fr}.mission-visual-art svg{max-width:170px}}
+@media print{.mk-guide,.mk-svg-box,.mission-visual{break-inside:avoid}.mk-block{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
