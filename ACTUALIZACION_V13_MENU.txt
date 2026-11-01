@@ -1,0 +1,16 @@
+ROBOMISIÓN LAB · V13 · MENÚ INTUITIVO
+
+Se han retirado las páginas antiguas material.html y proyecto-final.html.
+Se mantienen equipos.html y proyectos-pro.html, que son sus alternativas actuales.
+
+PARA ACTUALIZAR GITHUB DESKTOP:
+1. Copia el contenido de robomision-lab del ZIP pequeño al repositorio local y sustituye archivos.
+2. En la carpeta del repositorio ELIMINA MANUALMENTE estos DOS archivos:
+   - material.html
+   - proyecto-final.html
+3. Comprueba en GitHub Desktop que figuran como Deleted además de los archivos modificados.
+4. Commit to main y después Push origin.
+5. Recarga la web con Ctrl+F5 y abre el botón Menú en Inicio y en un laboratorio antiguo.
+
+IMPORTANTE: el ZIP de actualización no puede borrar automáticamente archivos existentes del repositorio.
+El ZIP completo ya no contiene ninguna de las dos páginas.

@@ -1,0 +1,29 @@
+/* RoboMisión LAB · navegación intuitiva y unificada · v13 */
+.menu-panel.menu13{position:relative;z-index:40;border-top:1px solid #dceae5;background:#f5f9f7;box-shadow:0 18px 28px #0a2b2b22;color:#15283d}
+.menu-panel.menu13[hidden]{display:none!important}
+.menu-panel.menu13 .menu13-inner{display:block;width:min(1240px,calc(100% - 34px));padding:22px 0 25px;max-height:min(76vh,800px);overflow:auto;margin:auto}
+.menu13-intro{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:0 4px 18px}
+.menu13-intro strong{font-size:23px;letter-spacing:-.7px;color:#12233c}
+.menu13-intro span{font-size:13px;color:#536b70}
+.menu-panel.menu13 .menu13-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.menu13-group{min-width:0;background:white;border:1px solid #e1ece8;border-radius:15px;padding:16px 12px 12px}
+.menu13-overline{display:block;color:#078066;font-size:10px;letter-spacing:1.3px;font-weight:850;margin:0 6px 6px}
+.menu13-heading{font-size:17px;line-height:1.2;letter-spacing:-.4px;margin:0 6px 11px;color:#16283c;font-weight:800}
+.menu13-links{display:flex;flex-direction:column;gap:4px}
+.menu-panel.menu13 .menu13-link{display:block;background:transparent;border:1px solid transparent;border-radius:9px;text-decoration:none!important;color:#243648;padding:9px 10px;margin:0;transition:background .15s,border-color .15s}
+.menu-panel.menu13 .menu13-link:hover,.menu-panel.menu13 .menu13-link:focus-visible{background:#edf8f3;border-color:#b1e4d3;outline:none}
+.menu-panel.menu13 .menu13-link[aria-current=page]{background:#e4f7ed;border-color:#8ed6ba}
+.menu13-label{display:block;font-weight:800;font-size:13px;line-height:1.35;color:#162f40}
+.menu13-desc{display:block;font-size:11px;line-height:1.4;color:#647982;margin-top:3px}
+.menu-panel.menu13 .menu13-secondary{display:flex;gap:14px;align-items:center;flex-wrap:wrap;padding:16px 5px 1px}
+.menu13-secondary-label{font-size:12px;font-weight:700;color:#576d70}
+.menu-panel.menu13 .menu13-secondary a{font-size:12px;font-weight:750;color:#126a59;text-decoration:none;border:0;padding:4px}
+.menu-panel.menu13 .menu13-secondary a:hover{text-decoration:underline}
+.cab .menu13-trigger{border-radius:9px;border:1px solid #cddad6;background:#fff;color:#19364b;min-height:41px;padding:9px 12px;font-weight:800}
+.cab .menu13-trigger[aria-expanded=true]{background:#c5f3df;color:#123c35;border-color:#7fd8b4}
+.menu13-trigger-icon{font-size:16px;line-height:1;margin-right:4px}
+.cab-nav a{white-space:nowrap}
+@media(max-width:1200px){.cab-nav{display:none!important}}
+@media(max-width:1050px){.menu-panel.menu13 .menu13-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.menu-panel.menu13 .menu13-inner{padding:12px 0 22px;max-height:min(79vh,760px)}.menu13-intro{padding:0 3px 12px}.menu13-intro strong{font-size:18px}.menu13-intro span{font-size:12px}.menu-panel.menu13 .menu13-grid{grid-template-columns:1fr;gap:9px}.menu13-group{padding:12px}.menu13-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.menu-panel.menu13 .menu13-link{padding:8px}.menu13-heading{font-size:16px}.menu13-desc{font-size:10px}.cab .menu13-trigger{padding:8px}}
+@media(max-width:360px){.menu13-links{grid-template-columns:1fr}}
