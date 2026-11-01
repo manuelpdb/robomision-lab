@@ -1,80 +1,93 @@
-'use strict';
-/* Renderizador oficial MakeCode: https://makecode.microbit.org/blocks-embed */
+"use strict";
+/* RoboMisión LAB v6 | Bloques REALES: render oficial de Microsoft MakeCode.
+ * Manual técnico: https://makecode.microbit.org/blocks-embed
+ * No se generan capturas simuladas ni se sustituyen por dibujos.
+ */
 (()=>{
- const origin='https://makecode.microbit.org', queue=[], waiting=new Map();
- let iframe=null, ready=false, busy=false, timeout=null, activeRequest=null;
- const inMem=new Map();
- const key=(id)=>'robomision.ta647.bloque.real.v1.'+id;
- function cached(id){
-   if(inMem.has(id))return inMem.get(id);
-   try {const s=sessionStorage.getItem(key(id));if(s&&s.startsWith('<svg')&&s.length<250000){inMem.set(id,s);return s}}catch(e){}
-   return null;
- }
- function finishCurrent(success,svg,error){
-   if(timeout){clearTimeout(timeout);timeout=null}
-   const job=activeRequest;activeRequest=null;busy=false;
-   if(job){
-      if(success&&typeof svg==='string'&&svg.startsWith('<svg')){
-         inMem.set(job.id,svg);
-         try{if(svg.length<230000)sessionStorage.setItem(key(job.id),svg)}catch(e){}
-         job.ok(svg);
-      }else job.fail(error||'No se pudo dibujar el programa. Revisa la conexión o la compatibilidad del código.');
-   }
-   pump();
+ const editor='https://makecode.microbit.org';
+ let frame=null,ready=false,failed=false,seq=0,active=null,alarm=null;
+ const queue=[],cache=new Map();
+ function status(host,message,kind){
+  if(!host.isConnected)return;
+  const el=host.querySelector('.mk6-status');
+  if(el){el.textContent=message;el.dataset.state=kind||'wait';}
  }
  function pump(){
-   if(!ready||busy||!queue.length)return;
-   const job=queue.shift();if(!job||!job.host.isConnected){pump();return}
-   activeRequest=job;busy=true;
-   try{
-     iframe.contentWindow.postMessage({type:'renderblocks',id:job.id,code:job.code,options:{snippetMode:true}},origin);
-     timeout=setTimeout(()=>finishCurrent(false,null,'MakeCode no ha respondido. El código de ejemplo sigue disponible abajo.'),22000);
-   }catch(err){finishCurrent(false,null,'No ha podido comunicarse con MakeCode.');}
+  if(!ready||!frame||active||!queue.length)return;
+  let job=queue.shift();
+  if(!job.host.isConnected||job.host.dataset.job!==job.id){pump();return;}
+  active=job;
+  status(job.host,'Generando la imagen con los bloques originales de MakeCode…','wait');
+  alarm=setTimeout(()=>complete(null,'MakeCode no ha respondido a tiempo.'),20000);
+  try{frame.contentWindow.postMessage({type:'renderblocks',id:job.id,code:job.code,options:{snippetMode:true}},editor);}catch(e){complete(null,'Error al comunicar con el editor MakeCode.');}
  }
- function onMessage(e){
-   if(e.origin!==origin||!iframe||e.source!==iframe.contentWindow)return;
-   const m=e.data||{};
-   if(m.source!=='makecode')return;
-   if(m.type==='renderready'){ready=true;pump();}
-   if(m.type==='renderblocks'&&busy&&activeRequest&&m.id===activeRequest.id){
-      if(m.error){finishCurrent(false,null,'Este ejemplo no ha podido convertirse a bloques; utiliza el código JavaScript de la ficha.');return}
-      let svg=typeof m.svg==='string'&&m.svg.trim().startsWith('<svg')?m.svg.trim():null;
-      if(!svg&&typeof m.uri==='string'&&m.uri.startsWith('data:image/svg+xml')){
-        try{svg=decodeURIComponent(m.uri.split(',').slice(1).join(','))}catch(e){}
-      }
-      if(svg)finishCurrent(true,svg,null);
-      else finishCurrent(false,null,'MakeCode no ha devuelto una imagen válida.');
-   }
+ function complete(result,error){
+  clearTimeout(alarm);alarm=null;
+  const job=active;active=null;
+  if(!job){pump();return;}
+  if(result){
+   cache.set(job.cacheKey,result);
+   showImage(job.host,result,job.cacheKey);
+  }else{
+   status(job.host,error||'MakeCode no ha podido dibujar este programa.','bad');
+   const btn=job.host.querySelector('.mk6-retry');if(btn)btn.hidden=false;
+  }
+  pump();
  }
- function ensure(){
-   if(iframe)return;
-   iframe=document.createElement('iframe');iframe.src=origin+'/--docs?render=1&lang=es';iframe.title='Renderizador oficial MakeCode';iframe.setAttribute('aria-hidden','true');iframe.tabIndex=-1;
-   iframe.style.cssText='position:fixed;width:1px;height:1px;left:-10px;top:-10px;opacity:0;border:0;pointer-events:none';
-   window.addEventListener('message',onMessage);
-   document.body.appendChild(iframe);
-   setTimeout(()=>{if(!ready){while(queue.length){let j=queue.shift();j.fail('El servicio de MakeCode no está accesible. Puedes copiar el programa y usar el editor.')}}},22000);
+ function showImage(host,result,name){
+  if(!host.isConnected)return;
+  const img=host.querySelector('.mk6-image');if(!img)return;
+  img.src=result.data;
+  img.alt='Imagen de bloques generada por el motor oficial de Microsoft MakeCode para este programa';
+  img.hidden=false;
+  img.onerror=()=>{img.hidden=true;status(host,'La imagen recibida no se puede mostrar en este navegador.','bad');};
+  status(host,'✓ Bloques auténticos generados por MakeCode','ok');
+  const btn=host.querySelector('.mk6-download');
+  if(btn){btn.hidden=false;btn.onclick=()=>{
+   const a=document.createElement('a');a.download='makecode-bloques-'+name+'.svg';
+   if(result.svg){const b=new Blob([result.svg],{type:'image/svg+xml;charset=utf-8'}),url=URL.createObjectURL(b);a.href=url;a.click();setTimeout(()=>URL.revokeObjectURL(url),1200);}
+   else {a.href=result.data;a.click();}
+  };}
  }
+ function readyFrame(){
+  if(frame)return;
+  frame=document.createElement('iframe');
+  frame.src=editor+'/--docs?render=1&lang=es';
+  frame.title='Motor oficial para dibujar bloques MakeCode';
+  frame.setAttribute('aria-hidden','true');frame.tabIndex=-1;
+  frame.style.cssText='position:fixed;left:0;bottom:0;width:1px;height:1px;border:0;opacity:0;pointer-events:none;';
+  document.body.appendChild(frame);
+  setTimeout(()=>{
+   if(!ready){failed=true;for(const j of queue.splice(0)){
+    status(j.host,'No se ha podido conectar con MakeCode. Pulsa Reintentar o abre el editor.','bad');
+    const b=j.host.querySelector('.mk6-retry');if(b)b.hidden=false;
+   }}
+  },18000);
+ }
+ window.addEventListener('message',ev=>{
+  if(!frame||ev.source!==frame.contentWindow||ev.origin!==editor)return;
+  const m=ev.data||{};
+  if(m.source!=='makecode')return;
+  if(m.type==='renderready'){ready=true;failed=false;pump();return;}
+  if(m.type!=='renderblocks'||!active||m.id!==active.id)return;
+  if(m.error){complete(null,'El editor no pudo convertir este fragmento a bloques. Usa «Copiar código» para revisarlo en MakeCode.');return;}
+  let svg=typeof m.svg==='string'?m.svg.trim():'';
+  let uri=typeof m.uri==='string'?m.uri:'';
+  // El motor oficial puede devolver URI directa (SVG o PNG) y/o SVG puro.
+  const isSvg=svg.indexOf('<svg')!==-1;
+  if(!uri.startsWith('data:image/')&&isSvg){uri='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg.slice(svg.indexOf('<svg')));}
+  if(uri.startsWith('data:image/'))complete({data:uri,svg:isSvg?svg.slice(svg.indexOf('<svg')):''});
+  else complete(null,'MakeCode no devolvió una imagen; abre el código en el editor para revisar compatibilidad.');
+ });
  function show(host,id,code){
-   host.replaceChildren();host.dataset.codeId=id;
-   const title=document.createElement('div');title.className='mk-real-head';title.innerHTML='<span class="mk-real-pulse"></span> Cargando bloques originales de MakeCode…';host.appendChild(title);
-   const setImg=(svg)=>{
-      if(!host.isConnected||host.dataset.codeId!==id)return;
-      host.replaceChildren();
-      const label=document.createElement('div');label.className='mk-real-success';label.textContent='✓ Imagen real generada por Microsoft MakeCode';
-      const img=document.createElement('img');img.className='mk-real-image';img.alt='Bloques reales del programa de ejemplo generados con el motor oficial MakeCode';img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
-      const link=document.createElement('button');link.type='button';link.className='pro-btn subtle mk-download';link.textContent='Descargar imagen SVG';
-      link.onclick=()=>{const blob=new Blob([svg],{type:'image/svg+xml;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='bloques-'+id+'.svg';a.click();setTimeout(()=>URL.revokeObjectURL(url),1500)};
-      host.append(label,img,link);
-   };
-   const fail=(msg)=>{
-       if(!host.isConnected||host.dataset.codeId!==id)return;
-       host.replaceChildren();const note=document.createElement('p');note.className='mk-offline';note.textContent=msg;
-       const button=document.createElement('button');button.type='button';button.className='pro-btn subtle';button.textContent='Reintentar imágenes reales';button.onclick=()=>show(host,id,code);
-       host.append(note,button);
-   };
-   if(cached(id)){setImg(cached(id));return}
-   if(!navigator.onLine){fail('Sin Internet: los bloques reales se generan con la herramienta oficial de MakeCode. El código y la foto sí se ven sin conexión.');return}
-   queue.push({host,id,code,ok:setImg,fail});ensure();pump();
+  if(!host)return;
+  const key=id+':'+code,jobid='mk6-'+(++seq);host.dataset.job=jobid;
+  host.innerHTML=`<div class="mk6-frame"><div class="mk6-heading">🧩 Bloques reales del programa</div><p class="mk6-status" data-state="wait" role="status">Preparando renderizador oficial de MakeCode…</p><img class="mk6-image" alt="Bloques de MakeCode" hidden><div class="mk6-actions"><button type="button" class="pro-btn subtle mk6-retry" hidden>↻ Reintentar bloques</button><button type="button" class="pro-btn subtle mk6-download" hidden>↓ Descargar SVG oficial</button><a class="pro-btn subtle" href="https://makecode.microbit.org/" target="_blank" rel="noopener noreferrer">Abrir editor MakeCode ↗</a></div><p class="mk6-foot">La imagen se crea con Microsoft MakeCode, no es un dibujo imitado. Requiere conexión; si falla, utiliza el código del ejemplo.</p></div>`;
+  host.querySelector('.mk6-retry').onclick=()=>show(host,id,code);
+  if(cache.has(key)){showImage(host,cache.get(key),id);return;}
+  if(!navigator.onLine){status(host,'Sin conexión. Abre esta página desde GitHub Pages con Internet.','bad');host.querySelector('.mk6-retry').hidden=false;return;}
+  if(failed&&frame){frame.remove();frame=null;ready=false;failed=false;}
+  queue.push({id:jobid,host,code,cacheKey:key});readyFrame();pump();
  }
  window.ROBO_LIVE_MAKECODE={show};
 })();

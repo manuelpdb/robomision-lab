@@ -70,3 +70,15 @@
 .ta-quick-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.ta-quick-actions button{font-size:12px;font-weight:850;border:1px solid #b9ded0;border-radius:99px;background:#fff;color:#137056;cursor:pointer;padding:8px 11px}.ta-quick-actions button:hover{background:#d2f6e1}
 @media(max-width:720px){.ta-catalog-highlight{grid-template-columns:1fr}.ta-catalog-highlight-photos{grid-template-columns:repeat(4,1fr)}.ta-catalog-highlight-photos img{height:66px}.ta-catalog-highlight-copy{padding:5px}}
 @media print{.ta-catalog-highlight{display:none}}
+
+/* v6 - makecode actual, programa destacado, acceso desde retos */
+.mk6-frame{padding:15px;border:2px solid #d2e8dd;border-radius:14px;background:#f9fefb;margin:12px 0}
+.mk6-heading{font-size:17px;font-weight:900;color:#143e36}
+.mk6-status{display:flex;align-items:center;gap:7px;font-size:13px;color:#466574;padding:8px 12px;background:#edf5f3;border-radius:8px;margin:10px 0}
+.mk6-status[data-state=ok]{background:#def8eb;color:#086746}.mk6-status[data-state=bad]{background:#fff4eb;color:#944618}
+.mk6-image{display:block;max-width:100%;height:auto;border:1px solid #e0e8e6;border-radius:10px;background:#fff;margin:12px 0;padding:13px}
+.mk6-image[hidden]{display:none!important}.mk6-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:9px}.mk6-actions [hidden]{display:none!important}
+.mk6-foot{font-size:12px;color:#667b76;line-height:1.5;margin:10px 0 0}.ta-task-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:9px 0 12px}
+.ta-go-program{border:1px solid #bddfce;background:#e9f9f1;color:#116448;border-radius:9px;font-weight:800;font-size:12px;padding:8px 11px;cursor:pointer}
+.ta-go-program:hover{background:#d4f0e0}.ta-task-actions>span{color:#647a77;font-size:11px}.version-v6{font-size:11px;font-weight:850;letter-spacing:1px;color:#057758;background:#dbf4e6;border-radius:100px;padding:7px 10px;display:inline-block;margin:14px 0}
+@media print{.mk6-image{max-height:260px;object-fit:contain}.mk6-actions,.ta-go-program{display:none!important}}
