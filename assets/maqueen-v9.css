@@ -1,0 +1,38 @@
+
+/* RoboMisión LAB v9 · Maqueen guías completas + portada */
+.pro-hero .hero-kit-title{font-size:clamp(36px,3.8vw,54px);letter-spacing:-1.3px;line-height:1.12;overflow-wrap:normal}
+.pro-hero .hero-kit-title em{white-space:normal}
+.mq-v9-head h2{font-size:clamp(23px,3vw,35px)}
+.mq-v9-pills{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 0}
+.mq-v9-pills span{border-radius:999px;background:#e4f6ee;color:#0b684f;font-size:11px;font-weight:800;padding:6px 9px}
+.mq-v9-stepsbar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin:20px 0 24px}
+.mq-v9-stepsbar span{background:#e9f5f0;padding:10px 6px;text-align:center;font-size:11px;color:#075942;font-weight:900;border-radius:7px}
+.mq-v9-section{margin:23px 0;padding:20px;border:1px solid #e0ebe6;border-radius:15px;background:#fff}
+.mq-v9-section>.micro-label{font-size:10px;color:#087c60;letter-spacing:1.1px}
+.mq-v9-section>h3{font-size:20px;margin:5px 0 13px;color:#162f42}
+.mq-v9-section>p{font-size:14px;line-height:1.65}
+.mq-v9-wiring{display:grid;grid-template-columns:115px minmax(0,1fr);align-items:center;gap:14px;padding:12px;background:#f0f8f5;border-radius:12px}
+.mq-v9-wiring img{width:100%;max-height:115px;object-fit:contain;background:#fff;border-radius:8px}
+.mq-v9-wiring p{margin:0;font-size:13px;line-height:1.55;color:#244d48}
+.mq-v9-warning{font-size:12px!important;color:#815723!important;background:#fff8e8;padding:12px;border-radius:9px}
+.mq-v9-list{padding:0;list-style:none;counter-reset:step;display:grid;gap:9px}
+.mq-v9-list li{counter-increment:step;display:grid;grid-template-columns:28px 1fr;align-items:start;gap:10px;padding:11px 12px;background:#f4f8f7;border-radius:10px;font-size:13px;line-height:1.6}
+.mq-v9-list li:before{content:counter(step);background:#173c45;color:#fff;font-weight:900;display:grid;place-items:center;border-radius:6px;width:26px;height:26px;font-size:12px}
+.mq-v9-blocks{white-space:pre-wrap;overflow-wrap:anywhere;background:#122a40;color:#d0f8e8;padding:15px;border-radius:11px;font-size:12px;line-height:1.7;max-width:100%;font-family:ui-monospace,Consolas,monospace}
+.mq-v9-source{font-size:12px!important;color:#526e78!important;border-left:3px solid #57ba99;padding-left:10px;margin:12px 0}
+.mq-v9-tiers{display:grid;grid-template-columns:1fr;gap:13px}
+.mq-v9-tier{border:1px solid #deebe4;background:#fbfdfb;border-radius:12px;padding:15px;break-inside:avoid}
+.mq-v9-tierhead{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.mq-v9-tierhead strong{font-size:17px;color:#153648}
+.mq-v9-tier p{font-size:13px;line-height:1.6;margin:10px 0}
+.mq-v9-success{display:flex;align-items:flex-start;gap:9px;background:#e6f6ed;border-radius:9px;padding:11px;color:#205b44;font-size:12px;line-height:1.6}
+.mq-v9-success>span:first-child{font-weight:950;font-size:20px;line-height:1}
+.mq-v9-done{display:flex;align-items:center;gap:9px;margin-top:12px;font-size:12px;font-weight:750;cursor:pointer}
+.mq-v9-done input{width:18px;height:18px;accent-color:#098568}
+.mq-v9-test-wrap{overflow-x:auto}.mq-v9-test{width:100%;border-collapse:collapse;font-size:12px;min-width:460px;text-align:left}
+.mq-v9-test th,.mq-v9-test td{padding:9px;border:1px solid #dce7e1}.mq-v9-test th{background:#e5f3ec;color:#224d42}
+.mq-v9-rubric{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:12px 0}.mq-v9-rubric span{padding:9px;background:#f1f6f5;border-radius:8px;font-size:12px}
+.mq-v9-bottom{padding-bottom:12px}
+@media(max-width:720px){.pro-hero .hero-kit-title{font-size:clamp(31px,7vw,48px)}.mq-v9-stepsbar{grid-template-columns:repeat(2,1fr)}.mq-v9-section{padding:12px}.mq-v9-wiring{grid-template-columns:90px 1fr}.mq-v9-test{font-size:11px}}
+@media(max-width:390px){.pro-hero .hero-kit-title{font-size:29px;letter-spacing:-.6px}.mq-v9-wiring{grid-template-columns:1fr}.mq-v9-wiring img{height:100px}}
+@media print{.mq-v9-done,.mq-v9-bottom{display:none!important}.mq-v9-section{break-inside:avoid;border:1px solid #cdd5d1;padding:10px;margin:10px 0}.mq-v9-stepsbar{display:none}.mq-v9-tier{break-inside:avoid}.mq-v9-test{min-width:0}.practice-detail{box-shadow:none}}
