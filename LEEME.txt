@@ -1,0 +1,57 @@
+RoboMisión LAB · Robótica, programación y retos para Secundaria
+============================================
+
+INICIO: abre index.html tras descomprimir el ZIP.
+
+NUEVO EN ESTA EDICIÓN
+- 72 nuevas misiones originales en 8 itinerarios, cada una con pasos concretos,
+  3 niveles de desafíos, errores típicos, evidencias y una pregunta interactiva.
+- 8 simuladores interactivos autocontenidos: matriz LED, sensor analógico,
+  dos motores, ultrasonidos, siguelíneas, servo, radio y semáforo.
+- 12 grandes proyectos STEAM con objetivos, extensiones PRO y entregables.
+- Perfiles locales de equipos, notas, progreso, XP, insignias y exportación/importación.
+- Selector aleatorio de misión, itinerarios, rúbrica 1–10 y descarga CSV.
+- Búsqueda y filtros por itinerario, nivel y tiempo. Fichas imprimibles.
+
+SE CONSERVA
+- El contenido y los 19 laboratorios interactivos ya disponibles en la copia
+  original, con sus simulaciones y explicaciones.
+- En los 11 apartados que estaban en preparación se han enlazado guías
+  nuevas de la ampliación. No son simulaciones 3D equivalentes.
+- La estructura, fuentes y autoría original figuran en creditos.html y LICENCIAS.txt.
+
+CÓMO USAR
+1. Extrae el ZIP COMPLETO.
+2. Abre la carpeta robomision-lab y haz doble clic en index.html.
+3. No borres ni renombres la carpeta assets.
+4. Usa los navegadores modernos Chrome, Edge o Firefox. Para WebGL 3D,
+   el navegador y el equipo deben ser compatibles.
+5. El contenido del sitio funciona sin conexión salvo enlaces externos.
+
+PRIVACIDAD Y PROGRESO
+- Los perfiles de la ampliación viven en el almacenamiento LOCAL del navegador.
+  No hay cuentas, servidor, sincronización ni envío de datos.
+- Usa alias de equipo, sin apellidos ni información personal.
+- Exporta JSON antes de cambiar de dispositivo o borrar datos de navegación.
+- La marca de hecho de los laboratorios de la edición original se guarda
+  mediante su sistema anterior, por separado de los perfiles PRO.
+
+SEGURIDAD
+- Verifica tensiones, pines, masas y fuentes según tu modelo exacto.
+- No aplicar 5 V a una entrada de 3,3 V. Los motores no se alimentan desde
+  pines de señal. Mantén líquidos lejos de la electrónica.
+- Los simuladores nuevos son didácticos y simplificados, no representan
+  especificaciones de firmware o controladores reales.
+
+CRÉDITOS
+- Bit a bit original: trabajo educativo del IES Fuente Nueva de Morón de la
+  Frontera, según los créditos incluidos en la web recibida.
+- La ampliación PRO incorpora material nuevo, manteniendo la autoría original.
+
+Licencias originales: LICENCIAS.txt.
+
+NOTA SOBRE EL CAMBIO DE NOMBRE
+- El nombre público actual es RoboMisión LAB; la web de origen es Bit a bit.
+- Se conserva el identificador interno de perfiles para que el cambio de marca
+  no borre el progreso ya guardado por el navegador.
+- Los créditos del proyecto original siguen presentes en creditos.html.
