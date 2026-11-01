@@ -55,3 +55,7 @@ NOTA SOBRE EL CAMBIO DE NOMBRE
 - Se conserva el identificador interno de perfiles para que el cambio de marca
   no borre el progreso ya guardado por el navegador.
 - Los créditos del proyecto original siguen presentes en creditos.html.
+
+
+GALERÍA DE BLOQUES: abre galeria-bloques.html. Contiene 72 imágenes PNG (assets/makecode/*.png) incrustadas como archivos locales.
+Las imágenes son esquemas didácticos, no capturas oficiales; si hay conexión Internet, las misiones pueden obtener los bloques originales desde el renderizador oficial de MakeCode.
