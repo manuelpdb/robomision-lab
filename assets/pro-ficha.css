@@ -34,3 +34,7 @@
 .sheet-blocks .mk-legend{display:flex;flex-wrap:wrap;gap:4px;padding:0 10px 10px}.sheet-blocks .mk-legend span{font-size:8px;font-weight:800;color:#fff;padding:3px 6px;border-radius:999px;letter-spacing:.3px;text-transform:uppercase}
 .sheet-blocks .events{background:#d14a9c}.sheet-blocks .loops{background:#26a7b8}.sheet-blocks .logic{background:#4a82d7}.sheet-blocks .variables{background:#e05a47}.sheet-blocks .basic{background:#7a58c8}.sheet-blocks .input{background:#bf4eb5}.sheet-blocks .robotics{background:#118f72}.sheet-blocks .radio{background:#2877b7}.sheet-blocks .music{background:#db8a28}
 @media print{.sheet-blocks .mk-block,.sheet-visual .mission-visual{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+
+/* La ficha impresa usa la imagen PNG adjunta, no depende de red ni de JS externo */
+.sheet-image-first .mk-image-card{padding:5px;margin:8px 0;border:1px solid #ceded6}.sheet-image-first .mk-image-card .mk-image-head{font-size:10px;margin:4px 4px 8px}.sheet-image-first .mk-image-card img{max-height:285px;width:100%;object-fit:contain}.sheet-image-first .mk-image-card figcaption{font-size:10px;padding:4px}.sheet-image-first .mk-live-target{display:none}
+@media print{.sheet-image-first .mk-image-card img{max-height:225px}.sheet-visual,.sheet-blocks{display:none}.sheet-image-first{break-inside:avoid}}
