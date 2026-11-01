@@ -1,0 +1,33 @@
+/* RoboMisión LAB v18 · imágenes ampliables · accesible en móvil */
+.rlz-zoomable{cursor:zoom-in;outline-offset:4px}
+.rlz-zoomable:focus-visible{outline:3px solid #1ab990}
+.rmk-image:not([hidden]),.mk6-image:not([hidden]),.mq6-image:not([hidden]),.mk-real-image:not([hidden]),.mk-live-figure img,.mq-live-figure img{max-width:100%;max-height:none;height:auto;object-fit:contain}
+.rlz-launch{display:inline-flex;align-items:center;justify-content:center;margin:4px 0 12px;padding:8px 12px;border:1px solid #cde4da;border-radius:9px;background:#e9f8f1;color:#0b6954;font:700 12px system-ui,sans-serif;cursor:pointer;min-height:35px}
+.rlz-launch:hover,.rlz-launch:focus-visible{background:#d9f3e6;border-color:#35aa86}
+img[hidden]+.rlz-launch{display:none!important}
+.rlz-overlay[hidden]{display:none!important}
+.rlz-overlay{position:fixed!important;inset:0!important;z-index:2147483646!important;display:flex!important;flex-direction:column!important;background:rgba(10,24,35,.97)!important;color:#f4f9f7!important;overflow:hidden!important;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif!important}
+.rlz-toolbar{padding:12px max(14px,env(safe-area-inset-left));display:flex;gap:12px;align-items:center;justify-content:space-between;min-height:64px;background:#14283b;flex-wrap:wrap}
+.rlz-title{min-width:0;max-width:min(48vw,620px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#f1f9f6;font-size:14px;font-weight:700}
+.rlz-controls{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.rlz-controls button{padding:8px 13px;min-height:40px;border:1px solid #546b7e;background:#203a50;color:#fff;border-radius:9px;font-size:15px;font-weight:800;cursor:pointer}
+.rlz-controls button:focus-visible{outline:3px solid #a0edcb;outline-offset:2px}
+.rlz-controls button:hover{background:#35536b}
+.rlz-controls button:disabled{opacity:.35;cursor:default}
+.rlz-controls .rlz-close{background:#a8efcd;color:#12372e;border-color:#a8efcd}
+.rlz-controls .rlz-close:hover{background:#8de4bd}
+.rlz-percent{min-width:54px;text-align:center;display:inline-block;color:#fff;font-size:13px;font-weight:800}
+.rlz-stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;touch-action:none;cursor:zoom-in;outline:none}
+.rlz-stage.is-zoomed{cursor:grab}
+.rlz-stage.is-zoomed:active{cursor:grabbing}
+.rlz-photo{display:block;max-width:calc(100% - 24px);max-height:calc(100% - 24px);width:auto;height:auto;object-fit:contain;user-select:none;-webkit-user-drag:none;transform-origin:center;will-change:transform;pointer-events:none;border-radius:6px;box-shadow:0 8px 30px #0005;background:white}
+.rlz-instructions{padding:10px 14px calc(10px + env(safe-area-inset-bottom));text-align:center;color:#cbdcd9;font-size:12px;line-height:1.5;margin:0}
+@media(max-width:700px){.rlz-toolbar{gap:7px;padding:9px 10px}.rlz-title{max-width:100%;font-size:12px}.rlz-controls{width:100%;justify-content:center}.rlz-controls button{padding:7px 11px;min-height:38px;font-size:13px}.rlz-stage{min-height:180px}.rlz-instructions{font-size:11px}}
+@media print{.rlz-overlay,.rlz-launch{display:none!important}.rlz-zoomable{cursor:auto}}
+/* Programas MakeCode: no limitar imágenes largas a media columna */
+@media screen{
+  .mq-example-grid,.p12-example-grid{grid-template-columns:minmax(0,1fr)!important}
+  .mq-example-card,.p12-example-card{min-width:0}
+  .mq-live-target,.mk-live-target{width:100%;max-width:100%}
+  .rmk-image:not([hidden]),.mk6-image:not([hidden]),.mq6-image:not([hidden]),.mk-real-image:not([hidden]){max-width:100%;width:auto;height:auto;max-height:none}
+}
