@@ -112,7 +112,7 @@
  function renderOfflineImage(m){
    const id=String(m.id||'');
    if(!/^\d\d-\d\d$/.test(id))return '';
-   return `<figure class="mk-image-card"><div class="mk-image-head"><b>Imagen de la programación · misión ${escape(id)}</b><span>Incluida en esta web</span></div><img class="mk-png" src="assets/makecode/${id}.png" alt="Guía visual de bloques de la misión ${escape(id)}: ${escape(m.title)}" loading="eager" decoding="async"><figcaption>Guía ilustrada de las instrucciones. Al publicar la web con Internet, MakeCode puede mostrar también sus bloques oficiales.</figcaption><div class="mk-live-target" data-mission="${escape(id)}" aria-live="polite"></div></figure>`;
+   return `<figure class="mk-image-card"><div class="mk-image-head"><b>Esquema didáctico · misión ${escape(id)}</b><span>Incluida en esta web</span></div><img class="mk-png" src="assets/makecode/${id}.png" alt="Esquema no oficial de la misión ${escape(id)}: ${escape(m.title)}" loading="eager" decoding="async"><figcaption>Imagen orientativa, NO es una captura de MakeCode. Consulta los bloques oficiales en el apartado superior.</figcaption></figure>`;
  }
  function download(filename,content,type){let blob=new Blob([content],{type:type||'application/json;charset=utf-8'});let a=document.createElement('a');let u=URL.createObjectURL(blob);a.href=u;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),5000);}
  function exportData(){download('bitabit-progreso-'+new Date().toISOString().slice(0,10)+'.json',JSON.stringify(state,null,2));}
