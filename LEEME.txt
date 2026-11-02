@@ -50,7 +50,7 @@ CRÉDITOS
 Licencias originales: LICENCIAS.txt.
 
 NOTA SOBRE EL CAMBIO DE NOMBRE
-- El nombre público actual es RoboMisión LAB; la web de origen es Bit a bit.
+- El nombre público de la plataforma es RoboMisión LAB.
 - Se conserva el identificador interno de perfiles para que el cambio de marca
   no borre el progreso ya guardado por el navegador.
 - Las fuentes técnicas y licencias siguen disponibles en creditos.html.

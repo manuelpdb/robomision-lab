@@ -1,4 +1,4 @@
-Bit a bit incluye estos programas y tipografías de terceros.
+Este sitio incluye los siguientes programas y tipografías de terceros.
 
 ========================================================================
 three.js (r160), biblioteca 3D
