@@ -45,3 +45,15 @@
 .mq-code-details{border-top:1px solid #e8efeb;padding-top:10px}.mq-code-details summary{cursor:pointer;font-size:12px;font-weight:800;color:#11795f}.mq-code-details pre{margin:10px 0 0;background:#13273d;color:#ecf7f5;border-radius:10px;padding:12px;font-size:12px;line-height:1.5;overflow:auto;white-space:pre-wrap}
 @media(max-width:720px){.mq-example-grid{grid-template-columns:1fr}.mq-live-target{min-height:140px}}
 @media print{.mq-example-grid{grid-template-columns:1fr 1fr}.mq-live-target{min-height:100px}.mq-code-details{display:none!important}}
+
+/* v19 - Separar inicialización I2C de la lógica principal */
+.mq-init-explain{background:#f5faf7;border:1px solid #b9decb}
+.mq-init-layout{display:grid;grid-template-columns:minmax(0,270px) minmax(0,1fr);gap:18px;align-items:center;margin:12px 0}
+.mq-init-layout img{display:block;width:100%;height:auto;max-width:270px;object-fit:contain;padding:8px;background:#fff;border:1px solid #d9e6dd;border-radius:10px}
+.mq-init-layout p{font-size:13px;line-height:1.55;margin:8px 0;color:#264f49}
+.mq-init-steps{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0}
+.mq-init-steps span{background:#e6f4ea;color:#185845;border:1px solid #bde0cf;border-radius:9px;padding:10px 13px;font-size:13px;font-weight:750}
+.mq-init-warning{padding:11px 13px;border-left:4px solid #27a67c;background:#fff;border-radius:7px;font-size:13px;line-height:1.6}
+.mq-init-tag{font-size:12px;line-height:1.55;color:#22614b;background:#e8f7ef;border:1px solid #cbe9d9;border-radius:9px;padding:10px}
+@media(max-width:750px){.mq-init-layout{grid-template-columns:1fr}.mq-init-layout img{max-width:270px}}
+@media print{.mq-init-layout,.mq-init-steps{break-inside:avoid}}

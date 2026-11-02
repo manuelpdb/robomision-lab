@@ -65,7 +65,7 @@
    while(jobs.length){
      const job=jobs.shift();if(!visible(job.host)||job.host.dataset.rmkToken!==job.token)continue;
      busy=job;setStatus(job,'Generando bloques oficiales…');
-     const options={snippetMode:true};if(job.kit==='maqueen')options.package=packageMaqueen;
+     const options={snippetMode:job.kit!=='maqueen'};if(job.kit==='maqueen')options.package=packageMaqueen;
      jobTimer=setTimeout(()=>finish(null,'Este ejemplo tarda demasiado en generarse. Puedes reintentar.'),26000);
      try{frame.contentWindow.postMessage({type:'renderblocks',id:job.token,code:job.code,options},origin);}
      catch(e){finish(null,'No se ha podido comunicar con MakeCode.');}
@@ -86,14 +86,15 @@
  function show(host,key,code,opt={}){
    if(!host||!code)return;
    const kit=opt.kit||'microbit';
+   const fullCode=opt.fullCode||code;
    const token='rmk-'+(++seq);
    host.dataset.rmkToken=token;
-   host.innerHTML=`<div class="rmk-container"><div class="rmk-header"><span>Bloques reales de Microsoft MakeCode</span><small>${kit==='maqueen'?'Con extensión Maqueen Plus V2':'micro:bit V2'}</small></div><p class="rmk-status" data-state="pending" role="status">Preparando renderizado…</p><img class="rmk-image" hidden alt="Bloques generados mediante Microsoft MakeCode"><div class="rmk-actions"><button type="button" class="rmk-retry" hidden>↻ Reintentar imagen</button><button type="button" class="rmk-download" hidden>↓ Descargar SVG oficial</button><button type="button" class="rmk-copy">Copiar JavaScript</button><a href="https://makecode.microbit.org/" target="_blank" rel="noopener noreferrer">Abrir MakeCode ↗</a></div><details class="rmk-code"><summary>Ver el código exacto de este ejemplo</summary><pre><code>${esc(code)}</code></pre></details><p class="rmk-note">Este panel solo etiqueta como oficiales las imágenes recibidas del editor MakeCode. Si no hay conexión, usa el código base y la opción de reintentar.</p></div>`;
+   host.innerHTML=`<div class="rmk-container"><div class="rmk-header"><span>Bloques reales de Microsoft MakeCode</span><small>${kit==='maqueen'?'Con extensión Maqueen Plus V2':'micro:bit V2'}</small></div><p class="rmk-status" data-state="pending" role="status">Preparando renderizado…</p><img class="rmk-image" hidden alt="Bloques generados mediante Microsoft MakeCode"><div class="rmk-actions"><button type="button" class="rmk-retry" hidden>↻ Reintentar imagen</button><button type="button" class="rmk-download" hidden>↓ Descargar SVG oficial</button><button type="button" class="rmk-copy">Copiar JavaScript</button><a href="https://makecode.microbit.org/" target="_blank" rel="noopener noreferrer">Abrir MakeCode ↗</a></div><details class="rmk-code"><summary>Ver el código exacto de este ejemplo</summary><pre><code>${esc(fullCode)}</code></pre></details><p class="rmk-note">Este panel solo etiqueta como oficiales las imágenes recibidas del editor MakeCode. Si no hay conexión, usa el código base y la opción de reintentar.</p></div>`;
    host.querySelector('.rmk-retry').onclick=()=>show(host,key,code,opt);
    host.querySelector('.rmk-copy').onclick=async()=>{
      const btn=host.querySelector('.rmk-copy');
-     try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(code);btn.textContent='✓ Código copiado';}
-       else{const input=document.createElement('textarea');input.value=code;document.body.appendChild(input);input.select();document.execCommand('copy');input.remove();btn.textContent='✓ Código copiado';}}
+     try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(fullCode);btn.textContent='✓ Código copiado';}
+       else{const input=document.createElement('textarea');input.value=fullCode;document.body.appendChild(input);input.select();document.execCommand('copy');input.remove();btn.textContent='✓ Código copiado';}}
      catch(e){btn.textContent='Selecciona el texto del código para copiarlo';}
    };
    const j={host,key,code,kit,token};
