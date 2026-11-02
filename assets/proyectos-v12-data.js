@@ -6,7 +6,7 @@ window.ROBOLAB_PROJECTS = [
     "level": "Intermedio",
     "sessions": 5,
     "kit": "ACEBOTT TA647",
-    "photo": "proyecto-invernadero.png",
+    "photo": "proyecto-invernadero.webp",
     "summary": "Diseña y construye una maqueta de invernadero con una planta real o simulada. El sistema debe leer la humedad del suelo, avisar cuando la tierra esté seca y, si el equipo lo amplía, activar un riego automático controlado por bomba o relé.",
     "question": "¿Cómo podemos mantener húmeda una planta sin desperdiciar agua?",
     "materials": [
@@ -226,7 +226,7 @@ window.ROBOLAB_PROJECTS = [
     "level": "Inicial",
     "sessions": 4,
     "kit": "ACEBOTT TA647",
-    "photo": "proyecto-semaforo.png",
+    "photo": "proyecto-semaforo.webp",
     "summary": "Construye una maqueta de cruce con semáforo para coches y peatones. El sistema debe seguir una secuencia clara de luces y responder a un pulsador para solicitar el paso peatonal.",
     "question": "¿Cómo organizar un cruce para que coches y peatones pasen con seguridad?",
     "materials": [
@@ -445,7 +445,7 @@ window.ROBOLAB_PROJECTS = [
     "level": "Inicial",
     "sessions": 4,
     "kit": "micro:bit V2",
-    "photo": "proyecto-microbit.png",
+    "photo": "proyecto-microbit.webp",
     "summary": "Diseña una pulsera o dispositivo portátil con micro:bit para registrar pasos, movimiento, tiempo de actividad o avisos sencillos usando los sensores integrados.",
     "question": "¿Cómo convertir una micro:bit en un dispositivo portátil útil para el día a día?",
     "materials": [
@@ -546,7 +546,7 @@ window.ROBOLAB_PROJECTS = [
     "level": "Intermedio",
     "sessions": 5,
     "kit": "ACEBOTT TA647",
-    "photo": "proyecto-casa.png",
+    "photo": "proyecto-casa.webp",
     "summary": "Crea una maqueta de casa eficiente capaz de detectar luz, temperatura u otras condiciones del entorno para encender luces, avisos o elementos automáticos solo cuando sean necesarios.",
     "question": "¿Cómo puede una casa ahorrar energía y reaccionar automáticamente a lo que ocurre dentro o fuera?",
     "materials": [
@@ -655,7 +655,7 @@ window.ROBOLAB_PROJECTS = [
     "level": "Inicial",
     "sessions": 4,
     "kit": "ACEBOTT TA647",
-    "photo": "proyecto-museo.png",
+    "photo": "proyecto-museo.webp",
     "summary": "Diseña una maqueta de museo interactivo en la que una exposición se active al acercarse una persona o al pulsar un botón, mostrando luces, mensajes o sonidos explicativos.",
     "question": "¿Cómo hacer que una exposición sea más atractiva e interactiva para los visitantes?",
     "materials": [
@@ -761,7 +761,7 @@ window.ROBOLAB_PROJECTS = [
     "level": "Inicial",
     "sessions": 4,
     "kit": "micro:bit V2",
-    "photo": "proyecto-microbit.png",
+    "photo": "proyecto-microbit.webp",
     "summary": "Programa un juego de feria con la micro:bit: puede ser un medidor de reflejos, un marcador de puntos, un dado especial o un reto de pulsación por tiempo.",
     "question": "¿Cómo crear un juego sencillo, divertido y que pueda entenderse en menos de un minuto?",
     "materials": [
@@ -863,7 +863,7 @@ window.ROBOLAB_PROJECTS = [
     "level": "Intermedio",
     "sessions": 5,
     "kit": "ACEBOTT TA647",
-    "photo": "proyecto-ambiental.png",
+    "photo": "proyecto-ambiental.webp",
     "summary": "Construye una estación ambiental que mida una o varias variables del entorno, como luz, temperatura, humedad o nivel sonoro, y las muestre de forma clara para interpretarlas.",
     "question": "¿Cómo podemos recoger datos del entorno y convertirlos en información útil?",
     "materials": [
@@ -974,7 +974,7 @@ window.ROBOLAB_PROJECTS = [
     "level": "Intermedio",
     "sessions": 5,
     "kit": "ACEBOTT TA647",
-    "photo": "proyecto-granja.png",
+    "photo": "proyecto-granja.webp",
     "summary": "Elabora una maqueta de granja automática que supervise una necesidad concreta, por ejemplo riego, iluminación, aviso por apertura o control de una puerta o barrera.",
     "question": "¿Qué tareas repetitivas de una granja se pueden automatizar para trabajar mejor?",
     "materials": [
@@ -1079,7 +1079,7 @@ window.ROBOLAB_PROJECTS = [
     "level": "Intermedio",
     "sessions": 5,
     "kit": "ACEBOTT TA647",
-    "photo": "proyecto-parking.png",
+    "photo": "proyecto-parking.webp",
     "summary": "Construye un parking inteligente con barrera, detector de presencia y sistema de aviso de plazas o acceso. La maqueta debe dejar claro cómo entra un vehículo y qué decide el sistema.",
     "question": "¿Cómo controlar el acceso a un parking de forma automática y comprensible?",
     "materials": [
