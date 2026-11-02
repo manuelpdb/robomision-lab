@@ -73,3 +73,22 @@
 .mq-ext-reminder{background:#e1f7eb;border-radius:10px;padding:10px 13px}
 .mq-ext-mini{font-size:12px!important;color:#55766c!important;margin-top:12px!important}
 @media(max-width:720px){.mq-ext-install{padding:13px}.mq-ext-install ol{font-size:13px}}
+
+/* v33 · instalación visual y colocación del bloque, en las 16 misiones */
+.mq33-howto{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,340px);gap:18px;align-items:start}
+.mq33-howto-content{min-width:0}
+.mq33-howto-content ol{margin:0;padding-left:25px}
+.mq33-howto-content li{margin-bottom:13px;line-height:1.65}
+.mq33-extension-image{margin:0;padding:11px;border-radius:12px;background:#f6faf8;border:1px solid #d0e7dc;text-align:center}
+.mq33-extension-image img{display:block;max-width:100%;width:300px;height:auto;margin:auto;border-radius:8px}
+.mq33-extension-image figcaption{font-size:12px;line-height:1.55;color:#426456;text-align:left;padding:11px 3px 2px}
+.mq33-install-note{padding:12px 14px;background:#e6f6ed;border-radius:10px;color:#1c624a!important;line-height:1.55}
+.mq33-placement{margin:14px 0 12px;padding:8px;border:1px solid #d3e7dc;border-radius:13px;background:#fff}
+.mq33-placement img{display:block;width:100%;height:auto;border-radius:8px;max-width:none;cursor:zoom-in}
+.mq33-placement figcaption{font-size:12px;color:#557466;margin:5px 7px 3px}
+.mq33-check{font-size:13px!important;line-height:1.6;color:#244e46!important;margin:10px 0 0}
+.mq-init-explain>p{font-size:14px;line-height:1.65;color:#2a4e48}
+.mq-init-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.mq-init-steps span{font-size:12px;line-height:1.55}
+@media(max-width:850px){.mq33-howto{grid-template-columns:1fr}.mq33-extension-image{max-width:370px}.mq-init-steps{grid-template-columns:1fr}}
+@media print{.mq33-howto{grid-template-columns:1fr 250px}.mq33-extension-image img{max-height:220px;width:auto}}
