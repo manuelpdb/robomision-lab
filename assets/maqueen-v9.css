@@ -49,13 +49,13 @@
 /* v19 - Separar inicialización I2C de la lógica principal */
 .mq-init-explain{background:#f5faf7;border:1px solid #b9decb}
 .mq-init-layout{display:grid;grid-template-columns:minmax(0,270px) minmax(0,1fr);gap:18px;align-items:center;margin:12px 0}
-.mq-init-layout img{display:block;width:100%;height:auto;max-width:270px;object-fit:contain;padding:8px;background:#fff;border:1px solid #d9e6dd;border-radius:10px}
+.mq-init-layout img{display:block;width:100%;height:auto;max-width:420px;object-fit:contain;padding:8px;background:#fff;border:1px solid #d9e6dd;border-radius:10px}
 .mq-init-layout p{font-size:13px;line-height:1.55;margin:8px 0;color:#264f49}
 .mq-init-steps{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0}
 .mq-init-steps span{background:#e6f4ea;color:#185845;border:1px solid #bde0cf;border-radius:9px;padding:10px 13px;font-size:13px;font-weight:750}
 .mq-init-warning{padding:11px 13px;border-left:4px solid #27a67c;background:#fff;border-radius:7px;font-size:13px;line-height:1.6}
 .mq-init-tag{font-size:12px;line-height:1.55;color:#22614b;background:#e8f7ef;border:1px solid #cbe9d9;border-radius:9px;padding:10px}
-@media(max-width:750px){.mq-init-layout{grid-template-columns:1fr}.mq-init-layout img{max-width:270px}}
+@media(max-width:750px){.mq-init-layout{grid-template-columns:1fr}.mq-init-layout img{max-width:100%}}
 @media print{.mq-init-layout,.mq-init-steps{break-inside:avoid}}
 
 /* v22 · aviso de extensión en todas las misiones; instalación solo en la primera */
