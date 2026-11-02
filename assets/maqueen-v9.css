@@ -57,3 +57,19 @@
 .mq-init-tag{font-size:12px;line-height:1.55;color:#22614b;background:#e8f7ef;border:1px solid #cbe9d9;border-radius:9px;padding:10px}
 @media(max-width:750px){.mq-init-layout{grid-template-columns:1fr}.mq-init-layout img{max-width:270px}}
 @media print{.mq-init-layout,.mq-init-steps{break-inside:avoid}}
+
+/* v22 · aviso de extensión en todas las misiones; instalación solo en la primera */
+.mq-ext-section{border-color:#b8e7d4;background:linear-gradient(145deg,#f0fbf5,#fff)}
+.mq-ext-section>h3{line-height:1.35}
+.mq-ext-section a:not(.pro-btn){color:#087c60;font-weight:750;text-decoration:underline;text-underline-offset:2px}
+.mq-ext-install{border:1px solid #c4e8da;border-radius:13px;background:#fff;padding:16px;margin-top:13px}
+.mq-ext-install h4{font-size:16px;margin:0 0 12px;color:#153e36}
+.mq-ext-install ol{padding-left:24px;margin:0 0 12px;line-height:1.65;font-size:14px;color:#304958}
+.mq-ext-install li{padding-left:2px;margin-bottom:8px}
+.mq-ext-install li::marker{font-weight:800;color:#087c60}
+.mq-ext-url{padding:9px 11px;margin-top:7px;background:#eff7f3;border:1px solid #d4e6df;border-radius:8px;max-width:100%;overflow-wrap:anywhere;word-break:break-all}
+.mq-ext-url code{font-size:12px;color:#184c3d}
+.mq-ext-install .pro-btn{margin-top:7px}
+.mq-ext-reminder{background:#e1f7eb;border-radius:10px;padding:10px 13px}
+.mq-ext-mini{font-size:12px!important;color:#55766c!important;margin-top:12px!important}
+@media(max-width:720px){.mq-ext-install{padding:13px}.mq-ext-install ol{font-size:13px}}
