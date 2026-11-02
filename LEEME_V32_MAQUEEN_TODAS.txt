@@ -1,0 +1,17 @@
+RoboMisión LAB v32
+
+Cambios realizados en toda la sección Maqueen:
+- Se ha forzado la carga de la versión nueva de la guía de inicialización en todas las misiones de Maqueen.
+- La explicación del bloque «inicializar el Maqueen» ya muestra el dibujo correcto y el texto actualizado en todas las misiones.
+- Se han actualizado los parámetros de caché en maqueen-plus.html para evitar que siga cargando la versión antigua.
+- Se han corregido textos antiguos del pie y de la cabecera de la página Maqueen.
+
+Archivos incluidos:
+- maqueen-plus.html
+- LEEME_V32_MAQUEEN_TODAS.txt
+
+Pasos:
+1. Sustituye el archivo en tu repositorio local.
+2. Haz Commit to main.
+3. Haz Push origin.
+4. Recarga la web con Ctrl+F5 o borra la caché del navegador.
