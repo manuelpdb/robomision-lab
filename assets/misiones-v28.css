@@ -1,0 +1,33 @@
+
+/* v28 · experiencias de taller específicas, legibles y con metas observables */
+.mission-v28-overview{background:linear-gradient(140deg,#f6fbf9,#fff)!important;border-color:#b8ded0!important}
+.mission-v28-overview-grid{display:grid;gap:12px}
+.mission-v28-overview-grid>div{background:#fff;border:1px solid #e0ebe6;padding:15px 16px;border-radius:12px}
+.mission-v28-overview-grid strong{font-size:13px;color:#0b715b;display:block;margin-bottom:6px}
+.mission-v28-overview-grid p{margin:0;font-size:14px;line-height:1.65;color:#294858}
+.mission-v28-callout{font-size:13px;line-height:1.6;margin-top:14px;background:#e2f5ea;border-radius:9px;padding:12px 15px;color:#245c48}
+.mission-v28-steps li{padding:0!important;display:block!important;background:transparent!important}
+.mission-v28-steps li:before{display:none!important}
+.mission-v28-steps{counter-reset:guide;display:grid;gap:10px}
+.mission-v28-steps li{counter-increment:guide;list-style:none}
+.mission-v28-steps label{display:flex;gap:12px;align-items:flex-start;cursor:pointer;background:#f4f8f7;border:1px solid #e2eae5;padding:15px;border-radius:11px;font-size:14px;line-height:1.65}
+.mission-v28-steps label:before{content:counter(guide,decimal-leading-zero);font-size:12px;font-weight:900;background:#123b44;color:white;padding:5px;border-radius:7px;min-width:28px;text-align:center}
+.mission-v28-steps input{width:19px;height:19px;flex:0 0 19px;accent-color:#087d5f;margin-top:2px}
+.mission-v28-steps input:checked+span{color:#4b7368}
+.mission-v28-hint{background:#edf8f4;border-radius:9px;padding:13px;color:#285244}
+.mission-v28-optional{margin:14px 0 18px;border:1px solid #dbe9e3;padding:10px 14px;border-radius:10px}
+.mission-v28-optional summary{font-size:14px;font-weight:800;cursor:pointer;color:#096b58}
+.mission-v28-tiers{grid-template-columns:1fr!important}
+.mission-v28-tiers article{padding:18px!important}
+.mission-v28-tiers article>h3{margin:12px 0 3px;font-size:13px;color:#243e4f}
+.mission-v28-tiers article>p{font-size:15px;line-height:1.6}
+.mission-v28-success{background:#e2f4e9;border-left:3px solid #169b72;padding:13px;border-radius:8px;font-size:13px;color:#245840}
+.mission-v28-success p{margin:5px 0 0!important;line-height:1.55}
+.mission-v28-tiercheck{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:12px;cursor:pointer;color:#3e5d55;font-weight:800}
+.mission-v28-tiercheck input{width:18px;height:18px;accent-color:#0e896b}
+.mission-v28-table{overflow:auto;margin:12px 0}.mission-v28-table table{width:100%;border-collapse:collapse;min-width:490px;font-size:12px}.mission-v28-table th,.mission-v28-table td{border:1px solid #dce8e3;padding:11px;text-align:left}.mission-v28-table th{background:#e5f3ed;color:#24584a}
+.mission-v28-error{padding:14px 16px;border:1px solid #eddfc5;background:#fffbf1;border-radius:10px}.mission-v28-error b{font-size:13px;color:#76551a}.mission-v28-error p{margin:5px 0 0;line-height:1.6}
+.mission-v28-card-hint{font-size:11px;color:#077a5c;font-weight:850;margin:12px 0}
+.sheet-v28-result{background:#edf8f2;border-left:3px solid #0a9070;padding:8px 11px;border-radius:7px}
+@media(max-width:720px){.mission-v28-overview-grid>div{padding:12px}.mission-v28-steps label{padding:12px;font-size:13px}}
+@media print{.mission-v28-steps label{break-inside:avoid;page-break-inside:avoid}.mission-v28-tiers article{break-inside:avoid}.mission-v28-optional{display:none}}
