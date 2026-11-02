@@ -1,0 +1,51 @@
+ROBOMISIÓN LAB V34 — ACTIVIDADES TA647 Y BOMBA DE AGUA
+
+CAMBIOS EN TODAS LAS 26 FICHAS
+- Las seis actividades de cada componente se seleccionan en una nueva lista de tarjetas.
+- Solo se despliega una actividad; el objetivo, los materiales, las instrucciones,
+  el esquema de montaje, las pruebas y la entrega quedan a la vista.
+- Las instrucciones ahora se presentan con pasos numerados.
+- Los ejemplos de programación aparecen después de entender el montaje.
+- Se mantiene el progreso y se pueden abrir actividades directamente con
+  ?pieza=shield&actividad=3 o ?pieza=bomba&actividad=6.
+
+BOMBA DE AGUA
+- Fotografías de los componentes que intervienen.
+- Explicación clara de control (micro:bit y relé) frente a potencia externa (bomba).
+- Tabla de conexiones P1/P2, IN, GND, VCC, COM, NO y alimentación externa.
+- Diagrama ampliable en SVG.
+- Distinción entre actividades con y sin sensor de humedad.
+- Se explican los componentes adicionales para proteger el motor.
+- Se corrige el ejemplo de programación de botones y se advierte que el
+  sentido de activación del relé debe verificarse.
+- Para humedad se añade un programa de solo lectura/simulación; NO activa la bomba.
+
+SEGURIDAD
+- La bomba no puede alimentarse desde un pin ni desde V de la Shield.
+- El circuito externo de potencia requiere fuente adecuada, protección inductiva,
+  cables/terminales correctos y supervisión docente.
+- No se asume compatibilidad del relé con 3,3 V sin comprobar su documentación.
+- Una parada por software no sustituye la desconexión física.
+- Los esquemas son funcionales: deben cotejarse con la serigrafía real.
+
+ARCHIVOS A SUSTITUIR O AÑADIR
+- practicas-ta647.html
+- assets/equipos-v34.js
+- assets/cableado-actividades-v34.js
+- assets/ta647-claridad-v34.js
+- assets/ta647-claridad-v34.css
+- assets/ta647-bomba-circuito-v34.svg
+
+ACTUALIZACIÓN CON GITHUB DESKTOP
+1. Descomprime el ZIP.
+2. Copia el contenido de la carpeta robomision-lab en la RAÍZ de tu repositorio,
+   donde se encuentra index.html. No anides una segunda carpeta robomision-lab.
+3. Haz Commit to main y luego Push origin.
+4. Abre la página y recarga con Ctrl + F5.
+
+COMPROBACIONES
+- Los 26 componentes tienen 6 actividades, para un total de 156.
+- Las seis actividades de bomba incluyen sus componentes y conexiones.
+- Revisión de sintaxis JS realizada.
+- La prueba visual en Chromium no ha sido posible por bloqueo del navegador local.
+- El montaje físico de potencia debe validarse con los dispositivos reales.
