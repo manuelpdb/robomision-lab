@@ -7,7 +7,7 @@
  if(!p){root.innerHTML='<p>Proyecto no encontrado. <a href="proyectos-pro.html">Abrir catálogo</a>.</p>';return}
  document.title='Ficha de trabajo · '+p.title+' · RoboMisión LAB';
  root.innerHTML=`<div class="sheet-tools"><a href="proyecto-guia.html?id=${encodeURIComponent(id)}">← Volver a la guía completa</a><button type="button" id="doPrint">🖨 Imprimir / Guardar como PDF</button></div>
- <header><div><span>ROBOMISIÓN LAB · KITs DEL INSTITUTO</span><span>PROYECTO ${String(all.indexOf(p)+1).padStart(2,'0')} · ${esc(p.level)}</span></div><h1>${esc(p.title)}</h1><p class="subtitle">${esc(p.kit)} · ${p.sessions} sesiones orientativas</p></header>
+ <header><div><span>ROBOMISIÓN LAB · KITs DE ROBÓTICA</span><span>PROYECTO ${String(all.indexOf(p)+1).padStart(2,'0')} · ${esc(p.level)}</span></div><h1>${esc(p.title)}</h1><p class="subtitle">${esc(p.kit)} · ${p.sessions} sesiones orientativas</p></header>
  <div class="fields"><div><b>EQUIPO / INTEGRANTES</b>______________________________________</div><div><b>CURSO / FECHA</b>______________________________________</div></div>
  <section><h2>1. ¿Qué vamos a conseguir?</h2><p>${esc(p.summary)}</p><p><b>Pregunta:</b> ${esc(p.question)}</p></section>
  <section><h2>2. Materiales</h2><ul class="task-list">${p.materials.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>

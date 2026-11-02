@@ -18,7 +18,7 @@ SE CONSERVA
   original, con sus simulaciones y explicaciones.
 - En los 11 apartados que estaban en preparación se han enlazado guías
   nuevas de la ampliación. No son simulaciones 3D equivalentes.
-- La estructura, fuentes y autoría original figuran en creditos.html y LICENCIAS.txt.
+- Las fuentes técnicas y las licencias de terceros figuran en creditos.html y LICENCIAS.txt.
 
 CÓMO USAR
 1. Extrae el ZIP COMPLETO.
@@ -44,9 +44,8 @@ SEGURIDAD
   especificaciones de firmware o controladores reales.
 
 CRÉDITOS
-- Bit a bit original: trabajo educativo del IES Fuente Nueva de Morón de la
-  Frontera, según los créditos incluidos en la web recibida.
-- La ampliación PRO incorpora material nuevo, manteniendo la autoría original.
+- Los laboratorios anteriores proceden de recursos didácticos previos. Se mantienen las referencias técnicas y las licencias de terceros.
+- La ampliación PRO incorpora actividades, sin cambiar las licencias de los componentes de terceros.
 
 Licencias originales: LICENCIAS.txt.
 
@@ -54,7 +53,7 @@ NOTA SOBRE EL CAMBIO DE NOMBRE
 - El nombre público actual es RoboMisión LAB; la web de origen es Bit a bit.
 - Se conserva el identificador interno de perfiles para que el cambio de marca
   no borre el progreso ya guardado por el navegador.
-- Los créditos del proyecto original siguen presentes en creditos.html.
+- Las fuentes técnicas y licencias siguen disponibles en creditos.html.
 
 
 Las imágenes son esquemas didácticos, no capturas oficiales; si hay conexión Internet, las misiones pueden obtener los bloques originales desde el renderizador oficial de MakeCode.

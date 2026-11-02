@@ -3045,7 +3045,7 @@ ${filas.join("\n")}
       piezas: {
         bmp: ["BMP280", "Mide la presión del aire con centésimas de hectopascal. La extensión de ACEBOTT la da en hPa con dos decimales: 1 centésima son unos 8 cm de altura.", "Se usa: la micro:bit le pregunta la presión en cada vuelta."],
         "bmp-chip": ["El chip BMP280", "Por el agujerito entra el aire: dentro hay una membrana que se dobla un poco con la presión.", ""],
-        edificio: ["El instituto", "Cuatro plantas de 3,5 m. Sube o baja con los botones de abajo.", ""],
+        edificio: ["El edificio", "Cuatro plantas de 3,5 m. Sube o baja con los botones de abajo.", ""],
         figura: ["La alumna", "Lleva la placa en la mano, a 1 m del suelo de cada planta.", ""]
       },
       alPulsar: (id) => id === "botonA" || id === "botonB",
@@ -3236,7 +3236,7 @@ ${filas.join("\n")}
         var _a;
         (_a = document.querySelector('[data-control="cero"] [data-valor="mar"]')) == null ? void 0 : _a.click();
         ui.ponerModo("auto");
-        return "Ponemos el cero en 1013,25 hPa, la presión «normal» del mar: la pantalla da una altura sobre el mar que depende del tiempo. Trae ahora la borrasca y mira cómo «sube» el instituto.";
+        return "Ponemos el cero en 1013,25 hPa, la presión «normal» del mar: la pantalla da una altura sobre el mar que depende del tiempo. Trae ahora la borrasca y mira cómo «sube» el edificio.";
       }
     };
   });
