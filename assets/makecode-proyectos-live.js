@@ -13,7 +13,7 @@
  }).filter(Boolean);
  if(!queue.length)return;
  let iframe=document.createElement('iframe');
- iframe.src=host+'/--docs?render=1&lang=es';
+ iframe.src=host+'/--docs?render=1&lang=es-ES';
  iframe.title='Renderizador de bloques MakeCode';
  iframe.setAttribute('aria-hidden','true');
  iframe.style.cssText='position:fixed;left:-100px;top:-100px;width:2px;height:2px;opacity:0;pointer-events:none;border:0';

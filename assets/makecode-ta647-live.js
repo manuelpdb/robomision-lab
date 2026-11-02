@@ -52,7 +52,7 @@
  function readyFrame(){
   if(frame)return;
   frame=document.createElement('iframe');
-  frame.src=editor+'/--docs?render=1&lang=es';
+  frame.src=editor+'/--docs?render=1&lang=es-ES';
   frame.title='Motor oficial para dibujar bloques MakeCode';
   frame.setAttribute('aria-hidden','true');frame.tabIndex=-1;
   frame.style.cssText='position:fixed;left:0;bottom:0;width:1px;height:1px;border:0;opacity:0;pointer-events:none;';

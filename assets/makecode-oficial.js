@@ -8,7 +8,7 @@
  if(!code)return;
  let sent=false,ended=false;
  let frame=document.createElement('iframe');
- frame.src=host+'/--docs?render=1&lang=es';
+ frame.src=host+'/--docs?render=1&lang=es-ES';
  frame.title='Renderizador de bloques MakeCode';
  frame.setAttribute('aria-hidden','true');
  frame.style.cssText='position:fixed;left:-100px;top:-100px;width:2px;height:2px;opacity:0;pointer-events:none;border:0';
