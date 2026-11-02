@@ -54,3 +54,20 @@
 .ta36-pulse{outline:4px solid #2db78c;outline-offset:2px;transition:outline .35s ease}
 @media(max-width:760px){.ta36-program-hero{padding:18px 13px}.ta36-stepsbar,.ta36-results{grid-template-columns:1fr}.ta36-code{margin:13px 9px 19px!important}.ta36-codehead{padding:16px 12px;gap:11px}.ta36-letter{min-width:47px;height:47px;font-size:24px}.ta36-codeover{font-size:10px}.ta36-codehead h4{font-size:18px!important}.ta36-codepurpose,.ta36-imagearea,.ta36-blockexplain,.ta36-codefooter{padding:14px 12px!important}.ta36-program-section>.ta-note{margin:0 9px 18px}.ta36-related-head{padding:12px;gap:9px}.ta36-related-head strong{font-size:15px}.ta36-related-body{padding:12px 12px 4px}.ta36-related .ta36-related-button{width:calc(100% - 24px)!important;margin:9px 12px 12px}}
 @media print{.ta36-program-section{break-before:page}.ta36-related .ta36-related-button,.ta36-code .ta-code-source{display:none!important}.ta36-code,.ta36-imagearea,.ta36-codepurpose{break-inside:avoid}.ta36-codehead,.ta36-letter,.ta36-stepsbar strong{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+/* V37 · encabezados más visibles y programa C */
+.ta36-hero-note{margin:6px 0 18px;padding:14px 16px;border-radius:14px;background:#ffffff;border:2px solid #c7e4d8;color:#184847;font-size:15px;line-height:1.7}
+.ta36-code-a .ta36-codehead,.ta36-code-a .ta36-codehead{background:#173b45}
+.ta36-code-b .ta36-codehead{background:#225261}
+.ta36-code-c .ta36-codehead{background:#4a2d63}
+.ta36-letter-c,.ta36-code-c .ta36-letter{background:#ead7ff;color:#3f2459}
+.ta36-code-c .ta36-codeover{color:#edd9ff}
+.ta36-code-c{border-color:#d7c8eb!important}
+.ta36-code-c .ta36-codepurpose{background:#faf7fe}
+.ta36-code-c .ta36-blockexplain{background:#f6f0fb!important}
+.ta36-code-c .ta36-codefooter{background:#fff7ef}
+.ta36-program-hero h3{font-size:clamp(25px,2.5vw,35px)!important}
+.ta36-program-eyebrow{font-size:13px;letter-spacing:1.1px}
+.ta36-codehead h4{font-size:clamp(20px,1.8vw,24px)!important}
+.ta36-sourcewarning b{color:#5b2f7c}
+@media(max-width:760px){.ta36-hero-note{padding:12px 13px;font-size:14px}.ta36-stepsbar>div{padding:12px}}
