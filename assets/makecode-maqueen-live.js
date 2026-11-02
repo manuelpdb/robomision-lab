@@ -27,7 +27,7 @@
  });
  function show(host,id,code){
    if(!host)return; const key=id+':'+code, jobid='mq6-'+(++seq); host.dataset.job=jobid;
-   host.innerHTML=`<div class="mq6-frame"><p class="mq6-status" data-state="wait" role="status">Preparando renderizador oficial de MakeCode…</p><img class="mq6-image" alt="Bloques de MakeCode" hidden><div class="mq6-actions"><button type="button" class="pro-btn subtle mq6-retry" hidden>↻ Reintentar bloques</button><a class="pro-btn subtle" href="https://makecode.microbit.org/" target="_blank" rel="noopener noreferrer">Abrir editor MakeCode ↗</a></div></div>`;
+   host.innerHTML=`<div class="mq6-frame"><p class="mq6-status" data-state="wait" role="status">Preparando renderizador oficial de MakeCode…</p><img class="mq6-image" alt="Bloques de MakeCode" hidden><div class="mq6-actions"><button type="button" class="pro-btn subtle mq6-retry" hidden>↻ Reintentar bloques</button><a class="pro-btn subtle" href="https://makecode.microbit.org/?lang=es-ES" target="_blank" rel="noopener noreferrer">Abrir editor MakeCode ↗</a></div></div>`;
    host.querySelector('.mq6-retry').onclick=()=>show(host,id,code);
    if(cache.has(key)){showImage(host,cache.get(key));return;}
    if(!navigator.onLine){status(host,'Sin conexión. Abre la página desde GitHub Pages con Internet.','bad'); host.querySelector('.mq6-retry').hidden=false; return;}

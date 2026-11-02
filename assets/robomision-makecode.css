@@ -4,3 +4,8 @@
 .rmk-header small{color:#5a8070;font-weight:650}.rmk-status{font-size:12px!important;color:#596f7d!important;margin:12px 0}.rmk-status[data-state=success]{color:#087457!important;font-weight:800}.rmk-status[data-state=error]{color:#9f502c!important}
 .rmk-image{max-width:100%;height:auto;display:block;margin:12px auto;border:1px solid #e3ebe8;border-radius:8px}.rmk-image[hidden]{display:none}.rmk-actions{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.rmk-actions>*{display:inline-flex;border:1px solid #cde3d9;border-radius:8px;padding:8px 10px;font-family:inherit;font-size:12px;font-weight:800;color:#0b654e!important;background:#edf8f3;text-decoration:none;cursor:pointer}.rmk-actions [hidden]{display:none}.rmk-code{margin-top:10px;border-top:1px solid #e1eae5;padding-top:9px;font-size:12px}.rmk-code summary{cursor:pointer;color:#18765f;font-weight:800}.rmk-code pre{padding:13px;background:#13273d;color:#f1f8f5;white-space:pre-wrap;overflow:auto;border-radius:8px;max-height:350px;font-size:12px}.rmk-note{font-size:11px!important;color:#678074!important;margin-bottom:0;line-height:1.5}
 @media print{.rmk-actions,.rmk-code,.rmk-note{display:none!important}.rmk-container{break-inside:avoid}}
+
+/* V26 · indicación de idioma en todo el entorno de aprendizaje */
+.rmk-aviso-idioma-v26{max-width:1120px;margin:26px auto;padding:12px 16px;border:1px solid #cce7dc;border-radius:12px;background:#f5fbf8;color:#214c42;font-size:13px;line-height:1.65;}
+.rmk-aviso-idioma-v26 strong{color:#0a775e;}
+@media print{.rmk-aviso-idioma-v26{display:none!important}}
