@@ -29,3 +29,13 @@
 @media(max-width:920px){.p12-session-grid,.p12-example-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:700px){.p12-session-grid,.p12-example-grid{grid-template-columns:1fr}.mk-live-target{min-height:140px}.p12-example-top strong{font-size:16px}}
 @media print{.p12-example-grid{grid-template-columns:1fr 1fr}.mk-live-target{min-height:100px}}
+
+/* v42 · maquetas orientativas y explicaciones más claras */
+.p12-visualtag{display:inline-flex;align-items:center;gap:6px;margin:8px 0 2px;padding:5px 9px;border-radius:999px;background:#e8f8ef;color:#0a7e64;font-size:10px;font-weight:900;letter-spacing:.7px;text-transform:uppercase}
+.p12-photo{align-content:center}
+.p12-photo figcaption{margin-top:10px;font-size:12px;line-height:1.5;color:#23433d;text-align:center;max-width:320px}
+.p12-explain-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}
+.p12-explain-card{padding:16px;border:1px solid #dbe7e2;border-radius:13px;background:#f7faf8}
+.p12-explain-card h3{margin:0 0 8px;font-size:15px;color:#153749}
+.p12-explain-card p{margin:0;font-size:14px;line-height:1.65;color:#47606e}
+@media(max-width:700px){.p12-explain-grid{grid-template-columns:1fr}.p12-photo figcaption{max-width:none}}

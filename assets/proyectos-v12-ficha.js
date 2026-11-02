@@ -9,7 +9,7 @@
  root.innerHTML=`<div class="sheet-tools"><a href="proyecto-guia.html?id=${encodeURIComponent(id)}">← Volver a la guía completa</a><button type="button" id="doPrint">🖨 Imprimir / Guardar como PDF</button></div>
  <header><div><span>ROBOMISIÓN LAB · KITs DE ROBÓTICA</span><span>PROYECTO ${String(all.indexOf(p)+1).padStart(2,'0')} · ${esc(p.level)}</span></div><h1>${esc(p.title)}</h1><p class="subtitle">${esc(p.kit)} · ${p.sessions} sesiones orientativas</p></header>
  <div class="fields"><div><b>EQUIPO / INTEGRANTES</b>______________________________________</div><div><b>CURSO / FECHA</b>______________________________________</div></div>
- <section><h2>1. ¿Qué vamos a conseguir?</h2><p>${esc(p.summary)}</p><p><b>Pregunta:</b> ${esc(p.question)}</p></section>
+ <section><h2>1. ¿Qué vamos a conseguir?</h2><p><b>Reto:</b> ${esc(p.question)}</p><p><b>Qué vas a construir:</b> ${esc(p.build||p.summary)}</p><p><b>Cómo debe funcionar:</b> ${esc(p.operation||p.summary)}</p></section>
  <section><h2>2. Materiales</h2><ul class="task-list">${p.materials.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>
  <section><h2>3. Montaje — Conexiones</h2><ol>${p.connections.map(x=>`<li>${esc(x)}</li>`).join('')}</ol><p class="warning">⚠ ${esc(p.safety)}</p></section>
  <section><h2>4. Lista de tareas</h2><ul class="task-list">${p.stages.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>
