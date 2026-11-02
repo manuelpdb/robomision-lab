@@ -17,7 +17,7 @@
   let job=queue.shift();
   if(!job.host.isConnected||job.host.dataset.job!==job.id){pump();return;}
   active=job;
-  status(job.host,'Generando la imagen con los bloques originales de MakeCode…','wait');
+  status(job.host,'Generando la imagen con los bloques oficiales de MakeCode…','wait');
   alarm=setTimeout(()=>complete(null,'MakeCode no ha respondido a tiempo.'),20000);
   try{frame.contentWindow.postMessage({type:'renderblocks',id:job.id,code:job.code,options:{snippetMode:true}},editor);}catch(e){complete(null,'Error al comunicar con el editor MakeCode.');}
  }

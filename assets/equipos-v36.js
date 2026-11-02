@@ -229,11 +229,11 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
      mode:guidedMode(m.id),
      blocks:[
        {name:'Punto de partida del programa B',why:'Toma como base el ejemplo intermedio, porque ya contiene la lectura o la acción principal del componente.'},
-       {name:'Nuevos eventos o decisiones',why:'Añade botones, comparaciones o un umbral para que el programa haga una tarea más completa y no solo una prueba básica.'},
+       {name:'Eventos y decisiones adicionales',why:'Añade botones, comparaciones o un umbral para que el programa haga una tarea más completa y no solo una prueba básica.'},
        {name:'Salida o aviso de comprobación',why:'El programa debe mostrar claramente si el reto funciona: un número, un icono, un tono o un mensaje.'},
        {name:'Ensayo y ajuste final',why:'Repite la prueba, cambia un valor y anota qué mejora hace falta para adaptar el ejemplo a tu actividad real.'}
      ],
-     question:advancedAct.variant||'¿Qué bloque nuevo añadirías para convertir este ejemplo en la solución completa de tu actividad?'
+     question:advancedAct.variant||'¿Qué bloque adicional añadirías para convertir este ejemplo en la solución completa de tu actividad?'
    };
    const sampleC={title:'Ejemplo C · Reto avanzado',code:advancedCodeFor(m,sampleA,sampleB)};
    return [{sample:sampleA,guide:guideA},{sample:sampleB,guide:guideB},{sample:sampleC,guide:guideC,synthetic:true}];

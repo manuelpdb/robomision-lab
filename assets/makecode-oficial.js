@@ -33,7 +33,7 @@
         img.addEventListener('load',()=>{
           target.replaceChildren();
           const heading=document.createElement('div');heading.className='live-title';
-          heading.textContent='✓ Bloques originales de MakeCode (generados en línea)';
+          heading.textContent='✓ Bloques oficiales de MakeCode (generados en línea)';
           target.append(heading,img);
         },{once:true});
       }

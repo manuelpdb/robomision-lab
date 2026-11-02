@@ -837,7 +837,7 @@
       recto: "Recto: M ve la línea",
       derecha: "Gira a la derecha: R1 ve la línea",
       izquierda: "Gira a la izquierda: L1 ve la línea",
-      ninguna: "Nada nuevo: sigue con la última orden"
+      ninguna: "Sin cambio: se mantiene la última orden"
     };
     let enMarcha = !matchMedia("(prefers-reduced-motion: reduce)").matches;
     let visible = true;

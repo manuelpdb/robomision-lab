@@ -1,0 +1,15 @@
+ROBOMISIÓN LAB · SECCIONES Y NOMBRES ESTABLES
+
+KITS: 2 equipos de robótica (Maqueen Plus V2 y ACEBOTT TA647).
+ACTIVIDADES GUIADAS TA647: 156 prácticas sobre 26 componentes.
+MISIONES MAQUEEN: 16 prácticas para programar el robot.
+MISIONES GENERALES: 72 misiones de programación, recorrido independiente de los kits.
+SIMULADORES: 8 experiencias interactivas para experimentar antes de conectar.
+LABORATORIOS INTERACTIVOS: 19 experiencias de exploración.
+PRÁCTICAS GUIADAS: 11 guías de trabajo complementarias al catálogo de laboratorios.
+PROYECTOS STEAM: 12 proyectos completos.
+
+No se deben sumar todas estas cifras: los recursos representan itinerarios distintos.
+La web evita etiquetas de lanzamiento (nuevos, originales, recién añadidos) y mantiene las denominaciones según el tipo de recurso.
+
+Las expresiones «Nuevo proyecto» de MakeCode, «Nuevo perfil» y «pilas nuevas» se conservan porque son acciones o especificaciones, no etiquetas de novedad.
