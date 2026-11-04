@@ -1,14 +1,14 @@
 /* RoboMisión LAB v54 · accesibilidad, navegación y diseño unificado.
    Se aplica tras la identidad v53 para mejorar contrastes y armonizar las fichas. */
 
-/* 1. CABECERA: Inicio + enlaces + Menú | RoboMisión LAB | CEP. */
+/* 1. CABECERA: Menú | Inicio + enlaces | RoboMisión LAB | CEP. */
 body.rl53 .cab.v52-topnav .cab-in{
   justify-content:space-between;
   column-gap:clamp(8px,1.1vw,16px);
 }
-body.rl53 .cab.v52-topnav .cab-nav{order:0;flex:0 1 auto;gap:2px;margin-right:2px}
-body.rl53 .cab.v52-topnav .cab-acciones{order:1;flex:0 0 auto;margin-right:auto}
-body.rl53 .cab.v52-topnav .marca{order:2;flex:0 0 auto;margin:0;white-space:nowrap}
+body.rl53 .cab.v52-topnav .cab-nav{order:1;flex:0 1 auto;gap:2px;margin-right:2px}
+body.rl53 .cab.v52-topnav .cab-acciones{order:0;flex:0 0 auto;margin-right:0}
+body.rl53 .cab.v52-topnav .marca{order:2;flex:0 0 auto;margin:0 0 0 auto;white-space:nowrap}
 body.rl53 .cab.v52-topnav .rl-cep-brand-head{order:3;flex:0 1 205px;min-width:170px;max-width:205px;margin:0}
 body.rl53 .cab.v52-topnav .cab-nav a{padding:10px 10px}
 body.rl53 .cab.v52-topnav .marca-txt{font-size:clamp(16px,1.55vw,21px)}
@@ -123,8 +123,8 @@ body.rl53 .ruta54-help a{color:#066b72;font-weight:800}
 @media(max-width:760px){
   body.rl53 .cab.v52-topnav .cab-in{flex-wrap:wrap;row-gap:8px;padding:7px 0}
   body.rl53 .cab.v52-topnav .cab-acciones{order:0;margin-right:0}
-  body.rl53 .cab.v52-topnav .marca{order:1;margin-right:auto;flex:0 1 auto}
-  body.rl53 .cab.v52-topnav .rl-cep-brand-head{order:2;flex:0 0 100%;max-width:none;min-width:0;justify-content:center}
+  body.rl53 .cab.v52-topnav .marca{order:2;margin:0 0 0 auto;flex:0 1 auto}
+  body.rl53 .cab.v52-topnav .rl-cep-brand-head{order:3;flex:0 0 100%;max-width:none;min-width:0;justify-content:center}
   body.rl53 .cab.v52-topnav .rl-cep-brand-head img{max-height:34px;max-width:240px}
   body.rl53 .ruta54-grid{grid-template-columns:1fr}
   body.rl53 .ruta54-card{padding:19px}
@@ -138,10 +138,10 @@ body.rl53 .ruta54-help a{color:#066b72;font-weight:800}
 
 /* En móvil, Inicio conserva una presencia visible; el resto de enlaces va en Menú. */
 @media(max-width:760px){
-  body.rl53 .cab.v52-topnav .cab-nav{display:flex!important;order:0;flex:0 0 auto;margin-right:0}
+  body.rl53 .cab.v52-topnav .cab-nav{display:flex!important;order:1;flex:0 0 auto;margin-right:0}
   body.rl53 .cab.v52-topnav .cab-nav a{font-size:12px;padding:8px 9px}
   body.rl53 .cab.v52-topnav .cab-nav a:not(:first-child){display:none!important}
-  body.rl53 .cab.v52-topnav .cab-acciones{order:1;margin:0}
+  body.rl53 .cab.v52-topnav .cab-acciones{order:0;margin:0}
   body.rl53 .cab.v52-topnav .marca{order:2;margin-left:auto;margin-right:0;min-width:0}
 }
 @media(max-width:440px){
@@ -149,4 +149,9 @@ body.rl53 .ruta54-help a{color:#066b72;font-weight:800}
   body.rl53 .cab.v52-topnav .marca-txt{font-size:clamp(14px,4vw,18px)}
   body.rl53 .cab.v52-topnav .pro-brand-icon{width:32px;height:32px;flex-basis:32px;font-size:19px}
   body.rl53 .cab.v52-topnav .menu13-trigger{padding:7px 9px;font-size:12px}
+}
+
+/* v55: conservar la secuencia de lectura y evitar solapamientos en tablets. */
+@media (min-width:761px) and (max-width:1100px){
+  body.rl53 .cab.v52-topnav .cab-nav a:not(:first-child){display:none!important}
 }

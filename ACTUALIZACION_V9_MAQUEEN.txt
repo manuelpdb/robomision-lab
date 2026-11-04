@@ -1,9 +1,0 @@
-ROBOMISIÓN LAB V9 — CAMBIOS
-
-- Nuevo titular de portada «Aprende a usar Maqueen Plus y el kit ACEBOTT TA647».
-- 16 misiones Maqueen con montaje, materiales, programación, pasos, retos BRONCE/PLATA/PRO con criterios observables, pruebas y evaluación.
-- Programas originales de DFRobot enlazados en las misiones pertinentes; los guiones de otras misiones son pseudocódigo, no imágenes de bloques reales.
-- Guardado local por reto, copiado e impresión.
-
-INSTALACIÓN: copia el CONTENIDO de robomision-lab/ a la RAÍZ del repositorio (index.html no debe quedar en subcarpeta). En GitHub Desktop Commit to main y Push origin.
-La actualización contiene solo los archivos necesarios. No borres otras carpetas del repositorio.
