@@ -1,0 +1,18 @@
+RoboMisión LAB v50 · Créditos, fuentes y licencias
+
+- Nueva página creditos.html, extensa, con fuentes comentadas y secciones por fabricante y tema.
+- Se corrige el enlace antiguo de la Shield ACEBOTT QA051, que redirigía al inicio de la web del fabricante.
+- Se distingue documentación de fabricante, contenido didáctico de la web, fotografías, maquetas generadas y capturas MakeCode.
+- Se aclaran los derechos de terceros, la ausencia de una licencia global de la web y el uso de logos sin presunción de patrocinio.
+- Se detalla three.js (MIT), Archivo/Atkinson Hyperlegible (OFL), PXT y extensión DFRobot.
+- Se incluye REGISTRO_FUENTES_V50.md, con listado de enlaces y dónde aparecen en el código.
+
+Archivos de la actualización:
+  creditos.html
+  assets/creditos-v50.css
+  REGISTRO_FUENTES_V50.md
+  CAMBIOS_V50_CREDITOS.txt
+
+Nota: No se han cambiado las actividades, misiones, simulaciones o programas; solamente la documentación de fuentes.
+
+Para GitHub Desktop: copia el contenido de la carpeta robomision-lab del ZIP pequeño en la carpeta local del repositorio (donde está index.html), conserva la estructura de assets, Commit to main y Push origin.

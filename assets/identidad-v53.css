@@ -1,0 +1,201 @@
+/* RoboMisión LAB · Identidad visual v53
+   Dirección: aula maker contemporánea, azul noche / turquesa / melocotón.
+   Solamente apariencia: no altera programación, simulaciones ni datos. */
+body.rl53{
+  --papel:#f2f6fc;
+  --hoja:#fff;
+  --tinta:#152943;
+  --tinta-2:#567087;
+  --raya:#dce6f0;
+  --cinta:#172b53;
+  --placa:#087f81;
+  --placa-2:#065c65;
+  --placa-suave:#e3f7f5;
+  --led:#f37362;
+  --led-suave:#fff0ed;
+  --oro:#d58241;
+  --oro-suave:#fff1df;
+  --escena-fondo:#e8eff6;
+  --radio:16px;
+  --p-bg:#f2f6fc;
+  --p-ink:#172c48;
+  --p-muted:#577086;
+  --p-line:#dce6ef;
+  --p-green:#097d7b;
+  --p-mint:#dbfaf1;
+  --p-navy:#101e42;
+  --f-display:"Atkinson Hyperlegible Next", "Trebuchet MS", system-ui, sans-serif;
+  background:linear-gradient(180deg,#e9f5ff 0,#f3f7fc 390px,#f7f9fc 100%);
+  color:#152943;
+  color-scheme:light;
+}
+body.rl53::before{background:#0e1c3a}
+body.rl53 h1,body.rl53 h2,body.rl53 h3{letter-spacing:-.025em}
+body.rl53 h1{font-weight:850}
+body.rl53 a:not(.pro-btn):not(.p12-btn):not(.boton){text-underline-offset:.24em}
+body.rl53 :focus-visible{outline:3px solid #ffb16e;outline-offset:3px}
+
+/* Identidad de cabecera: distinta al menú beige del material de referencia. */
+body.rl53 .cab.v52-topnav{
+  background:linear-gradient(100deg,#111d3c 0%,#182d53 70%,#153e53 100%)!important;
+  border-bottom:1px solid #2f5975!important;
+  box-shadow:0 8px 25px #0a245a25!important;
+}
+body.rl53 .cab.v52-topnav .cab-in{min-height:82px}
+body.rl53 .cab.v52-topnav .marca{color:#fff}
+body.rl53 .cab.v52-topnav .marca-txt{color:#fff;font-family:var(--f-display);font-weight:900}
+body.rl53 .cab.v52-topnav .pro-brand-icon{
+  background:#18385a!important;
+  border:1px solid #568f9c;
+  border-radius:14px!important;
+  box-shadow:0 5px 14px #030e2240;
+}
+body.rl53 .cab.v52-topnav .pro-word{background:#56e0c0;color:#082c32;border-radius:7px;font-size:10px;padding:5px 7px}
+body.rl53 .cab.v52-topnav .menu13-trigger{
+  background:#ffcca0!important;
+  border:1px solid #ffdebb!important;
+  color:#202b45!important;
+  border-radius:12px;
+  box-shadow:0 3px 0 #b57a49;
+  font-weight:900;
+}
+body.rl53 .cab.v52-topnav .menu13-trigger:hover,body.rl53 .cab.v52-topnav .menu13-trigger[aria-expanded="true"]{background:#ffe0ba!important}
+body.rl53 .cab.v52-topnav .cab-nav a{color:#eef8ff;font-size:14px;font-weight:760;border-radius:10px}
+body.rl53 .cab.v52-topnav .cab-nav a:hover,body.rl53 .cab.v52-topnav .cab-nav a[aria-current="page"]{
+  background:#4be1bf!important;color:#072e3d!important;box-shadow:none!important;
+}
+body.rl53 .cab.v52-topnav .rl-cep-brand-head{
+  background:#fff!important;border-radius:12px;padding:5px 9px;
+  box-shadow:0 0 0 1px #ffffff44;
+}
+body.rl53 .cab.v52-topnav .rl-cep-brand-head img{max-height:39px}
+body.rl53 .menu-panel.menu13,body.rl53 .menu13{
+  background:#142447;color:#eef9ff;border-color:#426080;
+}
+body.rl53 .menu13-intro strong,body.rl53 .menu13-group h2{color:#fff}
+body.rl53 .menu13-overline,body.rl53 .menu13-secondary-label{color:#7ce7d1}
+body.rl53 .menu13-group,body.rl53 .menu13-link{border-color:#405572}
+body.rl53 .menu13-link,body.rl53 .menu13-link .menu13-label{color:#eff8ff}
+body.rl53 .menu13-desc{color:#c0d7e7}
+body.rl53 .menu13-link:hover{background:#284568}
+
+/* Portada: marca maker; color acento cálido y tarjetas más gráficas. */
+body.rl53 .pro-hero{background:radial-gradient(circle at 23% 5%,#315888 0,#142547 43%,#101b37 100%);border:1px solid #476b89;border-radius:30px;box-shadow:0 22px 55px #1e3a6222}
+body.rl53 .pro-hero .eyebrow{color:#ffcd94}
+body.rl53 .pro-hero h1{font-size:clamp(43px,5vw,74px);line-height:1.04;letter-spacing:-1.35px}
+body.rl53 .pro-hero h1 em{color:#56e0c3}
+body.rl53 .pro-hero-art{background:radial-gradient(circle,#2c5876,#0e203e 74%)}
+body.rl53 .pro-hero-art>img{border-radius:20px!important;box-shadow:0 24px 52px #08192a80!important}
+body.rl53 .pro-btn.primary,body.rl53 .p12-btn,body.rl53 .boton:not(.sec){background:#43d9b6;color:#082c3a!important;border-color:#42dbb9;box-shadow:0 4px 0 #0d8575}
+body.rl53 .pro-btn.primary:hover,body.rl53 .p12-btn:hover,body.rl53 .boton:not(.sec):hover{background:#8af5db}
+body.rl53 .hero-facts strong{color:#ffc690}
+body.rl53 .hero-facts small{color:#d2e6f2}
+body.rl53 .pro-section .tagline,body.rl53 .pro-welcome .tagline,body.rl53 .pro-page-intro .eyebrow{color:#087e82}
+body.rl53 .pro-welcome,body.rl53 .pro-route-card,body.rl53 .pro-card,body.rl53 .pro-feature,body.rl53 .pro-project{
+  border-radius:21px;box-shadow:0 10px 30px #0c33610e;
+}
+body.rl53 .pro-welcome{border:1px solid #dbe6f2;border-left:6px solid #f7a36e}
+body.rl53 .pro-route-card{border-top:5px solid #40d4bc}
+body.rl53 .pro-route-card:nth-child(2n){border-top-color:#f5a86e}
+body.rl53 .pro-route-card:nth-child(3n){border-top-color:#8c9af7}
+body.rl53 .pro-feature.blue{background:#d9e6ff}
+body.rl53 .pro-feature.mint{background:#d7f7ef}
+body.rl53 .pro-bottom-banner{background:linear-gradient(115deg,#14244a,#254b65);border:1px solid #3b6681}
+
+/* Introducciones de las páginas clásicas: dejan de ser un H1 aislado sobre beige. */
+body.rl53:not(.pro-body) .cabecera-pagina,
+body.rl53:not(.pro-body) .lab-cab{
+  position:relative;overflow:hidden;
+  color:#fff;background:linear-gradient(115deg,#111f42 4%,#244b70 68%,#0b6975 100%);
+  border-radius:26px;border:1px solid #436c91;
+  box-shadow:0 16px 45px #1d466b1c;
+  padding:clamp(27px,4vw,54px);margin:24px 0 30px;
+  isolation:isolate;
+}
+body.rl53:not(.pro-body) .cabecera-pagina::after,
+body.rl53:not(.pro-body) .lab-cab::after{
+  content:"";position:absolute;width:225px;height:225px;right:-67px;top:-90px;
+  border:32px solid #54e1c32b;border-radius:50%;z-index:-1;
+}
+body.rl53:not(.pro-body) .cabecera-pagina h1,
+body.rl53:not(.pro-body) .lab-cab h1{
+  color:#fff;font-family:var(--f-display);font-weight:850;font-size:clamp(2.2rem,4vw,3.7rem);line-height:1.12;margin:10px 0 6px;
+}
+body.rl53:not(.pro-body) .cabecera-pagina .entradilla,
+body.rl53:not(.pro-body) .lab-cab .lab-sub,
+body.rl53:not(.pro-body) .cabecera-pagina .dato-fuente{color:#dceef8;max-width:75ch}
+body.rl53 .rl53-eyebrow{display:inline-flex;align-items:center;gap:8px;width:fit-content;max-width:100%;white-space:normal;overflow-wrap:break-word;font-weight:880;font-size:.74rem;line-height:1.4;text-transform:uppercase;letter-spacing:1.2px;color:#192b4d;background:#f9ce98;padding:8px 12px;border-radius:999px}
+body.rl53 .lab-cab .lab-num{color:#90f2d9;font-size:14px;letter-spacing:1px}
+body.rl53 .lab-cab .ficha-datos{background:#ffffff12;border-radius:12px;padding:11px;border:1px solid #ffffff20}
+body.rl53 .lab-cab .ficha-datos dt{color:#a1f0df}
+body.rl53 .lab-cab .ficha-datos dd{color:#fff}
+
+/* Laboratorios, rutas y contenidos legacy: lenguaje de tarjetas y chips. */
+body.rl53:not(.pro-body) section.bloque{
+  background:#fff;border:1px solid #d8e5f1;border-top:4px solid #36cbb9;
+  border-radius:20px;padding:clamp(20px,3vw,34px);margin-top:24px;
+  box-shadow:0 7px 23px #284d6610;
+}
+body.rl53:not(.pro-body) section.bloque:nth-of-type(even){border-top-color:#f5aa76}
+body.rl53 .panel{border-radius:14px;border:1px solid #d8e4f0;background:#f7faff}
+body.rl53 .nota{border-radius:12px;background:#effaf8;padding:14px 18px;border-color:#20baa4}
+body.rl53 .nota.ojo{background:#fff5e9;border-color:#f19b58}
+body.rl53 .banco{border:1px solid #cfdff1;border-top:5px solid #50d8c1;border-radius:21px;background:#fff;padding:clamp(12px,2.5vw,24px);box-shadow:0 8px 30px #163c6012}
+body.rl53 .panel-lab{background:#f7faff;border:1px solid #d5e2ee;border-radius:15px;padding:clamp(15px,2vw,22px)}
+body.rl53 .programa,body.rl53 .programa-cuerpo{border-radius:13px}
+body.rl53 .escena{border-radius:16px;border:1px solid #d0dfed;box-shadow:inset 0 0 0 3px #ffffff60}
+body.rl53 .parada{background:#fff;border:1px solid #dbe7f2;border-radius:19px;margin-bottom:18px;padding:25px 20px 25px 26px;box-shadow:0 7px 23px #24496511}
+body.rl53 .ruta::before{background:linear-gradient(#38d4ba,#7990ef)}
+body.rl53 .parada-marca{background:#152953;border-color:#152953;color:#fff;box-shadow:0 0 0 5px #dbeaf5}
+body.rl53 .parada .lab-fila{border:1px solid #e1eaf4;border-radius:11px;margin:6px 0;padding:11px 14px;background:#f8fbff}
+body.rl53 .parada .lab-fila:hover{background:#e5faf6;border-color:#9de3d7}
+body.rl53 .ficha-lab{background:#fff;border:1px solid #d9e5f0!important;border-radius:18px!important;box-shadow:0 7px 22px #13365d10}
+body.rl53 .ficha-lab:hover{border-color:#38c5b1!important;box-shadow:0 12px 32px #174c6b1c}
+body.rl53 .lab20-stat{background:#fff;border:1px solid #dce7f1;border-top:5px solid #46d3bd;border-radius:18px;box-shadow:0 7px 24px #17386010}
+body.rl53 .lab20-stat:nth-child(2){border-top-color:#f0a46f}
+body.rl53 .lab20-guide{background:#e9f7f7;border-color:#17bca8;border-radius:13px}
+
+/* Catálogos y documentación: fondos menos planos, componentes con personalidad. */
+body.rl53 .pro-page-intro,body.rl53 .equipment-hero,body.rl53 .e-page-title,
+body.rl53 .p12-head,body.rl53 .cr50-hero,body.rl53 .info52-hero{
+  border-radius:24px!important;box-shadow:0 14px 36px #1b487a16;
+}
+body.rl53 .p12-head,body.rl53 .cr50-hero{background:linear-gradient(115deg,#13244b,#274f78,#08717b)}
+body.rl53 .p12-card{border-radius:19px;border-color:#d7e3ef;box-shadow:0 8px 24px #18395a13}
+body.rl53 .p12-card:hover{box-shadow:0 12px 31px #173e6730;border-color:#45cbb8}
+body.rl53 .p12-level,body.rl53 .p12-visualtag{background:#d9f8f2;color:#087675}
+body.rl53 .p12-section{border:1px solid #d6e5f0;box-shadow:0 6px 25px #254d6b0c;border-radius:20px}
+body.rl53 .p12-section:nth-child(2n){border-top:4px solid #f2ac7f}
+body.rl53 .p12-question{background:#e5f5fb!important;color:#24466e!important}
+body.rl53 .p12-step{border-radius:13px}
+body.rl53 .p12-sidepanel{border-radius:17px}
+body.rl53 .cr50-section{border-radius:18px}
+body.rl53 .info52-card,body.rl53 .info52-panel{border-radius:18px}
+
+/* Pie oscuro y coherente también en las páginas de los laboratorios. */
+body.rl53 .pie,body.rl53 .pro-footer{
+  background:linear-gradient(150deg,#0d1934,#102c47);border-top:4px solid #35c8b6;color:#c9ddeb;
+}
+body.rl53 .pie .pie-marca,body.rl53 .pie nav h2,body.rl53 .pro-footer-grid strong{color:#fff}
+body.rl53 .pie a,body.rl53 .pro-footer a{color:#d7ebf8}
+body.rl53 .pie a:hover,body.rl53 .pro-footer a:hover{color:#65ead4}
+body.rl53 .pie .pie-nota{border-color:#314d6a;color:#b0cadc}
+body.rl53 .pro-dev-alert{border-left:5px solid #ffb679;background:#163453}
+
+@media(max-width:780px){
+ body.rl53 .cab.v52-topnav .cab-in{min-height:68px}
+ body.rl53 .rl53-eyebrow{font-size:.66rem;letter-spacing:.7px;padding:7px 10px}
+ body.rl53:not(.pro-body) .cabecera-pagina,body.rl53:not(.pro-body) .lab-cab{border-radius:19px;padding:24px 20px;margin:14px 0 20px}
+ body.rl53:not(.pro-body) .cabecera-pagina h1,body.rl53:not(.pro-body) .lab-cab h1{font-size:clamp(1.95rem,8vw,2.75rem)}
+ body.rl53 .ruta{padding-left:46px}
+ body.rl53 .parada-marca{left:-41px}
+ body.rl53 .parada{padding:18px 14px 18px 18px}
+ body.rl53 .p12-head{padding:26px 20px}
+}
+@media print{
+ body.rl53{background:#fff;color:#111}
+ body.rl53:not(.pro-body) .cabecera-pagina,body.rl53:not(.pro-body) .lab-cab{background:#fff!important;color:#111!important;border:1px solid #ddd;box-shadow:none}
+ body.rl53:not(.pro-body) .cabecera-pagina h1,body.rl53:not(.pro-body) .lab-cab h1,body.rl53:not(.pro-body) .cabecera-pagina p,body.rl53:not(.pro-body) .lab-cab p{color:#111!important}
+ body.rl53 .rl53-eyebrow{color:#111;background:#eee}
+ body.rl53 section.bloque,body.rl53 .p12-section{box-shadow:none;break-inside:avoid}
+}

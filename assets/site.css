@@ -256,6 +256,21 @@ main {
 }
 
 /* ---------- Cabecera ---------- */
+/* RoboMisión LAB v51: identidad visual unificada también en laboratorios. */
+.pro-brand-icon {
+  background: #13253c;
+  color: #b6f2ce;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 23px;
+  line-height: 1;
+}
+
 .cab {
   position: sticky;
   top: env(safe-area-inset-top, 0px);
@@ -287,25 +302,6 @@ main {
   font-stretch: 118%;
   font-size: 1.28rem;
   letter-spacing: -0.02em;
-}
-.led-matriz {
-  display: grid;
-  grid-template-columns: repeat(5, 4px);
-  gap: 2px;
-  padding: 4px;
-  background: var(--matriz);
-  border: 1px solid var(--matriz-borde);
-  border-radius: 4px;
-}
-.led-matriz i {
-  width: 4px;
-  height: 4px;
-  border-radius: 1px;
-  background: rgb(255 255 255 / 0.13);
-}
-.led-matriz i.on {
-  background: var(--led);
-  box-shadow: 0 0 4px var(--led);
 }
 .cab-nav {
   display: flex;
