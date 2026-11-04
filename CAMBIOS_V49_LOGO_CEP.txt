@@ -1,0 +1,8 @@
+RoboMisión LAB v49 · Logo institucional CEP Jerez
+
+- Se incorpora el logo facilitado de Junta de Andalucía, Consejería de Educación y Centro del Profesorado de Jerez de la Frontera.
+- Se sitúa en la cabecera, en el espacio blanco entre la identidad de RoboMisión LAB y la navegación.
+- Se repite en el pie de página azul, dentro de una tarjeta blanca bajo el lema, para asegurar la legibilidad.
+- Se adapta el tamaño en pantallas grandes y móviles.
+- No se modifica la fotografía del robot, los proyectos, las misiones ni los programas.
+- Para publicar: copia el contenido de la carpeta robomision-lab del ZIP sobre tu repositorio, Commit y Push en GitHub Desktop.
