@@ -1,0 +1,20 @@
+RoboMisión LAB v23 · Corrección instalación extensión Maqueen Plus V2
+
+CORRECCIÓN:
+La extensión se añade DENTRO DE MakeCode, abriendo Extensiones
+en el menú de bloques o en Configuración (⚙) > Extensiones.
+En esa pantalla se busca Maqueen Plus V2. Si no aparece,
+se pega https://github.com/DFRobot/pxt-DFRobot_MaqueenPlus_v20
+EN EL BUSCADOR DE EXTENSIONES DE MAKECODE, y se pulsa el resultado.
+
+CAMBIOS:
+- Misión 1: paso 3 corregido y guía detallada de instalación.
+- Misiones 1-16: mensaje inequívoco y botón hacia MakeCode.
+- Botón de cabecera y enlace de la sección de programación actualizados.
+- Versión visible V23 para comprobar si GitHub está actualizado.
+
+PUBLICACIÓN EN GITHUB DESKTOP:
+1. Descomprime el ZIP pequeño.
+2. Copia su contenido respetando la carpeta assets en tu repositorio.
+3. Haz Commit to main y Push origin.
+4. Comprueba la etiqueta V23 en maqueen-plus.html.

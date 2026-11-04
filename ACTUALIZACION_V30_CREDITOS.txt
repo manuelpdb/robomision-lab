@@ -1,0 +1,16 @@
+RoboMisión LAB v30 — Fuentes técnicas y licencias
+
+Actualización de la página de fuentes y revisión de referencias institucionales:
+- Se ha cambiado el título por «Fuentes técnicas y licencias».
+- Se han eliminado las frases de presentación antiguas de la página de fuentes.
+- Los menús y pies de página muestran «Fuentes y licencias».
+- Se han retirado afirmaciones de procedencia institucional y fechas de revisión sin verificación actual.
+- Se han sustituido las afirmaciones de autoría por herramientas concretas de IA por instrucciones educativas neutrales.
+- Se conservan documentación y enlaces a fabricantes, y las licencias de terceros.
+- Se conserva el nombre de la plataforma en la navegación y marca principal.
+
+Para actualizar GitHub Desktop:
+1. Copia los archivos del ZIP manteniendo las subcarpetas.
+2. Realiza Commit to main.
+3. Pulsa Push origin.
+4. Recarga la página de Fuentes y licencias en el navegador.

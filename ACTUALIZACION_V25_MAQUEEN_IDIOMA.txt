@@ -1,0 +1,24 @@
+RoboMisión LAB v25 · Corrección de extensión e idioma en Maqueen Plus
+
+Cambios realizados:
+- Corregida la guía para instalar la extensión Maqueen Plus V2.
+- Ahora se explica que se añade DESDE Extensiones dentro de MakeCode.
+- Se indica el nombre exacto de la tarjeta oficial: DFRobot MaqueenPlus_v20.
+- Se añade el paso para cambiar el idioma en MakeCode:
+  Configuración -> Language -> Español.
+- Se recuerda en las 16 misiones que si los bloques salen en inglés,
+  deben cambiar el idioma a Español.
+- Enlaces a MakeCode actualizados para abrir en español.
+- Etiqueta de versión actualizada a V25.
+
+Archivos incluidos en esta actualización:
+- maqueen-plus.html
+- assets/maqueen-v9-detail.js
+- ACTUALIZACION_V25_MAQUEEN_IDIOMA.txt
+
+Cómo actualizar:
+1. Descomprime este ZIP.
+2. Copia los archivos sobre tu repositorio local, sustituyendo los anteriores.
+3. En GitHub Desktop, haz Commit to main.
+4. Después, haz Push origin.
+5. Recarga la web con Ctrl+F5.

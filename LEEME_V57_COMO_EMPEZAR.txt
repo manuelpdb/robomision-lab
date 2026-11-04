@@ -1,0 +1,21 @@
+ROBOMISIÓN LAB v57 — NUEVA PÁGINA «CÓMO EMPEZAR»
+
+Se ha rediseñado por completo empieza.html:
+- Redacción y estructura propias, diferenciadas de la antigua web Bit a bit.
+- Centro de lanzamiento con un objetivo sencillo para la micro:bit.
+- Elección de equipo: micro:bit, ACEBOTT TA647 y Maqueen Plus V2.
+- Primera prueba con cuatro pasos verificables (se guardan en el navegador).
+- Accesos directos a misiones, sensores y robot.
+- Resolución de errores frecuentes.
+- Cabecera y pie coherentes con la identidad actual.
+
+No se han modificado otras páginas, misiones ni programas.
+
+ACTUALIZACIÓN EN GITHUB DESKTOP
+1. Descomprime el ZIP de actualización.
+2. Abre la carpeta robomision-lab extraída.
+3. Copia empieza.html, LEEME_V57_COMO_EMPEZAR.txt y los dos archivos nuevos
+   de la carpeta assets en la raíz de tu repositorio local, respetando su estructura.
+4. GitHub Desktop → Commit to main → Push origin.
+5. Visita https://manuelpdb.github.io/robomision-lab/empieza.html
+   y recarga con Ctrl+F5 si conserva estilos de la versión anterior.
