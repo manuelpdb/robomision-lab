@@ -1,0 +1,152 @@
+/* RoboMisión LAB v54 · accesibilidad, navegación y diseño unificado.
+   Se aplica tras la identidad v53 para mejorar contrastes y armonizar las fichas. */
+
+/* 1. CABECERA: Inicio + enlaces + Menú | RoboMisión LAB | CEP. */
+body.rl53 .cab.v52-topnav .cab-in{
+  justify-content:space-between;
+  column-gap:clamp(8px,1.1vw,16px);
+}
+body.rl53 .cab.v52-topnav .cab-nav{order:0;flex:0 1 auto;gap:2px;margin-right:2px}
+body.rl53 .cab.v52-topnav .cab-acciones{order:1;flex:0 0 auto;margin-right:auto}
+body.rl53 .cab.v52-topnav .marca{order:2;flex:0 0 auto;margin:0;white-space:nowrap}
+body.rl53 .cab.v52-topnav .rl-cep-brand-head{order:3;flex:0 1 205px;min-width:170px;max-width:205px;margin:0}
+body.rl53 .cab.v52-topnav .cab-nav a{padding:10px 10px}
+body.rl53 .cab.v52-topnav .marca-txt{font-size:clamp(16px,1.55vw,21px)}
+body.rl53 .cab.v52-topnav .pro-brand-icon{height:40px;width:40px;flex-basis:40px}
+
+/* 2. MENÚ: texto OSCURO sobre tarjetas BLANCAS, sin excepciones. */
+body.rl53 .menu-panel.menu13{background:#132649!important;color:#eff9ff!important}
+body.rl53 .menu-panel.menu13 .menu13-intro strong{color:#fff!important}
+body.rl53 .menu-panel.menu13 .menu13-intro span{color:#d3e9f2!important}
+body.rl53 .menu-panel.menu13 .menu13-group{
+  background:#fff!important;color:#152c49!important;border:1px solid #b9d3e5!important;
+  box-shadow:0 12px 30px #071c371f;
+}
+body.rl53 .menu-panel.menu13 .menu13-overline{color:#087f79!important}
+body.rl53 .menu-panel.menu13 .menu13-heading,
+body.rl53 .menu-panel.menu13 .menu13-group h2{color:#142d4a!important}
+body.rl53 .menu-panel.menu13 .menu13-links .menu13-link{
+  color:#1c3553!important;border:1px solid transparent!important;background:#f5f9fe!important;
+  border-radius:10px;
+}
+body.rl53 .menu-panel.menu13 .menu13-links .menu13-link:hover,
+body.rl53 .menu-panel.menu13 .menu13-links .menu13-link:focus-visible{
+  background:#dff7f2!important;border-color:#76cfc0!important;
+}
+body.rl53 .menu-panel.menu13 .menu13-links .menu13-link[aria-current="page"]{
+  background:#d5f5e9!important;border-color:#70cbb8!important;
+}
+body.rl53 .menu-panel.menu13 .menu13-links .menu13-link .menu13-label{
+  color:#132f49!important;font-weight:900!important;
+}
+body.rl53 .menu-panel.menu13 .menu13-links .menu13-link .menu13-desc{
+  color:#4c667b!important;font-weight:550!important;
+}
+body.rl53 .menu-panel.menu13 .menu13-secondary-label{color:#bceadd!important}
+body.rl53 .menu-panel.menu13 .menu13-secondary a{color:#91f2d5!important;text-decoration:underline!important}
+
+/* 3. MISMO LENGUAJE VISUAL: Maqueen, TA647, Shield, prácticas. */
+body.rl53.pro-body .equipment-hero,
+body.rl53.pro-body .maqueen-hero{
+  background:linear-gradient(122deg,#11244b 5%,#244d73 65%,#136b76 100%)!important;
+  border:1px solid #4a7297!important;border-radius:26px!important;
+  box-shadow:0 18px 38px #103b691c;
+}
+body.rl53 .equipment-hero .eyebrow,body.rl53 .equipment-hero h1 em{color:#65efd2!important}
+body.rl53 .equipment-hero p{color:#e1f2f9!important}
+body.rl53 .equipment-hero-photo{background:radial-gradient(circle at 45%,#376b8a,#12284c)!important}
+body.rl53.pro-body .e-page-title{
+  background:linear-gradient(115deg,#11244b,#29547a 70%,#126c77)!important;
+  border:1px solid #4f7b97!important;border-radius:25px!important;
+  padding:clamp(24px,4vw,42px)!important;
+  box-shadow:0 14px 34px #1a477719!important;
+  margin:24px 0;
+}
+body.rl53 .e-page-title h1{color:#fff!important;letter-spacing:-.8px!important}
+body.rl53 .e-page-title h1 em{color:#70f0d4!important}
+body.rl53 .e-page-title .eyebrow{color:#ffca96!important}
+body.rl53 .e-page-title p{color:#e1effb!important}
+body.rl53 .e-page-title p b,body.rl53 .e-page-title strong{color:#fff!important}
+body.rl53 .e-page-title .pro-btn.ghost{color:#fff!important;border-color:#a7d5e7!important}
+body.rl53 .equipment-stats>div,
+body.rl53 .equipment-choice-card,
+body.rl53 .equipment-three article,
+body.rl53 .sensor-card,
+body.rl53 .practice-detail,
+body.rl53 .shield-intro,
+body.rl53 .shield-mini{
+  background:#fff!important;border:1px solid #d0e2ef!important;border-radius:18px!important;
+  box-shadow:0 8px 25px #173e6c12!important;
+}
+body.rl53 .equipment-stats>div{border-top:4px solid #45d2c0!important}
+body.rl53 .equipment-three article{border-top:4px solid #f0b278!important}
+body.rl53 .equipment-stats strong,body.rl53 .micro-label,body.rl53 .equipment-three b{color:#067f81!important}
+body.rl53 .ta-catalog-highlight{
+  background:#eaf5fc!important;border:1px solid #bddce9!important;border-left:5px solid #13aaa5!important;
+  border-radius:21px!important;box-shadow:0 12px 28px #16496b10!important;
+}
+body.rl53 .ta-catalog-highlight h2{color:#17334f!important}
+body.rl53 .ta-catalog-highlight p{color:#48677c!important}
+body.rl53 .e-filters{padding:18px;border-radius:16px;border:1px solid #d4e3f0;background:#fff;margin-bottom:16px}
+body.rl53 .e-filters label{color:#22415a!important}
+body.rl53 .e-filters input,body.rl53 .e-filters select,
+body.rl53 .practice-list-button,body.rl53 .shield-search input{
+  background:#fff!important;color:#17344e!important;border-color:#cadaea!important;
+}
+body.rl53 .practice-list-button.selected,body.rl53 .practice-list-button:hover{background:#e2f8f5!important;border-color:#13a9a1!important}
+body.rl53 .practice-detail h2,body.rl53 .practice-detail h3{color:#1b3651!important}
+body.rl53 .wiring-box{background:#e9f6fd!important;color:#1b405c!important}
+body.rl53 .e-steps li{background:#f5f9ff!important;border:1px solid #e1edf7}
+body.rl53 .e-steps li:before{background:#1b4b70!important}
+body.rl53 .sensor-card h3,body.rl53 .equipment-choice-card h2{color:#18334d!important}
+body.rl53 .card-link{color:#007f80!important}
+body.rl53 .equipment-cta-strip{background:#e6f5ff!important;border-color:#bcd9ee!important}
+body.rl53 .equipment-cta-strip a{color:#0c6c80!important}
+
+/* 4. RUTA ACTUALIZADA: no quedan accesos a los laboratorios retirados. */
+body.rl53 .ruta54{padding-bottom:50px}
+body.rl53 .ruta54-hero{
+  padding:clamp(28px,4.5vw,54px);margin:24px 0 24px;border-radius:24px;color:#fff;
+  background:linear-gradient(110deg,#112146,#28537a,#087884);border:1px solid #497c94;
+}
+body.rl53 .ruta54-hero h1{color:#fff;font-size:clamp(2.3rem,4.3vw,4rem);margin:14px 0}
+body.rl53 .ruta54-hero p{color:#e4effb;max-width:70ch;line-height:1.75}
+body.rl53 .ruta54-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+body.rl53 .ruta54-card{background:#fff;border:1px solid #d8e6f2;border-top:5px solid #40d1bf;border-radius:19px;padding:26px;box-shadow:0 9px 24px #1b477110}
+body.rl53 .ruta54-card:nth-child(2n){border-top-color:#f4aa73}
+body.rl53 .ruta54-card>span{color:#0d7c85;font-size:12px;font-weight:900;letter-spacing:.8px}
+body.rl53 .ruta54-card h2{color:#172f4f;font-size:24px;margin:12px 0 8px}
+body.rl53 .ruta54-card p{color:#4c647c;font-size:15px;line-height:1.7}
+body.rl53 .ruta54-card a{display:inline-block;margin:8px 12px 0 0;color:#0c6771;font-weight:850}
+body.rl53 .ruta54-help{padding:20px;border-radius:13px;background:#e5f8f3;color:#234d58;margin-top:20px}
+body.rl53 .ruta54-help a{color:#066b72;font-weight:800}
+@media(max-width:760px){
+  body.rl53 .cab.v52-topnav .cab-in{flex-wrap:wrap;row-gap:8px;padding:7px 0}
+  body.rl53 .cab.v52-topnav .cab-acciones{order:0;margin-right:0}
+  body.rl53 .cab.v52-topnav .marca{order:1;margin-right:auto;flex:0 1 auto}
+  body.rl53 .cab.v52-topnav .rl-cep-brand-head{order:2;flex:0 0 100%;max-width:none;min-width:0;justify-content:center}
+  body.rl53 .cab.v52-topnav .rl-cep-brand-head img{max-height:34px;max-width:240px}
+  body.rl53 .ruta54-grid{grid-template-columns:1fr}
+  body.rl53 .ruta54-card{padding:19px}
+  body.rl53 .e-page-title{margin:12px 0!important;padding:24px 20px!important}
+}
+@media print{
+ body.rl53 .ruta54-hero{color:#111;background:#fff;box-shadow:none}
+ body.rl53 .ruta54-hero h1,body.rl53 .ruta54-hero p{color:#111}
+ body.rl53 .ruta54-card{box-shadow:none;break-inside:avoid}
+}
+
+/* En móvil, Inicio conserva una presencia visible; el resto de enlaces va en Menú. */
+@media(max-width:760px){
+  body.rl53 .cab.v52-topnav .cab-nav{display:flex!important;order:0;flex:0 0 auto;margin-right:0}
+  body.rl53 .cab.v52-topnav .cab-nav a{font-size:12px;padding:8px 9px}
+  body.rl53 .cab.v52-topnav .cab-nav a:not(:first-child){display:none!important}
+  body.rl53 .cab.v52-topnav .cab-acciones{order:1;margin:0}
+  body.rl53 .cab.v52-topnav .marca{order:2;margin-left:auto;margin-right:0;min-width:0}
+}
+@media(max-width:440px){
+  body.rl53 .cab.v52-topnav .cab-in{column-gap:6px}
+  body.rl53 .cab.v52-topnav .marca-txt{font-size:clamp(14px,4vw,18px)}
+  body.rl53 .cab.v52-topnav .pro-brand-icon{width:32px;height:32px;flex-basis:32px;font-size:19px}
+  body.rl53 .cab.v52-topnav .menu13-trigger{padding:7px 9px;font-size:12px}
+}
