@@ -1,0 +1,711 @@
+{
+  "shield": {
+    "title": "Distribución S · V · G",
+    "target": "Pines GPIO, I²C y alimentación",
+    "voltage": "3,3 V para lógica; V1/V2 según serigrafía",
+    "rows": [
+      {
+        "label": "Micro:bit",
+        "pin": "Ranura de la Shield",
+        "purpose": "micro:bit insertada"
+      },
+      {
+        "label": "S",
+        "pin": "P0/P1/P2...",
+        "purpose": "señal digital o analógica"
+      },
+      {
+        "label": "V",
+        "pin": "3,3 V recomendado",
+        "purpose": "alimentación del módulo"
+      },
+      {
+        "label": "G",
+        "pin": "GND",
+        "purpose": "masa común"
+      }
+    ],
+    "safety": "Identifica primero en tu placa el orden real de los contactos S/V/G y las posiciones V1/V2. No cambies los puentes de selección con la placa alimentada.",
+    "family": "shield"
+  },
+  "oled": {
+    "title": "Bus I²C",
+    "target": "Pantalla OLED",
+    "voltage": "3,3 V solo si el módulo lo admite",
+    "rows": [
+      {
+        "label": "SDA",
+        "pin": "P20 · SDA",
+        "purpose": "datos I²C"
+      },
+      {
+        "label": "SCL",
+        "pin": "P19 · SCL",
+        "purpose": "reloj I²C"
+      },
+      {
+        "label": "VCC",
+        "pin": "3,3 V si compatible",
+        "purpose": "alimentación"
+      },
+      {
+        "label": "GND",
+        "pin": "G · GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Comprueba en la placa OLED su controlador (SSD1306/SH1106), dirección I²C y tensión antes de instalar la extensión. Algunos módulos son de 5 V.",
+    "family": "i2c"
+  },
+  "rele": {
+    "title": "Control digital con interfaz",
+    "target": "Relé de 1 canal",
+    "voltage": "Alimentación según modelo; control de 3,3 V validado",
+    "rows": [
+      {
+        "label": "IN",
+        "pin": "P1 · señal",
+        "purpose": "mando del relé"
+      },
+      {
+        "label": "VCC",
+        "pin": "fuente adecuada",
+        "purpose": "alimentación de bobina"
+      },
+      {
+        "label": "GND",
+        "pin": "G · GND",
+        "purpose": "masa común"
+      },
+      {
+        "label": "COM / NO",
+        "pin": "carga CC baja tensión",
+        "purpose": "contactos, circuito aparte"
+      }
+    ],
+    "safety": "Nunca conectes 230 V en prácticas escolares. Un módulo de relé 5 V puede necesitar alimentación separada y adaptación del control a 3,3 V; verifica si es activo en alto o bajo.",
+    "family": "power"
+  },
+  "joystick": {
+    "title": "Tres entradas",
+    "target": "Joystick X/Y + pulsador",
+    "voltage": "3,3 V si el módulo lo admite",
+    "rows": [
+      {
+        "label": "VRx",
+        "pin": "P0 · analógico",
+        "purpose": "eje horizontal"
+      },
+      {
+        "label": "VRy",
+        "pin": "P1 · analógico",
+        "purpose": "eje vertical"
+      },
+      {
+        "label": "SW",
+        "pin": "P2 · digital",
+        "purpose": "pulsación"
+      },
+      {
+        "label": "VCC / GND",
+        "pin": "V / G",
+        "purpose": "alimentación y masa"
+      }
+    ],
+    "safety": "Los dos ejes requieren dos entradas analógicas distintas y SW una digital. Calibra el centro y verifica que VRx/VRy no superan 3,3 V.",
+    "family": "analog"
+  },
+  "l298n": {
+    "title": "Controlador de potencia",
+    "target": "Puente H L298N",
+    "voltage": "Motores con fuente externa compatible",
+    "rows": [
+      {
+        "label": "IN1 / IN2",
+        "pin": "P1 / P2",
+        "purpose": "sentido motor A"
+      },
+      {
+        "label": "ENA",
+        "pin": "puente ENA o P0 · PWM",
+        "purpose": "habilitación/velocidad"
+      },
+      {
+        "label": "IN3 / IN4",
+        "pin": "P12 / P13 opcionales",
+        "purpose": "segundo motor, no usado en ejemplos"
+      },
+      {
+        "label": "ENB",
+        "pin": "puente ENB o P8 · PWM",
+        "purpose": "segundo motor, opcional"
+      },
+      {
+        "label": "GND",
+        "pin": "G común",
+        "purpose": "referencia lógica"
+      },
+      {
+        "label": "MOTOR V / OUT",
+        "pin": "fuente CC / motores",
+        "purpose": "potencia externa"
+      }
+    ],
+    "safety": "El L298N debe alimentar los motores con fuente externa. Consulta los puentes ENA/ENB y la alimentación lógica real del módulo; comparte GND con micro:bit, sin enviar 5 V a entradas de la micro:bit.",
+    "family": "power"
+  },
+  "ultrason": {
+    "title": "Disparo y eco",
+    "target": "HC-SR04",
+    "voltage": "5 V típicos; ECHO requiere reducción de nivel",
+    "rows": [
+      {
+        "label": "TRIG",
+        "pin": "P0 · salida",
+        "purpose": "pulso de disparo"
+      },
+      {
+        "label": "ECHO",
+        "pin": "P1 vía divisor/adaptador",
+        "purpose": "entrada segura ≤3,3 V"
+      },
+      {
+        "label": "VCC",
+        "pin": "5 V del sistema",
+        "purpose": "alimentación HC-SR04"
+      },
+      {
+        "label": "GND",
+        "pin": "G · GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Muy importante: el ECHO de un HC-SR04 alimentado a 5 V puede salir a 5 V. Usa divisor resistivo o adaptador de nivel antes de P1.",
+    "family": "level"
+  },
+  "zumbador": {
+    "title": "Salida digital / tono",
+    "target": "Zumbador pasivo",
+    "voltage": "3,3 V si el módulo lo admite",
+    "rows": [
+      {
+        "label": "S",
+        "pin": "P1 · PWM",
+        "purpose": "tono/frecuencia"
+      },
+      {
+        "label": "V",
+        "pin": "V · 3,3 V",
+        "purpose": "alimentación"
+      },
+      {
+        "label": "G",
+        "pin": "G · GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Un zumbador pasivo necesita señal oscilante (música/tono), no solo un estado fijo. Si consume demasiado usa transistor/controlador.",
+    "family": "digital"
+  },
+  "sonido": {
+    "title": "Umbral del micrófono",
+    "target": "Sensor de sonido ajustable",
+    "voltage": "3,3 V si está indicado",
+    "rows": [
+      {
+        "label": "DO / S",
+        "pin": "P1 · digital",
+        "purpose": "salida umbral"
+      },
+      {
+        "label": "AO (si existe)",
+        "pin": "P0 · analógico",
+        "purpose": "lectura variable opcional"
+      },
+      {
+        "label": "VCC",
+        "pin": "V · 3,3 V",
+        "purpose": "alimentación compatible"
+      },
+      {
+        "label": "GND",
+        "pin": "G · GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Algunas versiones de tres pines solo proporcionan DO. Comprueba serigrafía AO/DO antes de programar analogReadPin. Ajusta el potenciómetro para cambiar el umbral.",
+    "family": "digital"
+  },
+  "rgb": {
+    "title": "LED RGB · identificar conexiones",
+    "target": "Módulo RGB",
+    "voltage": "La ficha de código usa 3 canales PWM, no S/V/G",
+    "rows": [
+      {
+        "label": "R (solo 3 canales)",
+        "pin": "P0 · PWM",
+        "purpose": "canal rojo"
+      },
+      {
+        "label": "G (solo 3 canales)",
+        "pin": "P1 · PWM",
+        "purpose": "canal verde"
+      },
+      {
+        "label": "B (solo 3 canales)",
+        "pin": "P2 · PWM",
+        "purpose": "canal azul"
+      },
+      {
+        "label": "VCC / GND",
+        "pin": "alimentación compatible",
+        "purpose": "según tipo de módulo"
+      },
+      {
+        "label": "Si el módulo tiene S/V/G",
+        "pin": "S→P1, V→V, G→G",
+        "purpose": "otra conexión; requiere código diferente"
+      }
+    ],
+    "safety": "El código de las actividades solo sirve para RGB de tres canales separados PWM y con control de corriente. Si el módulo real tiene tres pines S/V/G, NO sigas ese código: identifica su circuito y extensión antes de conectar.",
+    "family": "conditional"
+  },
+  "rojo": {
+    "title": "Salida LED",
+    "target": "LED rojo",
+    "voltage": "3,3 V si módulo compatible",
+    "rows": [
+      {
+        "label": "S",
+        "pin": "P1 · salida",
+        "purpose": "encendido/PWM"
+      },
+      {
+        "label": "V",
+        "pin": "3,3 V",
+        "purpose": "alimentación"
+      },
+      {
+        "label": "G",
+        "pin": "GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Prueba digital 0/1; usa analogWritePin si el módulo permite regular brillo. Comprueba si el LED trabaja con lógica invertida.",
+    "family": "digital"
+  },
+  "verde": {
+    "title": "Salida LED",
+    "target": "LED verde",
+    "voltage": "3,3 V si módulo compatible",
+    "rows": [
+      {
+        "label": "S",
+        "pin": "P1 · salida",
+        "purpose": "encendido/PWM"
+      },
+      {
+        "label": "V",
+        "pin": "3,3 V",
+        "purpose": "alimentación"
+      },
+      {
+        "label": "G",
+        "pin": "GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Prueba digital 0/1; ajusta brillo solo si la placa incorpora resistencia/control apropiado.",
+    "family": "digital"
+  },
+  "azul": {
+    "title": "Salida LED",
+    "target": "LED azul",
+    "voltage": "3,3 V si módulo compatible",
+    "rows": [
+      {
+        "label": "S",
+        "pin": "P1 · salida",
+        "purpose": "encendido/PWM"
+      },
+      {
+        "label": "V",
+        "pin": "3,3 V",
+        "purpose": "alimentación"
+      },
+      {
+        "label": "G",
+        "pin": "GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "No conectes un LED desnudo sin resistencia limitadora; el módulo suele incorporar componentes de protección, pero verifícalo.",
+    "family": "digital"
+  },
+  "botonazul": {
+    "title": "Entrada digital",
+    "target": "Pulsador azul",
+    "voltage": "3,3 V",
+    "rows": [
+      {
+        "label": "S / OUT",
+        "pin": "P1 · entrada digital",
+        "purpose": "estado pulsado/libre"
+      },
+      {
+        "label": "V",
+        "pin": "3,3 V si necesita",
+        "purpose": "alimentación"
+      },
+      {
+        "label": "G",
+        "pin": "GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Activa pull-up/pull-down según el circuito del módulo. Comprueba si al pulsar se lee 0 o 1 y añade antirrebote.",
+    "family": "digital"
+  },
+  "botonamarillo": {
+    "title": "Entrada digital",
+    "target": "Pulsador amarillo",
+    "voltage": "3,3 V",
+    "rows": [
+      {
+        "label": "S / OUT",
+        "pin": "P1 · entrada digital",
+        "purpose": "estado pulsado/libre"
+      },
+      {
+        "label": "V",
+        "pin": "3,3 V si necesita",
+        "purpose": "alimentación"
+      },
+      {
+        "label": "G",
+        "pin": "GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Prueba pulsación suelta, mantenida y antirrebote. No confundas el pulsador externo con el botón A/B integrado en la micro:bit.",
+    "family": "digital"
+  },
+  "color": {
+    "title": "Bus I²C · confirmar controlador",
+    "target": "Sensor de color",
+    "voltage": "3,3 V si el breakout lo admite",
+    "rows": [
+      {
+        "label": "SDA",
+        "pin": "P20 · SDA",
+        "purpose": "datos I²C"
+      },
+      {
+        "label": "SCL",
+        "pin": "P19 · SCL",
+        "purpose": "reloj I²C"
+      },
+      {
+        "label": "VCC",
+        "pin": "3,3 V compatible",
+        "purpose": "alimentación"
+      },
+      {
+        "label": "GND",
+        "pin": "GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "En el modelo habitual TCS34725 se usa I²C, pero confirma referencia, dirección y niveles de los pull-ups de la placa real. El código de demostración no lee todavía el sensor.",
+    "family": "i2c"
+  },
+  "presion": {
+    "title": "Bus I²C · confirmar chip",
+    "target": "Barómetro BMP280 (si corresponde)",
+    "voltage": "3,3 V salvo módulo preparado para otra tensión",
+    "rows": [
+      {
+        "label": "SDA",
+        "pin": "P20 · SDA",
+        "purpose": "datos I²C"
+      },
+      {
+        "label": "SCL / SCK",
+        "pin": "P19 · SCL",
+        "purpose": "reloj I²C"
+      },
+      {
+        "label": "VCC",
+        "pin": "3,3 V compatible",
+        "purpose": "alimentación"
+      },
+      {
+        "label": "GND",
+        "pin": "GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Verifica que es BMP280, no otro modelo, y que la placa está configurada en I²C. No confundir valores de ejemplo con lecturas reales.",
+    "family": "i2c"
+  },
+  "luz": {
+    "title": "Lectura analógica",
+    "target": "Sensor de luz",
+    "voltage": "3,3 V si compatible",
+    "rows": [
+      {
+        "label": "AO / S",
+        "pin": "P1 · analógico",
+        "purpose": "nivel luminoso"
+      },
+      {
+        "label": "V",
+        "pin": "3,3 V",
+        "purpose": "alimentación"
+      },
+      {
+        "label": "G",
+        "pin": "GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Si tu placa solo tiene DO, usa lectura digital en lugar de analogReadPin. Anota valores medidos antes de fijar umbrales.",
+    "family": "analog"
+  },
+  "lm35": {
+    "title": "Tensión analógica",
+    "target": "LM35",
+    "voltage": "Alimentación según especificación; a menudo 5 V",
+    "rows": [
+      {
+        "label": "OUT / S",
+        "pin": "P1 · analógico",
+        "purpose": "salida LM35 ≤3,3 V"
+      },
+      {
+        "label": "VCC",
+        "pin": "5 V si requiere",
+        "purpose": "alimentación"
+      },
+      {
+        "label": "GND",
+        "pin": "GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "El LM35 clásico necesita típicamente al menos 4 V, por eso no debe asumirse una alimentación a 3,3 V. Su salida representa 10 mV/°C. Verifica módulo y tensión con instrumental.",
+    "family": "analog"
+  },
+  "inclinacion": {
+    "title": "Entrada digital",
+    "target": "Sensor de inclinación",
+    "voltage": "3,3 V si compatible",
+    "rows": [
+      {
+        "label": "S",
+        "pin": "P1 · entrada",
+        "purpose": "estado inclinado"
+      },
+      {
+        "label": "V",
+        "pin": "3,3 V",
+        "purpose": "alimentación"
+      },
+      {
+        "label": "G",
+        "pin": "GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Comprueba orientación y lógica 0/1. Añade un pequeño retardo para evitar falsas detecciones por rebote.",
+    "family": "digital"
+  },
+  "infrarrojo": {
+    "title": "Entrada digital",
+    "target": "Detector de obstáculos IR",
+    "voltage": "3,3 V si compatible",
+    "rows": [
+      {
+        "label": "S / DO",
+        "pin": "P1 · entrada",
+        "purpose": "detección"
+      },
+      {
+        "label": "V",
+        "pin": "3,3 V",
+        "purpose": "alimentación"
+      },
+      {
+        "label": "G",
+        "pin": "GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Ajusta el potenciómetro y prueba superficies claras y oscuras. Comprueba si detectar equivale a 0 o 1.",
+    "family": "digital"
+  },
+  "humedad": {
+    "title": "Entrada analógica / digital",
+    "target": "Humedad del suelo",
+    "voltage": "3,3 V si módulo compatible",
+    "rows": [
+      {
+        "label": "AO / S",
+        "pin": "P1 · analógico",
+        "purpose": "humedad relativa"
+      },
+      {
+        "label": "DO opcional",
+        "pin": "P2 · digital",
+        "purpose": "umbral, si existe"
+      },
+      {
+        "label": "VCC",
+        "pin": "3,3 V",
+        "purpose": "alimentación"
+      },
+      {
+        "label": "GND",
+        "pin": "GND",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Algunos módulos usan solo S/V/G. Calibra en seco y húmedo; no sumerjas conexiones ni componentes de la shield.",
+    "family": "analog"
+  },
+  "motorcc": {
+    "title": "Potencia externa",
+    "target": "Motor de CC amarillo",
+    "voltage": "Fuente adecuada según motor",
+    "rows": [
+      {
+        "label": "Motor A+ / A-",
+        "pin": "OUT1 / OUT2 de L298N",
+        "purpose": "cables del motor"
+      },
+      {
+        "label": "ENA / IN1 / IN2",
+        "pin": "Shield P0 / P1 / P2",
+        "purpose": "control L298N"
+      },
+      {
+        "label": "Potencia",
+        "pin": "fuente externa",
+        "purpose": "alimentación motor"
+      },
+      {
+        "label": "GND",
+        "pin": "Shield y driver común",
+        "purpose": "referencia"
+      }
+    ],
+    "safety": "Nunca conectes el motor directamente a P1 o a V de la shield. Necesita controlador L298N y fuente de potencia adecuada.",
+    "family": "power"
+  },
+  "lcd": {
+    "title": "I²C · adaptación lógica",
+    "target": "LCD1602 con interfaz I²C",
+    "voltage": "Módulo habitual 5 V",
+    "rows": [
+      {
+        "label": "SDA",
+        "pin": "P20 mediante adaptador I²C",
+        "purpose": "datos 3,3 V ↔ 5 V"
+      },
+      {
+        "label": "SCL",
+        "pin": "P19 mediante adaptador I²C",
+        "purpose": "reloj 3,3 V ↔ 5 V"
+      },
+      {
+        "label": "VCC",
+        "pin": "5 V, si módulo lo requiere",
+        "purpose": "alimentación LCD"
+      },
+      {
+        "label": "GND",
+        "pin": "GND común",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Muchos LCD1602 con PCF8574 incluyen resistencias pull-up a 5 V: no conectes SDA/SCL directamente a micro:bit sin confirmar compatibilidad o usar conversor bidireccional.",
+    "family": "level"
+  },
+  "bomba": {
+    "title": "Potencia / agua",
+    "target": "Minibomba CC 3–5 V",
+    "voltage": "Fuente externa, nunca desde GPIO",
+    "rows": [
+      {
+        "label": "S / mando",
+        "pin": "P1 al transistor/driver",
+        "purpose": "control lógico"
+      },
+      {
+        "label": "Bomba + / -",
+        "pin": "driver + fuente 3–5 V",
+        "purpose": "potencia"
+      },
+      {
+        "label": "GND",
+        "pin": "masa común driver/Shield",
+        "purpose": "referencia"
+      },
+      {
+        "label": "Diodo",
+        "pin": "en paralelo con bobina",
+        "purpose": "protección según driver"
+      }
+    ],
+    "safety": "Usa MOSFET/relé y alimentación externa. No conectes motor o bomba al pin. Mantén toda el agua lejos de micro:bit, shield, batería y conectores.",
+    "family": "power"
+  },
+  "servo360": {
+    "title": "PWM de servo",
+    "target": "Servo de giro continuo 360°",
+    "voltage": "Fuente externa 4,8–6 V",
+    "rows": [
+      {
+        "label": "S / señal",
+        "pin": "P1 · control PWM",
+        "purpose": "velocidad/sentido"
+      },
+      {
+        "label": "V / rojo",
+        "pin": "5 V externo",
+        "purpose": "alimentación servo"
+      },
+      {
+        "label": "G / marrón",
+        "pin": "GND compartida",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Un servo 360° no se controla por ángulo: la duración del pulso gobierna velocidad/dirección, y el neutro requiere calibración. No alimentes servos desde el GPIO.",
+    "family": "servo"
+  },
+  "servo180": {
+    "title": "PWM de servo",
+    "target": "Servo estándar 180°",
+    "voltage": "Fuente externa 4,8–6 V",
+    "rows": [
+      {
+        "label": "S / señal",
+        "pin": "P1 · servo PWM",
+        "purpose": "ángulo solicitado"
+      },
+      {
+        "label": "V / rojo",
+        "pin": "5 V externo",
+        "purpose": "alimentación servo"
+      },
+      {
+        "label": "G / marrón",
+        "pin": "GND compartida",
+        "purpose": "masa"
+      }
+    ],
+    "safety": "Prueba primero posiciones 90°, 45° y 135° sin forzar el mecanismo. No alimentes el servo desde un pin de micro:bit.",
+    "family": "servo"
+  }
+}

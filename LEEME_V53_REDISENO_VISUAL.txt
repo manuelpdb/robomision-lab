@@ -1,0 +1,20 @@
+ROBOMISIÓN LAB v53 — IDENTIDAD VISUAL DIFERENCIADA
+
+Objetivo: renovar la apariencia para que RoboMisión LAB tenga un estilo propio.
+
+Cambios:
+- Identidad con azul noche, turquesa y acentos melocotón.
+- Navegación principal oscura y diferenciada con el icono del robot y el logo del CEP.
+- Portada con nuevo tratamiento visual de botones, cifras y tarjetas.
+- Laboratorios, ruta y primeros pasos con cabeceras destacadas y tarjetas.
+- Estilo visual armonizado en glosario, seguridad, proyectos, créditos, misiones y TA647.
+- Adaptación a móvil; sin cambios en los algoritmos ni recursos didácticos.
+
+Para instalar:
+1. Descomprime la actualización.
+2. Entra en la subcarpeta robomision-lab y copia su CONTENIDO dentro de tu repositorio, donde está index.html.
+3. Confirma la sustitución de los archivos .html y añade assets/identidad-v53.css.
+4. En GitHub Desktop: Commit to main → Push origin.
+5. Abre tu web y utiliza Ctrl+F5 si el navegador conserva una versión antigua.
+
+Nota: vistas de verificación revisadas con estilos y HTML; el funcionamiento de cada simulador debe comprobarse con el hardware o el navegador de aula cuando corresponda.

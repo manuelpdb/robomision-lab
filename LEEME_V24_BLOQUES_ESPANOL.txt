@@ -1,0 +1,24 @@
+ROBOMISIÓN LAB — v24 · Bloques en español
+
+QUÉ CAMBIA
+- El renderizador de bloques de MakeCode usa el idioma es-ES.
+- La extensión Maqueen Plus V2 también dispone de traducciones es-es.
+- Si alguna etiqueta conocida llega en inglés, se adapta SOLO el texto de la imagen SVG generada por MakeCode, sin alterar la lógica ni el código.
+- El botón Abrir MakeCode apunta al editor con idioma español.
+- Se actualizan las referencias de versión de los scripts para evitar cargar un archivo antiguo de la caché.
+
+LIMITACIONES
+- No hemos podido consultar ni verificar el servicio de MakeCode en línea desde este entorno.
+- Algunas etiquetas de extensiones de terceros podrían no estar traducidas; no se debe modificar el código JavaScript para traducirlo.
+- Las imágenes se solicitan a MakeCode y no están incrustadas localmente.
+
+ACTUALIZACIÓN EN GITHUB DESKTOP
+1. Descomprime el ZIP pequeño.
+2. Copia el CONTENIDO de la carpeta robomision-lab en tu repositorio local, respetando assets/.
+3. Sustituye los archivos anteriores.
+4. En GitHub Desktop, Commit to main > Push origin.
+5. Abre la página e inténtalo otra vez (Ctrl+F5 si ves la versión anterior).
+
+COMPROBACIÓN
+- En Maqueen y en TA647, los nuevos paneles indican «Bloques reales de MakeCode · español».
+- La página diagnostico-bloques.html también muestra el renderizador actualizado.

@@ -1,0 +1,22 @@
+ROBOMISIÓN LAB V22 — EXTENSIÓN MAQUEEN PLUS V2
+
+ACTUALIZACIÓN
+- En las 16 misiones se añade un aviso que recuerda incorporar la extensión Maqueen Plus V2 a cada proyecto MakeCode.
+- SOLO la misión MQ-01 contiene los seis pasos de instalación de la extensión, con el enlace oficial:
+  https://github.com/DFRobot/pxt-DFRobot_MaqueenPlus_v20
+- El aviso aclara que una segunda micro:bit usada exclusivamente como emisor de radio no necesita la extensión.
+- Se mantienen los programas, imágenes de bloques, fichas y retos existentes.
+
+INSTALACIÓN EN GITHUB DESKTOP
+1. Descomprime el ZIP de ACTUALIZACIÓN.
+2. Copia su contenido respetando la estructura (la carpeta assets queda dentro del repositorio).
+3. Sustituye los archivos existentes.
+4. En GitHub Desktop pulsa Commit to main y luego Push origin.
+5. Comprueba la etiqueta V22 en https://manuelpdb.github.io/robomision-lab/maqueen-plus.html
+
+ARCHIVOS MODIFICADOS
+- maqueen-plus.html
+- assets/maqueen-v9-detail.js
+- assets/maqueen-v9.css
+
+NOTA: La web completa se ha construido partiendo de RoboMisión LAB V21.

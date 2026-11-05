@@ -1,0 +1,6 @@
+Actualización v58
+
+- Rediseño completo del glosario con estilo propio de RoboMisión LAB.
+- Estructura por tarjetas y categorías.
+- Buscador en vivo y filtros por áreas.
+- Revisión de términos: se añaden conceptos útiles (algoritmo, depurar, relé, servo, voltaje...) y se eliminan definiciones demasiado técnicas o repetitivas.

@@ -1,0 +1,16 @@
+ROBOMISIÓN LAB v43 — IMÁGENES DE PROYECTOS MÁS VISIBLES
+
+CAMBIOS
+- Las 12 tarjetas del catálogo proyectos-pro.html muestran imágenes grandes (formato 4:3).
+- Los 7 proyectos de maquetas ilustradas usan las imágenes generadas en v42.
+- Cada guía proyecto-guia.html muestra una fotografía mayor y su texto explicativo.
+- La sección «Construcción paso a paso» muestra también una imagen grande de referencia.
+- Las imágenes de maquetas son orientativas, NO esquemas eléctricos. Para conectar los componentes consulta las instrucciones y verifica el hardware real.
+- Se modifican solo los archivos de proyectos: el resto de las prácticas queda intacto.
+
+PARA ACTUALIZAR GITHUB DESKTOP
+1. Descomprime el ZIP ACTUALIZACION.
+2. Copia el contenido de la carpeta robomision-lab encima de tu repositorio local, donde está index.html.
+3. Sustituye los archivos cuando se pregunte.
+4. En GitHub Desktop: Commit to main > Push origin.
+5. Recarga proyectos-pro.html con Ctrl+F5.

@@ -1,0 +1,30 @@
+ROBOMISIÓN LAB · V35 · ACTIVIDADES TA647
+
+CAMBIOS
+- Revisión de las 156 actividades de los 26 componentes del kit ACEBOTT TA647.
+- Cada actividad incluye acción concreta, algoritmo específico de MakeCode y prueba observable.
+- Se han sustituido los pasos genéricos repetidos de la anterior versión.
+- Motor de corriente continua y L298N: fotografía de materiales, esquema de control y potencia, tabla de pines y advertencias de alimentación.
+- Dos programas de arranque para motor/L298N: giro corto con cancelación y comparación de PWM.
+- Las actividades que necesitan un segundo motor o una extensión se identifican como condicionadas o de diseño.
+- Las actividades de la bomba y la Shield mantienen la guía especial de seguridad v34 y añaden un resumen específico de acción, programa y prueba.
+- Los ejemplos A/B son programas de apoyo, no soluciones completas automáticas de todas las actividades.
+
+INSTALACIÓN SOBRE TU REPOSITORIO GITHUB DESKTOP
+1. Descomprime el ZIP de actualización.
+2. Copia el CONTENIDO de la carpeta robomision-lab dentro de la carpeta principal del repositorio local (donde está index.html).
+3. Sustituye practicas-ta647.html y añade los nuevos archivos de assets.
+4. Haz Commit to main y después Push origin.
+5. Abre practicas-ta647.html?pieza=motorcc&actividad=1 y comprueba la etiqueta EDICIÓN V35.
+
+ARCHIVOS REVISADOS
+- practicas-ta647.html
+- assets/cableado-actividades-v35.js
+- assets/equipos-v35.js
+- assets/ta647-itinerarios-v35.js
+- assets/ta647-motor-ejemplos-v35.js
+- assets/ta647-claridad-v35.css
+- assets/ta647-motor-circuito-v35.svg
+
+LIMITACIONES
+Las comprobaciones han sido de datos, sintaxis y referencias locales. No se han validado físicamente los circuitos ni la generación de imágenes externas del motor MakeCode; el navegador de pruebas bloqueó la apertura local. La fuente externa, la corriente, la lógica de alimentación del L298N y su jumper ENA deben verificarse en cada equipo real antes de alimentarlo. Nunca conectes un motor directamente a un pin de la micro:bit ni alimentes cargas desde la Shield sin comprobar las especificaciones.

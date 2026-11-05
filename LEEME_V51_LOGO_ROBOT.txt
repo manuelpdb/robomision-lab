@@ -1,0 +1,14 @@
+ROBOMISIÓN LAB · V51 — ICONO DEL ROBOT EN TODAS LAS CABECERAS
+
+Qué se ha corregido
+- Sustitución del icono antiguo de matriz LED por el robot 🤖 en las 26 páginas que todavía lo utilizaban.
+- Las 41 páginas con cabecera mantienen ahora el mismo símbolo de RoboMisión LAB.
+- Las dos fichas de impresión independientes no tienen cabecera y no necesitan cambios de icono.
+- Se ha actualizado la hoja de estilos compartida y su versión de caché para evitar que el navegador muestre la imagen antigua.
+- No se modifican las matrices LED funcionales dentro de laboratorios, ni los programas, actividades o retos.
+
+Instalación con GitHub Desktop
+1. Descomprime el ZIP de actualización.
+2. Abre la carpeta robomision-lab del ZIP y copia su contenido en la raíz del repositorio local, sustituyendo los archivos indicados.
+3. En GitHub Desktop: Commit to main y Push origin.
+4. Tras publicar, recarga tu página con Ctrl+F5 si queda algún recurso antiguo en caché.

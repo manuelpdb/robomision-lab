@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" role="img" aria-labelledby="t d">
+<title id="t">Conexión segura del motor CC mediante controlador L298N y Shield micro:bit</title>
+<desc id="d">La micro:bit se introduce sin cables en el zócalo de la Shield. Shield P0 a ENA, P1 a IN1, P2 a IN2, GND común al L298N. La fuente de potencia externa alimenta VM y GND del controlador; OUT1 y OUT2 se conectan al motor. Verificar alimentación lógica del L298N, tensión del motor y retirar puente ENA antes del control PWM.</desc>
+<rect width="1100" height="620" rx="24" fill="#f6faf8"/>
+<text x="45" y="46" font-family="Arial,sans-serif" font-weight="700" font-size="24" fill="#143b4a">Motor CC + L298N + Shield: dos funciones distintas</text>
+<text x="45" y="76" font-family="Arial,sans-serif" font-size="17" fill="#44616a">Control (líneas verdes) y energía del motor (líneas naranjas y rojas)</text>
+<rect x="40" y="117" width="290" height="340" rx="20" fill="#173e50"/>
+<text x="62" y="150" font-family="Arial,sans-serif" font-weight="700" font-size="22" fill="#fff">micro:bit + Shield</text>
+<text x="62" y="176" font-family="Arial,sans-serif" font-size="15" fill="#bdebd6">micro:bit encajada en su zócalo</text>
+<rect x="70" y="200" width="230" height="68" rx="12" fill="#285f6a" stroke="#90d9b5" stroke-width="2"/>
+<text x="85" y="242" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff">Sin cable entre placas</text>
+<g font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#fff">
+<text x="66" y="312">P0 (S) — ENA</text><text x="66" y="347">P1 (S) — IN1</text><text x="66" y="382">P2 (S) — IN2</text><text x="66" y="417">GND — GND</text></g>
+<rect x="436" y="117" width="280" height="340" rx="20" fill="#e9f4ef" stroke="#8fbaa9" stroke-width="3"/>
+<text x="456" y="152" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#184a42">Controlador L298N</text>
+<text x="456" y="176" font-family="Arial,sans-serif" font-size="15" fill="#456e65">Puente H: no es la Shield</text>
+<g font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#244f47"><text x="456" y="312">ENA</text><text x="456" y="347">IN1</text><text x="456" y="382">IN2</text><text x="456" y="417">GND</text></g>
+<g stroke="#0c987a" stroke-width="5" fill="none" stroke-linecap="round"><path d="M315 306 H445"/><path d="M315 341 H445"/><path d="M315 376 H445"/><path d="M315 411 H445"/></g>
+<g fill="#0c987a"><path d="M445 306 l-12 -7 v14z"/><path d="M445 341 l-12 -7 v14z"/><path d="M445 376 l-12 -7 v14z"/><path d="M445 411 l-12 -7 v14z"/></g>
+<g font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#184a42"><text x="619" y="237">OUT1</text><text x="619" y="277">OUT2</text></g>
+<path d="M683 231 H765" stroke="#ea9c2f" stroke-width="6" stroke-linecap="round"/><path d="M683 271 H765" stroke="#ea9c2f" stroke-width="6" stroke-linecap="round"/>
+<rect x="769" y="173" width="277" height="142" rx="17" fill="#fff2db" stroke="#e8bc78" stroke-width="3"/>
+<text x="793" y="211" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#7c4f0a">Motor CC amarillo</text>
+<text x="793" y="244" font-family="Arial,sans-serif" font-size="17" fill="#7c4f0a">Sus 2 cables van a OUT1 / OUT2</text>
+<text x="793" y="273" font-family="Arial,sans-serif" font-size="17" fill="#7c4f0a">No se conecta a P0, P1 ni V</text>
+<rect x="769" y="354" width="277" height="129" rx="17" fill="#fff4f1" stroke="#edb4aa" stroke-width="3"/>
+<text x="791" y="392" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#a13b30">Fuente externa del motor</text>
+<text x="791" y="422" font-family="Arial,sans-serif" font-size="17" fill="#943b31">+ hacia VM/Vs del L298N</text>
+<text x="791" y="450" font-family="Arial,sans-serif" font-size="17" fill="#943b31">− hacia GND del L298N</text>
+<path d="M769 398 H737 V442 H713" fill="none" stroke="#d96b42" stroke-width="5" stroke-linecap="round"/>
+<path d="M769 451 H746 V470 H701 V416" fill="none" stroke="#6a6660" stroke-width="5" stroke-linecap="round"/>
+<text x="609" y="445" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#a54e32">VM/Vs (+)</text>
+<text x="605" y="407" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#575959">GND (−)</text>
+<rect x="40" y="500" width="1006" height="92" rx="17" fill="#fff2df" stroke="#dbaa64" stroke-width="2"/>
+<text x="62" y="533" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#754911">Antes de encender: comprobación docente</text>
+<text x="62" y="562" font-family="Arial,sans-serif" font-size="16" fill="#70480e">Verificar tensión y corriente del motor, alimentación lógica 5 V del L298N, masa común, jumper ENA y fuente apropiada.</text>
+<text x="62" y="584" font-family="Arial,sans-serif" font-size="14" fill="#7f6033">No conectar el pin 5V del L298N a la Shield sin identificar su función real de entrada/salida según el jumper.</text>
+</svg>

@@ -1,0 +1,35 @@
+ROBOMISIÓN LAB · EDICIÓN KIT TA647 + MAQUEEN PLUS
+==================================================
+
+CÓMO ABRIR
+1. Descomprime el ZIP.
+2. Abre index.html en Chrome, Edge o Safari.
+3. Para publicarlo: sube TODO el contenido de esta carpeta (NO solo el ZIP) a la raíz del repositorio GitHub Pages.
+
+NUEVAS SECCIONES
+- equipos.html: portada centrada en el equipamiento real.
+- sensores-ta647.html: inventario visual con los 30 tipos de piezas que muestra la imagen facilitada.
+- practicas-ta647.html: 3 retos por pieza, 90 en total, con conexión, pasos y seguridad.
+- maqueen-plus.html: 16 misiones para el robot, algunas con programas oficiales de DFRobot.
+
+TODO LO ANTERIOR SE CONSERVA
+- 72 misiones generales, imágenes de bloques ilustradas, 19 laboratorios 3D, 8 simuladores, progreso y zona docente.
+
+IMÁGENES
+- assets/equipos/ta647-foto-original.png: inventario aportado.
+- assets/equipos/maqueen-foto-real.jpg: fotografía aportada del robot.
+- assets/equipos/*.png: recortes de cada casilla de la fotografía original. Las imágenes son fotos reales del inventario, no nuevas fotografías del producto ni capturas verificadas de MakeCode.
+- assets/makecode: imágenes ilustradas originales de la edición previa.
+
+LIMITACIONES Y SEGURIDAD
+El enlace de Dropbox del TA647 se incluye para consulta, pero su PDF no se pudo descargar o examinar completamente desde el entorno de trabajo. Los pines, direcciones I2C y tensiones dependen de la variante de cada módulo; las conexiones descritas son orientativas, no un cableado confirmado con el PDF.
+No conectar directamente 5 V a entradas de micro:bit de 3,3 V. Motores, servos, relés y bomba exigen alimentación y etapa de control adecuadas. Evitar tensión de red y agua cerca de componentes eléctricos. El robot Maqueen Plus puede tener diferentes revisiones; comprobar modelo/serigrafía antes de instalar extensión.
+
+FUENTES
+- Tutorial oficial del TA647: https://acebott.com/tutorial/ (fichero enlazado en Dropbox).
+- Maqueen Plus V2: https://wiki.dfrobot.com/mbt0021-en/
+- Extensión: https://github.com/DFRobot/pxt-DFRobot_MaqueenPlus_v20
+- MakeCode: https://makecode.microbit.org/
+
+CRÉDITOS
+Conservados los créditos de la web original en creditos.html y LICENCIAS.txt.

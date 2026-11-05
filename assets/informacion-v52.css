@@ -1,0 +1,147 @@
+/* RoboMisión LAB v52 · Seguridad y Glosario con estética común */
+.info52-page{padding-top:22px;padding-bottom:70px;background:#f4f8f6;color:#1d3547;}
+.info52-page>.marco{width:min(1240px,calc(100% - 36px));max-width:1240px;}
+.info52-page .info52-hero{
+  display:block;
+  margin:0 0 24px;
+  padding:clamp(27px,4.2vw,55px);
+  border-radius:24px;
+  background:linear-gradient(128deg,#14283e 0%,#164a45 100%);
+  color:#fff;
+  border:1px solid #335a60;
+  box-shadow:0 10px 25px rgba(22,62,62,.12);
+}
+.info52-page .info52-kicker{
+  font-size:11px;
+  line-height:1.35;
+  font-weight:900;
+  letter-spacing:1.8px;
+  text-transform:uppercase;
+  color:#b3f3d5;
+  margin:0 0 14px;
+}
+.info52-page .info52-hero h1{
+  font-size:clamp(31px,4.3vw,51px);
+  letter-spacing:-1.2px;
+  line-height:1.1;
+  color:#fff;
+  margin:0 0 17px;
+}
+.info52-page .info52-hero .entradilla{
+  color:#d5e7e9;
+  transform:none;
+  font-size:clamp(15px,1.45vw,18px);
+  line-height:1.65;
+  margin:0;
+  max-width:780px;
+}
+.info52-page .info52-hero .dato-fuente{color:#c4dddd;font-size:12px;line-height:1.65;margin:19px 0 0;}
+.info52-page .info52-hero a{color:#b2f4da;text-decoration:underline;text-underline-offset:3px;}
+.info52-page .bloque{
+  margin:0 0 16px;
+  padding:clamp(20px,3vw,32px);
+  background:#fff;
+  border:1px solid #dce8e2;
+  border-radius:18px;
+  box-shadow:0 4px 16px rgba(17,56,60,.045);
+}
+.info52-page .bloque+.bloque{margin-top:16px;}
+.info52-page .bloque h2{font-size:clamp(21px,2.4vw,28px);color:#152c41;line-height:1.25;margin:0 0 14px;letter-spacing:-.45px;}
+.info52-page .bloque h3{font-size:17px;color:#184b45;}
+.info52-page .bloque p,.info52-page .bloque li{line-height:1.72;color:#405c6b;}
+.info52-page .bloque a,.info52-page .glosario a{color:#0a826a;font-weight:700;text-underline-offset:2px;}
+.info52-page .bloque .medida{max-width:none;}
+.info52-page .dos-col{gap:16px 26px;}
+.info52-page .nota{
+  border:1px solid #d0e8df;
+  border-left:4px solid #20a17d;
+  border-radius:10px;
+  background:#edf8f2;
+  padding:18px;
+  max-width:none;
+}
+.info52-page .nota p{margin:8px 0 0;}
+.info52-page .tabla-envoltura{border:1px solid #dbe7e1;border-radius:12px;overflow-x:auto;}
+.info52-page .tabla-envoltura th{color:#164b43;background:#e9f6f0;font-size:13px;}
+.info52-page .tabla-envoltura td{background:#fff;color:#3d5564;line-height:1.65;}
+.info52-page .lista-pasos{max-width:none;gap:15px;}
+.info52-page .lista-pasos>li::before{background:#dcf6e8;border:1px solid #9cdebe;color:#0c6c53;border-radius:10px;}
+.info52-page .lista-pasos>li{align-items:start;color:#425e6b;}
+.info52-page .indice-letras{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:7px;
+  margin:0 0 21px;
+  padding:18px;
+  border:1px solid #dce8e3;
+  border-radius:17px;
+  background:#fff;
+}
+.info52-page .indice-letras a{
+  display:inline-grid;
+  place-items:center;
+  min-width:40px;
+  min-height:38px;
+  padding:7px;
+  border-radius:10px;
+  border:1px solid #cce4d9;
+  background:#eff9f3;
+  color:#136e55;
+  text-decoration:none;
+  font-weight:900;
+  font-size:14px;
+}
+.info52-page .indice-letras a:hover,.info52-page .indice-letras a:focus-visible{background:#c8f3de;border-color:#78cba6;outline-offset:2px;}
+.info52-page .glosario{
+  display:grid;
+  grid-template-columns:1fr;
+  max-width:none;
+  width:100%;
+  gap:0;
+  margin:0;
+}
+.info52-page .glosario dt{
+  padding:17px 20px 5px;
+  font-size:18px;
+  font-weight:850;
+  line-height:1.4;
+  background:#fff;
+  border:1px solid #dce8e2;
+  border-bottom:0;
+  border-radius:13px 13px 0 0;
+  color:#143b43;
+}
+.info52-page .glosario dd{
+  max-width:none;
+  margin:0 0 12px;
+  padding:0 20px 17px;
+  line-height:1.7;
+  background:#fff;
+  border:1px solid #dce8e2;
+  border-top:0;
+  border-radius:0 0 13px 13px;
+  color:#405c69;
+}
+.info52-page .glosario dd small{margin-top:8px;color:#687f86;font-size:12px;line-height:1.6;}
+.info52-page .glosario dt:target{scroll-margin-top:130px;background:#e8f9f1;}
+@media(max-width:700px){
+  .info52-page>.marco{width:calc(100% - 26px);padding-left:0;padding-right:0;}
+  .info52-page{padding-top:14px;}
+  .info52-page .info52-hero{padding:25px 20px;border-radius:17px;}
+  .info52-page .bloque{padding:19px;border-radius:14px;}
+  .info52-page .dos-col{grid-template-columns:1fr;}
+  .info52-page .glosario dt{padding:14px 15px 5px;font-size:16px;}
+  .info52-page .glosario dd{padding:0 15px 15px;font-size:14px;}
+  .info52-page .indice-letras{padding:12px;gap:5px;}
+  .info52-page .indice-letras a{min-width:34px;min-height:34px;}
+}
+@media print{
+  .info52-page{background:#fff!important;color:#111!important;padding:0!important;}
+  .info52-page .info52-hero{background:#fff!important;border:1px solid #999;color:#111!important;box-shadow:none;}
+  .info52-page .info52-hero h1,.info52-page .info52-hero .entradilla{color:#111!important;}
+  .info52-page .info52-kicker{color:#333!important;}
+  .info52-page .bloque{break-inside:avoid;box-shadow:none;border:1px solid #ddd;}
+  .info52-page .indice-letras{display:none;}
+  .info52-page .glosario dt,.info52-page .glosario dd{break-inside:avoid;}
+}

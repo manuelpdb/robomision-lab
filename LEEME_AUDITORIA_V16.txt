@@ -1,0 +1,37 @@
+ROBOMISIÓN LAB — V16 · AUDITORÍA GENERAL DE BLOQUES MAKECODE
+
+¿QUÉ SE HA CAMBIADO?
+- Un único motor de renderización oficial de Microsoft MakeCode para ejemplos de programación.
+- 72 misiones de programación: bloque real primero; esquemas antiguos identificados como orientativos.
+- 26 componentes ACEBOTT TA647: dos programas por componente con bloques generados en línea.
+- 16 misiones Maqueen Plus: dos programas por misión y corrección de llamadas a la biblioteca DFRobot V2.
+- 12 proyectos STEAM: dos ejemplos por proyecto y el mismo motor de renderizado.
+- 19 laboratorios originales: panel para obtener bloques oficiales del código del laboratorio. Haz clic en "Copiar JavaScript" y luego en "Ver bloques oficiales"; si se solicita, pega el programa.
+- Nueva página "diagnostico-bloques.html": comprueba micro:bit y Maqueen con el servicio oficial.
+- Mensajes de error y botón Reintentar. El código exacto permanece disponible si falla el servicio.
+
+LIMITACIÓN IMPORTANTE
+Las imágenes reales se crean al abrir la web con Internet. En este paquete NO se incluyen SVG oficiales descargados porque el entorno usado para elaborar la actualización no tuvo acceso directo al servidor renderizador de MakeCode. No se presentan imitaciones como imágenes oficiales. Las imágenes orientativas conservadas en la web se identifican como tales.
+
+VERIFICACIONES REALIZADAS
+- 180 fragmentos de código (72 misiones + 52 TA647 + 32 Maqueen + 24 proyectos): sintaxis JavaScript comprobada.
+- Correspondencia de nombres de la extensión DFRobot Maqueen Plus V2 revisada documentalmente; por ejemplo, controlLED, MyEnumLed y controlMotorStop.
+- Navegación interna de los HTML comprobada automáticamente.
+- Pruebas de interacción locales en 16 fichas Maqueen y 26 TA647: paneles de bloques visibles.
+- Pruebas de las páginas principales con scripts ejecutados localmente.
+- NO se han compilado todos los programas en MakeCode, ni ensayado en las placas físicas.
+- NO se ha verificado la respuesta del servicio de MakeCode desde el entorno de creación.
+
+CÓMO ACTUALIZAR GITHUB DESKTOP
+1. Descomprime el ZIP de actualización.
+2. Copia el contenido de la carpeta "robomision-lab" sobre la raíz de tu repositorio local (NO copies esa carpeta como una carpeta adicional).
+3. Sustituye los archivos existentes.
+4. Abre GitHub Desktop: Changes → Commit to main → Push origin.
+5. Cuando se actualice GitHub Pages, visita:
+   https://manuelpdb.github.io/robomision-lab/diagnostico-bloques.html
+6. Prueba luego "Maqueen Plus", "Prácticas TA647", "Misiones" y "Proyectos".
+
+Documentación del sistema oficial:
+https://makecode.microbit.org/blocks-embed
+Biblioteca oficial DFRobot Maqueen Plus V2:
+https://github.com/DFRobot/pxt-DFRobot_MaqueenPlus_v20

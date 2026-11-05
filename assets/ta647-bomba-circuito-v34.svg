@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 635" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Montaje didáctico de bomba y relé: circuito de control independiente de alimentación</title>
+<desc id="desc">Arriba: micro:bit insertada en Shield, señal P1 o P2 a la entrada IN del relé y masas según el modelo; alimentación de la bobina del relé comprobada por el docente. Abajo: la fuente externa de 3 a 5 voltios alimenta la bomba mediante los contactos COM y NO. Diodo protector en los terminales de la bomba. Nunca alimentar la bomba desde la Shield.</desc>
+<style>
+ .title{font:800 28px system-ui,Arial,sans-serif;fill:#18374a}.sub{font:600 16px system-ui,Arial,sans-serif;fill:#4a6570}.n{font:800 20px system-ui,Arial,sans-serif;fill:white}.t{font:800 18px system-ui,Arial,sans-serif;fill:#15374c}.small{font:600 15px system-ui,Arial,sans-serif;fill:#355764}.lbl{font:800 15px system-ui,Arial,sans-serif;fill:#0b745b}.white{fill:#fff}.box{fill:white;stroke:#b6dacf;stroke-width:2}.note{font:700 16px system-ui,Arial,sans-serif;fill:#72420d}
+</style>
+<rect width="1080" height="635" rx="23" fill="#f7fbf9"/>
+<text x="35" y="48" class="title">1. CONTROL: la micro:bit solo manda una orden</text>
+<text x="35" y="75" class="sub">La micro:bit va insertada en el zócalo de la Shield, SIN cables entre ambas.</text>
+<rect x="38" y="101" width="304" height="178" rx="17" class="box"/><rect x="59" y="122" width="262" height="56" rx="9" fill="#193c52"/>
+<text x="75" y="156" class="n">MICRO:BIT + SHIELD</text><text x="62" y="207" class="t">P1 / P2 (señal S)</text><text x="62" y="234" class="small">G (masa de control)</text><text x="62" y="260" class="small">V: no alimenta la bomba</text>
+<rect x="699" y="101" width="340" height="178" rx="17" class="box"/><rect x="720" y="122" width="298" height="56" rx="9" fill="#184a41"/>
+<text x="738" y="156" class="n">MÓDULO RELÉ</text><text x="724" y="205" class="t">IN · entrada de control</text><text x="724" y="232" class="small">GND · referencia si hace falta</text><text x="724" y="257" class="small">VCC · bobina (verificar tensión)</text>
+<path d="M341 193 H693" stroke="#0a9a77" stroke-width="7" fill="none"/><path d="M693 193 l-20 -12 v24z" fill="#0a9a77"/>
+<rect x="396" y="154" width="260" height="31" rx="8" fill="#e5f7ed"/><text x="414" y="177" class="lbl">Cable Dupont de señal S → IN</text>
+<path d="M341 238 H693" stroke="#3c6079" stroke-width="6" fill="none" stroke-dasharray="10 7"/>
+<text x="404" y="262" class="small">GND común según relé</text>
+<text x="35" y="324" class="title">2. POTENCIA: la bomba recibe corriente de otra fuente</text>
+<text x="35" y="351" class="sub">Contactos del relé COM / NO: actúan como interruptor en el cable positivo.</text>
+<rect x="38" y="378" width="270" height="151" rx="17" class="box"/><text x="58" y="418" class="t">FUENTE EXTERNA CC</text><text x="58" y="454" class="lbl">+3 a +5 V (según bomba)</text><text x="58" y="485" class="small">− negativo</text>
+<rect x="413" y="378" width="237" height="151" rx="17" class="box"/><text x="431" y="418" class="t">CONTACTOS RELÉ</text><text x="431" y="453" class="lbl">COM → NO</text><text x="431" y="485" class="small">NC no se usa</text>
+<rect x="762" y="378" width="280" height="151" rx="17" class="box"/><text x="783" y="418" class="t">BOMBA DE AGUA</text><text x="783" y="453" class="lbl">+ positivo</text><text x="783" y="485" class="small">− negativo</text>
+<path d="M308 449 H406" stroke="#ef5c4f" stroke-width="7" fill="none"/><polygon points="408,449 392,438 392,460" fill="#ef5c4f"/>
+<path d="M650 449 H757" stroke="#ef5c4f" stroke-width="7" fill="none"/><polygon points="759,449 743,438 743,460" fill="#ef5c4f"/>
+<path d="M761 488 V547 H180 V498 H307" stroke="#456782" stroke-width="6" fill="none" stroke-linejoin="round"/>
+<rect x="691" y="548" width="352" height="38" rx="10" fill="#fff0d9" stroke="#ead29e"/>
+<text x="709" y="572" class="note">Diodo en la bomba (lo verifica el docente)</text>
+<text x="35" y="604" class="note">No conectar la bomba a P1 / P2 ni a la alimentación V de la Shield.</text>
+</svg>

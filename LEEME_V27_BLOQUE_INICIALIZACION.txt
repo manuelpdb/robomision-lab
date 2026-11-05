@@ -1,0 +1,17 @@
+RoboMisión LAB v27
+
+Corrección realizada:
+- Se ha sustituido la imagen antigua en inglés del bloque de inicialización de Maqueen.
+- Ahora se muestra un recorte real en español: «inicializar el Maqueen».
+- También se ajusta el texto explicativo en la sección de Maqueen Plus.
+
+Archivos incluidos:
+- maqueen-plus.html
+- assets/maqueen-v9-detail.js
+- assets/maqueen-bloque-inicializacion-real.png
+
+Cómo actualizar:
+1. Sustituye estos archivos en tu repositorio local.
+2. Haz Commit to main.
+3. Haz Push origin.
+4. Recarga la web con Ctrl+F5.

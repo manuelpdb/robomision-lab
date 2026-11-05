@@ -1,0 +1,14 @@
+RoboMisión LAB v45 — Logos reubicados en la portada
+
+CAMBIOS
+- Se han eliminado los tres logos de las cabeceras de todas las páginas.
+- Se muestran solamente en la zona azul oscuro de la portada, sobre la fotografía del robot.
+- Están en una sola fila horizontal, con tamaño reducido y diseño adaptable a móviles.
+- Se mantiene el aviso visible de web en desarrollo en el pie de página.
+
+ACTUALIZAR
+1. Descomprime el ZIP de actualización.
+2. Abre la carpeta robomision-lab de dentro del ZIP.
+3. Copia su contenido sobre la carpeta del repositorio que contiene index.html.
+4. En GitHub Desktop, pulsa Commit to main y después Push origin.
+5. Si ves el diseño antiguo, usa Ctrl + F5.

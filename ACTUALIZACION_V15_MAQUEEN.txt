@@ -1,0 +1,23 @@
+RoboMisión LAB v15 · Maqueen Plus
+
+Cambios realizados:
+- Mejora completa de la página maqueen-plus.html.
+- Las 16 misiones de Maqueen están más explicadas.
+- Cada misión incluye ahora:
+  * objetivo más claro,
+  * pasos de trabajo mejor guiados,
+  * explicación de cómo pensar el programa,
+  * 2 ejemplos con bloques reales de MakeCode.
+- Se añaden scripts para renderizar bloques oficiales de MakeCode con la extensión Maqueen Plus V2.
+
+Archivos modificados:
+- maqueen-plus.html
+- assets/maqueen-v9.css
+- assets/maqueen-v9-detail.js
+- assets/maqueen-v15-examples.js
+- assets/makecode-maqueen-live.js
+
+Cómo actualizar:
+1. Sustituye estos archivos en tu repositorio local.
+2. Haz Commit to main.
+3. Haz Push origin.

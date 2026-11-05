@@ -1,0 +1,24 @@
+ROBOMISIÓN LAB · EDICIÓN V21
+MEJORAS DE LAS FICHAS ACEBOTT TA647
+
+La actualización mejora la página:
+practicas-ta647.html
+
+Novedades:
+- 26 componentes con explicación de funcionamiento y precauciones.
+- 52 ejemplos MakeCode (dos por componente): para qué sirven, qué resultado esperar y explicación de cada instrucción identificada.
+- 156 actividades guiadas (seis por componente): objetivo, pasos, criterios de éxito, montaje específico y reto extra.
+- Identificación explícita de los ejemplos de simulación, como OLED, LCD, sensor de color y presión, cuyos códigos anteriores solo trabajaban con micro:bit y no con el módulo externo.
+- Sigue utilizando el renderizador oficial de Microsoft MakeCode (necesita conexión a Internet) y el zoom de imágenes existente.
+
+ACTUALIZAR EN GITHUB DESKTOP
+1. Descomprime el paquete de actualización.
+2. Abre su carpeta robomision-lab y copia el contenido sobre la raíz de tu repositorio local, sin crear una carpeta robomision-lab anidada.
+3. En GitHub Desktop revisa Changes, pulsa Commit to main y después Push origin.
+4. Abre https://manuelpdb.github.io/robomision-lab/practicas-ta647.html y comprueba la etiqueta EDICIÓN V21.
+
+LIMITACIONES DE VERIFICACIÓN
+- Las 26 fichas se han comprobado localmente con una prueba de interfaz (2 ejemplos y 6 actividades por componente, sin excepciones).
+- El código MakeCode se muestra sin cambios y los SVG siguen solicitándose al servicio oficial en línea; no se han recompilado ni probado los 52 programas en componentes físicos.
+- Para los módulos con controlador I2C específico no se ofrece un programa ficticio: los ejemplos de apoyo se etiquetan como simulación cuando no controlan el módulo.
+- Se debe confirmar la serigrafía, la tensión y el chip real antes de conectar. La micro:bit solo admite señales GPIO de hasta 3,3 V.

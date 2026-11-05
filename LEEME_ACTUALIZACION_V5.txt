@@ -1,0 +1,34 @@
+ROBOMISIÓN LAB · VERSIÓN 5 · COMPONENTES TA647
+
+CAMBIOS
+- En sensores-ta647.html se han retirado la protoboard y los cables Dupont MM, MF y FF.
+- Se muestran 26 componentes con fotografía real procedente del inventario original.
+- Fichas didácticas: 6 actividades distintas por componente (156 en total).
+- 2 programas en JavaScript de MakeCode por componente (52 programas).
+- La web utiliza el renderizador OFICIAL de Microsoft MakeCode para generar
+  las imágenes auténticas de los bloques cuando hay acceso a Internet.
+- Si se abre sin Internet, el código de los ejemplos permanece disponible.
+- Programación con medidas de seguridad, recordatorios de tensiones y pines.
+- La web conserva la ruta Maqueen Plus y las actividades anteriores.
+
+INSTALACIÓN DE WEB COMPLETA
+1) Descomprime el ZIP completo.
+2) Abre la carpeta robomision-lab y copia su contenido a tu repositorio GitHub.
+3) Usa GitHub Desktop: commit + push origin. Si usas la web de GitHub,
+   usa el ZIP de actualización, que contiene menos de 100 archivos.
+4) Revisa https://manuelpdb.github.io/robomision-lab/sensores-ta647.html
+   y https://manuelpdb.github.io/robomision-lab/practicas-ta647.html
+
+BLOQUES OFICIALES MAKECODE
+- Entra a una ficha en GitHub Pages con conexión.
+- El código se envía al motor de MakeCode, que devuelve una imagen SVG auténtica
+  de sus bloques, sin imitaciones dibujadas.
+- Pulsa «Descargar imagen SVG» para guardar los bloques reales generados.
+- Si MakeCode no responde, usa el código y pulsa «Reintentar imágenes reales».
+- Los esquemas de conexión son orientativos, no sustituyen al manual del kit.
+- OLED, LCD y sensores I2C no identificados requieren confirmar controlador,
+  alimentación y extensión específica antes de programar lecturas físicas.
+
+NOTA: La conexión al servidor MakeCode no pudo verificarse en este entorno,
+pero se ha implementado su protocolo de renderizado documentado y se han
+validado localmente la navegación, las 26 fichas, el código y las imágenes del kit.
