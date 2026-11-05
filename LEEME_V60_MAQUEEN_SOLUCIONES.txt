@@ -1,0 +1,20 @@
+ROBOMISIÓN LAB · V60 · MAQUEEN PLUS V2
+
+ACTUALIZACIÓN PARA GITHUB DESKTOP
+1. Copia maqueen-plus.html y los tres archivos nuevos de assets/ en la carpeta de tu repositorio, respetando las rutas.
+2. BORRA del repositorio el antiguo archivo assets/maqueen-v15-examples.js, para que sus programas de ampliación ya no queden publicados. GitHub Desktop mostrará una eliminación además de las altas y modificaciones.
+3. Haz Commit to main y Push origin.
+4. Recarga la página Maqueen Plus con Ctrl+F5 si ves la versión anterior.
+
+NOVEDADES EN LAS 16 MISIONES
+- Un ejemplo guiado por misión, con objetivo, explicación de cada bloque y resultado esperado.
+- Imágenes de bloques AUTÉNTICOS solicitadas en línea al motor de Microsoft MakeCode en español, con extensión DFRobot MaqueenPlus V2 donde corresponde.
+- En radio hay dos programas separados: emisor y receptor.
+- Retos Bronce, Plata y PRO sin mostrar sus soluciones en la web pública.
+- Se mantienen el diario editable, el guardado local y el recordatorio plegable desde la misión 2.
+
+SOLUCIONARIO SOLO DOCENTE
+Existe un tercer ZIP INDEPENDIENTE llamado RoboMision_LAB_v60_SOLUCIONARIO_DOCENTE_PRIVADO.zip, con las 48 propuestas de solución y 53 programas completos para 16 misiones. No está incluido en ninguno de los dos ZIP de la web y NO debe copiarse a un repositorio público de GitHub Pages.
+
+PRECISIÓN TÉCNICA
+Se han comprobado la sintaxis TypeScript/JavaScript y los nombres de las funciones empleadas frente a la extensión oficial DFRobot, pero no se han compilado individualmente todos los programas en MakeCode ni probado todos los circuitos con robots físicos. Los bloques se generan cuando MakeCode responde; no son dibujos imitativos. Ajustar tiempos, velocidades y umbrales antes del uso en el aula.
