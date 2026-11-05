@@ -2647,3 +2647,6 @@ a.ficha-lab:hover {
 /* Enlaces entre la edición original y la ampliación */
 .cab-nav .go-pro{background:#c8f4df!important;color:#083f33!important;font-weight:850;border-radius:9px}.ficha-lab.guided{border-style:dashed}.guided-label,.guided-link{background:#ddf7e7!important;color:#0c6c50!important;text-decoration:none!important}.expansion-panel{margin:42px 0 16px;padding:23px 27px;background:var(--placa-suave);border-left:5px solid var(--placa);border-radius:12px}.expansion-panel p{font-size:14px;margin:7px 0}.expansion-panel a{font-size:14px;font-weight:800}.parada .guided-link{white-space:nowrap}.ficha-lab.guided:hover{border-color:var(--placa)}
 
+
+/* V60: ocultar solo los enlaces a Mi progreso (menu y portada). */
+a[href="mi-progreso.html"] { display: none !important; }
