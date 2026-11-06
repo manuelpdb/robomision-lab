@@ -1,11 +1,11 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prácticas TA647 · RoboMisión LAB V61</title></head><body><p>Abriendo las nuevas prácticas… <a id="fallback" href="ta647/index.html">Ver componentes</a></p>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prácticas TA647 · RoboMisión LAB V61</title></head><body><p>Abriendo las nuevas prácticas… <a id="fallback" href="sensores-ta647.html">Ver componentes</a></p>
 <script>
 (function(){
  const valid=new Set('azul,bomba,botonamarillo,botonazul,color,humedad,inclinacion,infrarrojo,joystick,l298n,lcd,lm35,luz,motorcc,oled,presion,rele,rgb,rojo,servo180,servo360,shield,sonido,ultrason,verde,zumbador'.split(','));
  const alias={'ultrasonidos':'ultrason','servo':'servo180','humedadsuelo':'humedad','led':'rojo','pulsador':'botonazul','potenciometro':'joystick'};
  const p=new URLSearchParams(location.search).get('pieza')||'';
  const target=alias[p]||p;
- const dest=valid.has(target)?'ta647/fichas/'+target+'.html':'ta647/index.html';
+ const dest=valid.has(target)?'ta647/fichas/'+target+'.html':'sensores-ta647.html';
  document.getElementById('fallback').href=dest;
  location.replace(dest+location.hash);
 })();

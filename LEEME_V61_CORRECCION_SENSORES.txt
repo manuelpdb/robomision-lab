@@ -1,0 +1,45 @@
+RoboMisión LAB · V61 CORREGIDA — SUSTITUCIÓN REAL DE SENSORES TA647
+
+'
+'La página sensores-ta647.html ha sido sustituida por el nuevo catálogo completo del kit.
+'
+'La dirección pública sigue siendo: https://manuelpdb.github.io/robomision-lab/sensores-ta647.html
+
+'
+'Contiene 26 componentes, fichas con seis actividades, fotografías, esquemas de conexión
+'
+'oficiales, pistas y un enlace opcional al manual y los programas originales.
+
+'
+'IMPORTANTE:
+'
+'- El resto de la V60 se mantiene intacto; no se modifican otras secciones.
+'
+'- La página antigua practicas-ta647.html redirige sus enlaces a las nuevas fichas.
+'
+'- ta647/index.html solo sirve de compatibilidad con enlaces antiguos.
+'- Las soluciones del profesorado no están incluidas en el ZIP público.
+'
+'- Las soluciones nuevas están pendientes de comprobación física con los componentes.
+
+'
+'PARA INSTALAR LA WEB COMPLETA:
+'
+'1. Descomprime la carpeta robomision-lab del ZIP.
+'
+'2. Conserva una copia de seguridad de tu repositorio GitHub local.
+'
+'3. Copia el CONTENIDO de robomision-lab al repositorio y reemplaza los archivos.
+'
+'4. Publica con GitHub Desktop (Commit y Push).
+
+'
+'PARA ACTUALIZAR UNA V60 EXISTENTE:
+'
+'1. Descomprime el ZIP ACTUALIZACION_TA647.
+'
+'2. Copia sensores-ta647.html y practicas-ta647.html a la raíz del repositorio.
+'
+'3. Copia la carpeta ta647 a la raíz, conservando su estructura.
+'
+'4. Publica los cambios.
