@@ -1,0 +1,33 @@
+ROBOMISIÓN LAB · V61 · WEB COMPLETA
+====================================
+Base: V60 completa y funcional, con los enlaces a «Mi progreso» ocultos.
+
+QUÉ CAMBIA:
+- sensores-ta647.html -> abre el nuevo catálogo TA647.
+- practicas-ta647.html -> abre el nuevo catálogo o la ficha solicitada con ?pieza=.
+- ta647/ -> 26 fichas del alumnado y 156 actividades, con fotos y esquemas de conexión.
+- Los bloques nuevos utilizan solamente MakeCode estándar.
+- El visor muestra el programa completo para conservar 'al iniciar' y 'para siempre' cuando corresponden.
+- Manual oficial y 37 programas ACEBOTT en un único ZIP de descarga opcional.
+- Los cuatro módulos OLED, LCD, color y presión tienen prototipos con la micro:bit;
+  no se presentan como programas que controlan esos módulos externos sin controlador.
+
+QUÉ NO CAMBIA:
+- Todas las demás páginas, JavaScript, CSS, logos e imágenes heredados de V60
+  mantienen exactamente sus bytes originales.
+- Se sigue ocultando «Mi progreso» en el menú y la portada.
+
+IMPORTANTE:
+- No publicar el ZIP docente en GitHub Pages: se distribuye por separado.
+- Esta versión tiene revisión estática de estructura, sintaxis y enlaces.
+- No se han compilado ni probado físicamente todos los programas nuevos en MakeCode;
+  conviene validarlos antes de utilizarlos como soluciones definitivas en clase.
+
+PUBLICAR EN GITHUB DESKTOP:
+1. Haz una copia de seguridad del repositorio actual.
+2. Descomprime este ZIP.
+3. Copia el contenido de la carpeta robomision-lab/ a la carpeta del repositorio,
+   conservando .git de tu repositorio.
+4. Confirma los cambios y usa Push origin.
+5. Comprueba Inicio, Maqueen, TA647, las fichas, el manual y la zona docente.
+6. Actualiza el navegador con Ctrl+F5.
