@@ -1,0 +1,328 @@
+/* Cabecera de RoboMisión LAB V61 aplicada exclusivamente a las páginas TA647.
+   Fuentes visuales: nav-bar-v52, nav-v13, identidad-v53 y v54 de la V60.
+   No cambia las fichas ni los estilos de los ejercicios. */
+.rm-nav-scope{position:sticky;top:0;z-index:100;font-family:"Atkinson Hyperlegible Next","Trebuchet MS",system-ui,sans-serif;font-size:16px;color:#152943;--f-display:"Atkinson Hyperlegible Next","Trebuchet MS",system-ui,sans-serif}
+.rm-nav-scope *{box-sizing:border-box}
+.rm-nav-scope .marco{width:100%;max-width:1180px;margin-inline:auto;padding-left:16px;padding-right:16px}
+@media(min-width:720px){.rm-nav-scope .marco{padding-left:28px;padding-right:28px}}
+.rm-nav-scope .cab.v52-topnav{position:relative;top:auto}
+.rm-nav-scope .cab.v52-topnav .cab-in{display:flex;align-items:center}
+.rm-nav-scope .cab.v52-topnav .marca{display:inline-flex;gap:10px;align-items:center}
+.rm-nav-scope .cab.v52-topnav .boton-cab{font:inherit;cursor:pointer}
+.rm-nav-scope [hidden]{display:none!important}
+.rm-nav-scope .menu-panel.menu13{position:relative}
+.rm-nav-scope .menu-panel.menu13 .menu13-grid{display:grid}
+.rm-nav-scope .menu-panel.menu13 .menu13-inner{box-sizing:border-box}
+.rm-nav-scope .cab.v52-topnav a{text-decoration:none}
+.rm-nav-scope .menu-panel.menu13 a{text-decoration:none}
+.rm-nav-scope .cab.v52-topnav .cab-nav a{line-height:1.3}
+.rm-nav-scope .cab.v52-topnav .menu13-trigger{line-height:1.2}
+
+/* RoboMisión LAB v52 · Navegación principal unificada.
+   Orden deliberado: marca → menú → enlaces directos → CEP Jerez. */
+.cab.v52-topnav{
+  background:#fff;
+  border-bottom:1px solid #e1ebe6;
+  box-shadow:0 2px 18px rgba(18,44,52,.055);
+  position:sticky;
+  top:0;
+  z-index:30;
+}
+.cab.v52-topnav .cab-in{
+  display:flex;
+  flex-wrap:nowrap;
+  align-items:center;
+  gap:clamp(9px,1.4vw,20px);
+  min-height:76px;
+}
+.cab.v52-topnav .marca{
+  display:inline-flex;
+  gap:10px;
+  align-items:center;
+  flex:0 0 auto;
+  min-width:0;
+  margin-right:auto;
+  text-decoration:none;
+  white-space:nowrap;
+  color:#16263a;
+}
+.cab.v52-topnav .pro-brand-icon{
+  display:inline-grid;
+  place-items:center;
+  height:43px;
+  width:43px;
+  flex:0 0 43px;
+  background:#15283f;
+  border-radius:11px;
+  font-size:24px;
+  color:#b5f1cc;
+}
+.cab.v52-topnav .marca-txt{
+  color:#16263a;
+  font-size:clamp(18px,1.65vw,25px);
+  line-height:1.2;
+  font-weight:850;
+  font-stretch:normal;
+  letter-spacing:-.45px;
+}
+.cab.v52-topnav .pro-word{
+  display:inline-block;
+  vertical-align:middle;
+  margin-left:6px;
+  background:#b8f0d0;
+  border-radius:4px;
+  padding:4px 7px;
+  color:#0b4336;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:1.2px;
+}
+.cab.v52-topnav .cab-acciones{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex:0 0 auto;
+  order:0;
+}
+.cab.v52-topnav .menu13-trigger{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 14px;
+  min-height:43px;
+  white-space:nowrap;
+  font-size:14px;
+  font-weight:800;
+  background:#e8f9ef;
+  color:#0b6757;
+  border:1px solid #ade1cb;
+  border-radius:10px;
+}
+.cab.v52-topnav .menu13-trigger:hover,
+.cab.v52-topnav .menu13-trigger[aria-expanded="true"]{
+  background:#c9f2dc;
+  border-color:#77cdaa;
+}
+.cab.v52-topnav .cab-nav{
+  display:flex;
+  align-items:center;
+  gap:2px;
+  flex:0 1 auto;
+  min-width:0;
+}
+.cab.v52-topnav .cab-nav a{
+  color:#1d3246;
+  text-decoration:none;
+  font-size:clamp(12px,1.05vw,14px);
+  padding:10px 11px;
+  font-weight:800;
+  border-radius:10px;
+  white-space:nowrap;
+}
+.cab.v52-topnav .cab-nav a:hover,
+.cab.v52-topnav .cab-nav a[aria-current="page"]{
+  background:#e7f7ef;
+  color:#096c56;
+  box-shadow:none;
+}
+.cab.v52-topnav .cab-nav a[aria-current="page"]{
+  box-shadow:inset 0 -3px 0 #14253a;
+}
+.cab.v52-topnav .rl-cep-brand-head{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  flex:0 1 210px;
+  min-width:125px;
+  max-width:210px;
+  margin:0;
+  padding:0;
+  background:#fff;
+}
+.cab.v52-topnav .rl-cep-brand-head img{
+  display:block;
+  height:auto;
+  max-height:49px;
+  max-width:100%;
+  object-fit:contain;
+}
+@media(max-width:1200px){
+  .cab.v52-topnav .cab-nav{display:none!important;}
+  .cab.v52-topnav .rl-cep-brand-head{flex-basis:225px;max-width:225px;min-width:125px;}
+}
+@media(max-width:660px){
+  .cab.v52-topnav .cab-in{flex-wrap:wrap;column-gap:10px;row-gap:3px;padding-top:6px;padding-bottom:7px;}
+  .cab.v52-topnav .marca{flex:1 1 auto;}
+  .cab.v52-topnav .marca-txt{font-size:clamp(17px,4.4vw,22px);}
+  .cab.v52-topnav .pro-brand-icon{width:36px;height:36px;flex-basis:36px;font-size:21px;}
+  .cab.v52-topnav .menu13-trigger{font-size:13px;min-height:38px;padding:8px 11px;}
+  .cab.v52-topnav .rl-cep-brand-head{
+    order:4;
+    flex:0 0 100%;
+    min-width:0;
+    max-width:none;
+    justify-content:center;
+    padding:1px 2px 0;
+  }
+  .cab.v52-topnav .rl-cep-brand-head img{width:auto;max-width:min(75vw,205px);max-height:35px;}
+}
+@media(max-width:360px){
+  .cab.v52-topnav .marca{gap:6px;}
+  .cab.v52-topnav .marca-txt{font-size:16px;}
+  .cab.v52-topnav .pro-word{font-size:8px;letter-spacing:.6px;margin-left:2px;padding:4px 5px;}
+}
+@media print{
+  .cab.v52-topnav{display:none!important;}
+}
+
+/* RoboMisión LAB · navegación intuitiva y unificada · v13 */
+.menu-panel.menu13{position:relative;z-index:40;border-top:1px solid #dceae5;background:#f5f9f7;box-shadow:0 18px 28px #0a2b2b22;color:#15283d}
+.menu-panel.menu13[hidden]{display:none!important}
+.menu-panel.menu13 .menu13-inner{display:block;width:min(1240px,calc(100% - 34px));padding:22px 0 25px;max-height:min(76vh,800px);overflow:auto;margin:auto}
+.menu13-intro{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding:0 4px 18px}
+.menu13-intro strong{font-size:23px;letter-spacing:-.7px;color:#12233c}
+.menu13-intro span{font-size:13px;color:#536b70}
+.menu-panel.menu13 .menu13-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.menu13-group{min-width:0;background:white;border:1px solid #e1ece8;border-radius:15px;padding:16px 12px 12px}
+.menu13-overline{display:block;color:#078066;font-size:10px;letter-spacing:1.3px;font-weight:850;margin:0 6px 6px}
+.menu13-heading{font-size:17px;line-height:1.2;letter-spacing:-.4px;margin:0 6px 11px;color:#16283c;font-weight:800}
+.menu13-links{display:flex;flex-direction:column;gap:4px}
+.menu-panel.menu13 .menu13-link{display:block;background:transparent;border:1px solid transparent;border-radius:9px;text-decoration:none!important;color:#243648;padding:9px 10px;margin:0;transition:background .15s,border-color .15s}
+.menu-panel.menu13 .menu13-link:hover,.menu-panel.menu13 .menu13-link:focus-visible{background:#edf8f3;border-color:#b1e4d3;outline:none}
+.menu-panel.menu13 .menu13-link[aria-current=page]{background:#e4f7ed;border-color:#8ed6ba}
+.menu13-label{display:block;font-weight:800;font-size:13px;line-height:1.35;color:#162f40}
+.menu13-desc{display:block;font-size:11px;line-height:1.4;color:#647982;margin-top:3px}
+.menu-panel.menu13 .menu13-secondary{display:flex;gap:14px;align-items:center;flex-wrap:wrap;padding:16px 5px 1px}
+.menu13-secondary-label{font-size:12px;font-weight:700;color:#576d70}
+.menu-panel.menu13 .menu13-secondary a{font-size:12px;font-weight:750;color:#126a59;text-decoration:none;border:0;padding:4px}
+.menu-panel.menu13 .menu13-secondary a:hover{text-decoration:underline}
+.cab .menu13-trigger{border-radius:9px;border:1px solid #cddad6;background:#fff;color:#19364b;min-height:41px;padding:9px 12px;font-weight:800}
+.cab .menu13-trigger[aria-expanded=true]{background:#c5f3df;color:#123c35;border-color:#7fd8b4}
+.menu13-trigger-icon{font-size:16px;line-height:1;margin-right:4px}
+.cab-nav a{white-space:nowrap}
+@media(max-width:1200px){.cab-nav{display:none!important}}
+@media(max-width:1050px){.menu-panel.menu13 .menu13-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.menu-panel.menu13 .menu13-inner{padding:12px 0 22px;max-height:min(79vh,760px)}.menu13-intro{padding:0 3px 12px}.menu13-intro strong{font-size:18px}.menu13-intro span{font-size:12px}.menu-panel.menu13 .menu13-grid{grid-template-columns:1fr;gap:9px}.menu13-group{padding:12px}.menu13-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.menu-panel.menu13 .menu13-link{padding:8px}.menu13-heading{font-size:16px}.menu13-desc{font-size:10px}.cab .menu13-trigger{padding:8px}}
+@media(max-width:360px){.menu13-links{grid-template-columns:1fr}}
+
+/* Identidad de cabecera: distinta al menú beige del material de referencia. */
+body.rl53 .cab.v52-topnav{
+  background:linear-gradient(100deg,#111d3c 0%,#182d53 70%,#153e53 100%)!important;
+  border-bottom:1px solid #2f5975!important;
+  box-shadow:0 8px 25px #0a245a25!important;
+}
+body.rl53 .cab.v52-topnav .cab-in{min-height:82px}
+body.rl53 .cab.v52-topnav .marca{color:#fff}
+body.rl53 .cab.v52-topnav .marca-txt{color:#fff;font-family:var(--f-display);font-weight:900}
+body.rl53 .cab.v52-topnav .pro-brand-icon{
+  background:#18385a!important;
+  border:1px solid #568f9c;
+  border-radius:14px!important;
+  box-shadow:0 5px 14px #030e2240;
+}
+body.rl53 .cab.v52-topnav .pro-word{background:#56e0c0;color:#082c32;border-radius:7px;font-size:10px;padding:5px 7px}
+body.rl53 .cab.v52-topnav .menu13-trigger{
+  background:#ffcca0!important;
+  border:1px solid #ffdebb!important;
+  color:#202b45!important;
+  border-radius:12px;
+  box-shadow:0 3px 0 #b57a49;
+  font-weight:900;
+}
+body.rl53 .cab.v52-topnav .menu13-trigger:hover,body.rl53 .cab.v52-topnav .menu13-trigger[aria-expanded="true"]{background:#ffe0ba!important}
+body.rl53 .cab.v52-topnav .cab-nav a{color:#eef8ff;font-size:14px;font-weight:760;border-radius:10px}
+body.rl53 .cab.v52-topnav .cab-nav a:hover,body.rl53 .cab.v52-topnav .cab-nav a[aria-current="page"]{
+  background:#4be1bf!important;color:#072e3d!important;box-shadow:none!important;
+}
+body.rl53 .cab.v52-topnav .rl-cep-brand-head{
+  background:#fff!important;border-radius:12px;padding:5px 9px;
+  box-shadow:0 0 0 1px #ffffff44;
+}
+body.rl53 .cab.v52-topnav .rl-cep-brand-head img{max-height:39px}
+body.rl53 .menu-panel.menu13,body.rl53 .menu13{
+  background:#142447;color:#eef9ff;border-color:#426080;
+}
+body.rl53 .menu13-intro strong,body.rl53 .menu13-group h2{color:#fff}
+body.rl53 .menu13-overline,body.rl53 .menu13-secondary-label{color:#7ce7d1}
+body.rl53 .menu13-group,body.rl53 .menu13-link{border-color:#405572}
+body.rl53 .menu13-link,body.rl53 .menu13-link .menu13-label{color:#eff8ff}
+body.rl53 .menu13-desc{color:#c0d7e7}
+body.rl53 .menu13-link:hover{background:#284568}
+
+
+/* RoboMisión LAB v54 · accesibilidad, navegación y diseño unificado.
+   Se aplica tras la identidad v53 para mejorar contrastes y armonizar las fichas. */
+
+/* 1. CABECERA: Menú | Inicio + enlaces | RoboMisión LAB | CEP. */
+body.rl53 .cab.v52-topnav .cab-in{
+  justify-content:space-between;
+  column-gap:clamp(8px,1.1vw,16px);
+}
+body.rl53 .cab.v52-topnav .cab-nav{order:1;flex:0 1 auto;gap:2px;margin-right:2px}
+body.rl53 .cab.v52-topnav .cab-acciones{order:0;flex:0 0 auto;margin-right:0}
+body.rl53 .cab.v52-topnav .marca{order:2;flex:0 0 auto;margin:0 0 0 auto;white-space:nowrap}
+body.rl53 .cab.v52-topnav .rl-cep-brand-head{order:3;flex:0 1 205px;min-width:170px;max-width:205px;margin:0}
+body.rl53 .cab.v52-topnav .cab-nav a{padding:10px 10px}
+body.rl53 .cab.v52-topnav .marca-txt{font-size:clamp(16px,1.55vw,21px)}
+body.rl53 .cab.v52-topnav .pro-brand-icon{height:40px;width:40px;flex-basis:40px}
+
+/* 2. MENÚ: texto OSCURO sobre tarjetas BLANCAS, sin excepciones. */
+body.rl53 .menu-panel.menu13{background:#132649!important;color:#eff9ff!important}
+body.rl53 .menu-panel.menu13 .menu13-intro strong{color:#fff!important}
+body.rl53 .menu-panel.menu13 .menu13-intro span{color:#d3e9f2!important}
+body.rl53 .menu-panel.menu13 .menu13-group{
+  background:#fff!important;color:#152c49!important;border:1px solid #b9d3e5!important;
+  box-shadow:0 12px 30px #071c371f;
+}
+body.rl53 .menu-panel.menu13 .menu13-overline{color:#087f79!important}
+body.rl53 .menu-panel.menu13 .menu13-heading,
+body.rl53 .menu-panel.menu13 .menu13-group h2{color:#142d4a!important}
+body.rl53 .menu-panel.menu13 .menu13-links .menu13-link{
+  color:#1c3553!important;border:1px solid transparent!important;background:#f5f9fe!important;
+  border-radius:10px;
+}
+body.rl53 .menu-panel.menu13 .menu13-links .menu13-link:hover,
+body.rl53 .menu-panel.menu13 .menu13-links .menu13-link:focus-visible{
+  background:#dff7f2!important;border-color:#76cfc0!important;
+}
+body.rl53 .menu-panel.menu13 .menu13-links .menu13-link[aria-current="page"]{
+  background:#d5f5e9!important;border-color:#70cbb8!important;
+}
+body.rl53 .menu-panel.menu13 .menu13-links .menu13-link .menu13-label{
+  color:#132f49!important;font-weight:900!important;
+}
+body.rl53 .menu-panel.menu13 .menu13-links .menu13-link .menu13-desc{
+  color:#4c667b!important;font-weight:550!important;
+}
+body.rl53 .menu-panel.menu13 .menu13-secondary-label{color:#bceadd!important}
+body.rl53 .menu-panel.menu13 .menu13-secondary a{color:#91f2d5!important;text-decoration:underline!important}
+
+
+
+/* Identical mobile arrangement as the original V60/V61 header */
+@media(max-width:760px){
+ body.rl53 .rm-nav-scope .cab.v52-topnav .cab-in{flex-wrap:wrap;row-gap:8px;padding:7px 0}
+ body.rl53 .rm-nav-scope .cab.v52-topnav .cab-acciones{order:0;margin-right:0}
+ body.rl53 .rm-nav-scope .cab.v52-topnav .marca{order:2;margin:0 0 0 auto;flex:0 1 auto}
+ body.rl53 .rm-nav-scope .cab.v52-topnav .rl-cep-brand-head{order:3;flex:0 0 100%;max-width:none;min-width:0;justify-content:center}
+ body.rl53 .rm-nav-scope .cab.v52-topnav .rl-cep-brand-head img{max-height:34px;max-width:240px}
+ body.rl53 .rm-nav-scope .cab.v52-topnav .cab-nav{display:flex!important;order:1;flex:0 0 auto;margin-right:0}
+ body.rl53 .rm-nav-scope .cab.v52-topnav .cab-nav a{font-size:12px;padding:8px 9px}
+ body.rl53 .rm-nav-scope .cab.v52-topnav .cab-nav a:not(:first-child){display:none!important}
+}
+@media(max-width:440px){
+ body.rl53 .rm-nav-scope .cab.v52-topnav .cab-in{column-gap:6px}
+ body.rl53 .rm-nav-scope .cab.v52-topnav .marca-txt{font-size:clamp(14px,4vw,18px)}
+ body.rl53 .rm-nav-scope .cab.v52-topnav .pro-brand-icon{width:32px;height:32px;flex-basis:32px;font-size:19px}
+ body.rl53 .rm-nav-scope .cab.v52-topnav .menu13-trigger{padding:7px 9px;font-size:12px}
+}
+@media (min-width:761px) and (max-width:1100px){body.rl53 .rm-nav-scope .cab.v52-topnav .cab-nav a:not(:first-child){display:none!important}}
+
+/* Header-only finishing rules; match original colors but never affect TA647 content. */
+.rm-nav-scope .cab.v52-topnav .menu13-trigger{font-family:inherit}
+.rm-nav-scope .menu-panel.menu13 .menu13-heading{font-family:inherit;font-size:17px;line-height:1.2;margin:0 6px 11px}
+.rm-nav-scope .menu-panel.menu13 .menu13-group{margin:0}
+.rm-nav-scope .menu-panel.menu13 .menu13-links a{font-family:inherit}
+@media(max-width:1200px){.rm-nav-scope .cab.v52-topnav .cab-nav{display:none!important}}
+@media(max-width:760px){.rm-nav-scope .cab.v52-topnav .cab-nav{display:flex!important}}
+@media print{.rm-nav-scope{display:none!important}}
