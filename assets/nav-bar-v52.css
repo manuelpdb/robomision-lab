@@ -112,9 +112,9 @@
   display:flex;
   justify-content:flex-end;
   align-items:center;
-  flex:0 1 210px;
-  min-width:125px;
-  max-width:210px;
+  flex:0 1 118px;
+  min-width:88px;
+  max-width:118px;
   margin:0;
   padding:0;
   background:#fff;
@@ -128,7 +128,7 @@
 }
 @media(max-width:1200px){
   .cab.v52-topnav .cab-nav{display:none!important;}
-  .cab.v52-topnav .rl-cep-brand-head{flex-basis:225px;max-width:225px;min-width:125px;}
+  .cab.v52-topnav .rl-cep-brand-head{flex-basis:112px;max-width:112px;min-width:86px;}
 }
 @media(max-width:660px){
   .cab.v52-topnav .cab-in{flex-wrap:wrap;column-gap:10px;row-gap:3px;padding-top:6px;padding-bottom:7px;}
@@ -144,7 +144,7 @@
     justify-content:center;
     padding:1px 2px 0;
   }
-  .cab.v52-topnav .rl-cep-brand-head img{width:auto;max-width:min(75vw,205px);max-height:35px;}
+  .cab.v52-topnav .rl-cep-brand-head img{width:auto;max-width:min(75vw,95px);max-height:35px;}
 }
 @media(max-width:360px){
   .cab.v52-topnav .marca{gap:6px;}
